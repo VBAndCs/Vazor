@@ -65,7 +65,7 @@ Public Class IndexView
     Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
         Get
             If _content Is Nothing Then
-                Dim html = Vazor().ToString(SaveOptions.DisableFormatting).replace("<vazor>", "").replace("</vazor>", "")
+                Dim html = Vazor().ToHtml()
                 _content = System.Text.Encoding.UTF8.GetBytes(html)
             End If
             Return _content

@@ -105,7 +105,7 @@ Public Class LayoutView
     Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
         Get
             If _content Is Nothing Then
-                _content = System.Text.Encoding.UTF8.GetBytes(Vazor().ToString(SaveOptions.DisableFormatting).Replace("_vazor_amp_", "&"))
+                _content = System.Text.Encoding.UTF8.GetBytes(Vazor().ToHtml)
             End If
             Return _content
         End Get
