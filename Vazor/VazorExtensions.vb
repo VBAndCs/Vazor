@@ -2,7 +2,7 @@
 
 Public Module VazorExtensions
     <Extension>
-    Public Function ToHtml(x As XElement) As String
+    Public Function ToHtmlString(x As XElement) As String
         Return x.ToString(SaveOptions.DisableFormatting).
             Replace("<vazor>", "").
             Replace("</vazor>", "").
