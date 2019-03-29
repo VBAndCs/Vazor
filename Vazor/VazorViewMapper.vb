@@ -5,7 +5,7 @@ Public Class VazorViewMapper
     Shared map As New ConcurrentDictionary(Of String, ViewData)
 
     Public Shared Function Add(view As IVazorView) As String
-        Dim key = view.Name & "_" & Now.ToFileTime
+        Dim key = view.Name & "_" & Guid.NewGuid.ToString
         If map.TryAdd(key, New ViewData(view.Content, 1)) Then Return key
         Return ""
     End Function

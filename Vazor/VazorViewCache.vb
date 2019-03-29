@@ -12,12 +12,12 @@ Public Class VazorViewCache
         cache.TryAdd(key, (view, t))
 
         If (t - lastSweep).TotalMinutes >= ExpireMinutes Then
+            lastSweep = t
             For Each kv In cache
                 If (t - kv.Value.saveTime).TotalMinutes >= ExpireMinutes Then
                     cache.TryRemove(kv.Key, Nothing)
                 End If
             Next
-            lastSweep = t
         End If
     End Sub
 
