@@ -1,5 +1,5 @@
 ﻿# Vazor 1.0
-This is a few lines of code for a programmer, agiant leap for VB.NET apps!
+These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 
 Vazor stands for VB.NET Razor. It allows you to write ASP.NET MVC Core applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
 Till now, there is no project template for that, so, you need to clone this repo to your pc, and modify app1 to build your web app. I welcome all contributions to enhance this works and create a project template.
@@ -80,6 +80,8 @@ This is important to save us unnecessary effort to convert Razor views that does
 This following image shows the rendered Page resulted from:
 - layout and Index as a Vazor classes.
 - the rest of the parts (like _viewstart and _viewimports) are Razor cshtml files!
+
+![untitled1](https://user-images.githubusercontent.com/48354902/55183329-3eae4d00-5198-11e9-933d-49e9264c8161.jpg)
 
 # Useing Vazor Views:
 * To use Vazor views, configure the virtual file system by adding this to the Startup.ConfigureServices method:
