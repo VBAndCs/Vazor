@@ -1,17 +1,11 @@
 ﻿Imports System.Collections.Concurrent
+Imports System.Threading
 
 Public Class VazorViewMapper
     Shared map As New ConcurrentDictionary(Of String, ViewData)
-    Shared Id As Integer
 
     Public Shared Function Add(view As IVazorView) As String
-        If Id = Integer.MaxValue Then
-            Id = 1
-        Else
-            Id += 1
-        End If
-
-        Dim key = view.Name & "_ID_" & Id
+        Dim key = view.Name & "_" & Now.ToFileTime
         If map.TryAdd(key, New ViewData(view.Content, 1)) Then Return key
         Return ""
     End Function
