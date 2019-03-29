@@ -43,7 +43,7 @@ Public Class IndexView
     Public Function Vazor() As XElement Implements IVazorView.Vazor
         ViewBag.Title = "Vazor Sample"
         Return _
- <p>
+ <vazor>
      <h3> Browse Students</h3>
      <p>Select from <%= students.Count() %> students:</p>
      <ul>
@@ -57,14 +57,17 @@ Public Class IndexView
         var x = 5;
         document.writeln("students count = <%= students.Count() %>");
     </script>
- </p>
+ </vazor>
 
     End Function
 
-    Dim _content As XElement = Nothing
-    Public ReadOnly Property Content() As XElement Implements IVazorView.Content
+    Dim _content As Byte()
+    Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
         Get
-            If _content Is Nothing Then _content = Vazor()
+            If _content Is Nothing Then
+                Dim html = Vazor().ToString(SaveOptions.DisableFormatting).replace("<vazor>", "").replace("</vazor>", "")
+                _content = System.Text.Encoding.UTF8.GetBytes(html)
+            End If
             Return _content
         End Get
     End Property

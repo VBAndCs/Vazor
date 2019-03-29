@@ -12,5 +12,5 @@ Public Interface IVazorView
     Property Path As String
     Function Vazor() As XElement
 
-    ReadOnly Property Content As XElement
+    ReadOnly Property Content As Byte()
 End Interface

@@ -1,0 +1,117 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": "e96b4d0f1dc0fb0d380e32fd2f8d71a17755af5a"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Vazor/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
+          "Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2"
+        },
+        "runtime": {
+          "Vazor.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview3.19153.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.0.0-preview3.19153.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview3.19128.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.19.15301"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {},
+      "Microsoft.NETCore.Targets/2.0.0": {},
+      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
+          "Microsoft.NETCore.Targets": "2.0.0"
+        }
+      },
+      "System.Memory/4.5.2": {},
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.7.19.12807"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vazor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview3.19153.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fl5D5QvkN7nwzuLDHn31TVjuSi0mf/Jw9JnDta16kG45ANqA+kvUmD2yJiLcw16NYp3YSt6Vl1F6/SWy8WWqWA==",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.0.0-preview3.19153.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HG3Fk+VxJPdqPWIUbvOUBBLCGmz5esbJlmvq986v7mkJvdpa6zcPdIkfhaJ9zoWh81YhOt2y1KdvYNL7l6qXmQ==",
+      "path": "microsoft.extensions.primitives/3.0.0-preview3.19153.1",
+      "hashPath": "microsoft.extensions.primitives.3.0.0-preview3.19153.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4/k52fBHvM1RNPoBMik0Y3wIovsUGaTadNGH75iLGjQCJPRq2UBivEkhYrYkIFnu+K9kTYJcmXCDF6SFzMBrqA==",
+      "path": "microsoft.netcore.platforms/3.0.0-preview3.19128.7",
+      "hashPath": "microsoft.netcore.platforms.3.0.0-preview3.19128.7.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
+      "path": "microsoft.netcore.targets/2.0.0",
+      "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t7Iw6nkx03aOXgZ7L2ZJLN7hGY7FlUaxIyH6UbGhjHCJABxfV8Bx3xOe6E63xa1HVeoccCAdNPctTX2s2zj5SQ==",
+      "path": "microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
+      "hashPath": "microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512"
+    },
+    "System.Memory/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "path": "system.memory/4.5.2",
+      "hashPath": "system.memory.4.5.2.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6pNB8NAgWC/uTy52WX/gCz9b5FSy27Fti0IrYvF1+L07RR8KKCVjyWdyQxB7lFUz0hij5lP83Ob9OPkVzSGA7g==",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview3.19128.7",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0-preview3.19128.7.nupkg.sha512"
+    }
+  }
+}

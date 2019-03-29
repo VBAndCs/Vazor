@@ -101,11 +101,14 @@ Public Class LayoutView
 
     End Function
 
-    Dim _content As XElement = Nothing
-    Public ReadOnly Property Content() As XElement Implements IVazorView.Content
+    Dim _content As Byte() = Nothing
+    Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
         Get
-            If _content Is Nothing Then _content = Vazor()
+            If _content Is Nothing Then
+                _content = System.Text.Encoding.UTF8.GetBytes(Vazor().ToString(SaveOptions.DisableFormatting).Replace("_vazor_amp_", "&"))
+            End If
             Return _content
         End Get
     End Property
+
 End Class

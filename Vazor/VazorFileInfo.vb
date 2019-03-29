@@ -5,14 +5,11 @@ Imports Microsoft.Extensions.FileProviders
 Public Class VazorFileInfo
     Implements IFileInfo
 
-    Private view As IVazorView
-
+    Private view As MemoryStream
+    Private path As String
     Public Sub New(ByVal path As String)
+        Me.path = path
         view = VazorViewMapper.Find(path)
-    End Sub
-
-    Public Sub New(ByVal view As IVazorView)
-        view = view
     End Sub
 
     Public ReadOnly Property Exists() As Boolean Implements IFileInfo.Exists
@@ -31,21 +28,13 @@ Public Class VazorFileInfo
 
     Public ReadOnly Property Length() As Long Implements IFileInfo.Length
         Get
-            If view Is Nothing Then Return 0
-            Dim content = view.Content.ToString
-            If content Is Nothing Then Return 0
-            Dim bytes() As Byte = Encoding.UTF8.GetBytes(content)
-            Return bytes.Length
+            Return view.Length
         End Get
     End Property
 
     Public ReadOnly Property Name() As String Implements IFileInfo.Name
         Get
-            If view IsNot Nothing AndAlso view.Path IsNot Nothing Then
-                Return view.Path
-            Else
-                Return String.Empty
-            End If
+            Return path
         End Get
     End Property
 
@@ -56,12 +45,7 @@ Public Class VazorFileInfo
     End Property
 
     Public Function CreateReadStream() As Stream Implements IFileInfo.CreateReadStream
-        If view Is Nothing Then Return Nothing
-        Dim Content = view.Content.ToString()
-        If Content Is Nothing Then Return Nothing
-        Dim bytes() As Byte = Encoding.UTF8.GetBytes(Content)
-        Dim ms As New MemoryStream(bytes)
-        Return ms
+        Return view
     End Function
 
 End Class
