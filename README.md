@@ -7,7 +7,7 @@ Till now, there is no project template for that, so, you need to clone this repo
 # Create a Vazor View:
 Vazor uses xml literals to compose the HTML code, so all you need is to create a class to represent your view, and make it implements IVazorView Interface. You can name the class as you want, but you must put the view name without any the extension (like "Index", and "_layout") in the Name property. 
 You can define a field or a property to hold your model data (like a list of students), and receive these data through the constructor of the class.
-You can write the vbxml code that represents the view in the Vazor Function, and use the Content property to deliver the rendered View as a byte array. I made this additional step to allow any further processing of the HTML content away from the vbxml code. For example, I cache the content byte array in a field named _content, so that multiple calls to the Content property will call the Vazor function only once, then use the cached content afterwards. 
+You can write the vbxml code that represents the view in the GetVbXml Function, and use the Content property to deliver the rendered View as a byte array. I made this additional step to allow any further processing of the HTML content away from the vbxml code. For example, I cache the content byte array in a field named _content, so that multiple calls to the Content property will call the GetVbXml function only once, then use the cached content afterwards. 
 
 > Note: don't use the _content cache technique if you expect changes in the model data or the view page that makes the view changes. Or you can just create a new instance of the view class every time you. I supplied a caching mechanism in the CreateInstance method in the IndexView class, which uses the VazorViewCache class to save an instance of the view, and updates it if the model data changes. So, you can always call the IndexView.CreateInstance to get the right instance for the job. 
 > Alternatively, if you have a large page, with only small sections that can change, you can separate the vbxml code in more than one function, cache the static parts, and join all of them in the content. Do not forget that the view is a VB class, and there is no limit to what you can do with it.
@@ -36,10 +36,10 @@ Public Class IndexView
 
     Public Property Path As String = "Views\Home" Implements IVazorView.Path
 
-    Public Function Vazor() As XElement Implements IVazorView.Vazor
+    Public Function GetVbXml() As XElement Implements IVazorView.GetVbXml
         ViewBag.Title = "Vazor Sample"
         Return _
- <vazor>
+ <vbxml>
      <h3> Browse Students</h3>
      <p>Select from <%= students.Count() %> students:</p>
      <ul>
@@ -53,7 +53,7 @@ Public Class IndexView
         var x = 5;
         document.writeln("students count = <%= students.Count() %>");
     </script>
- </vazor>
+ </vbxml>
 
     End Function
 
@@ -61,7 +61,7 @@ Dim _content As Byte()
     Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
         Get
             If _content Is Nothing Then
-                Dim html = Vazor().ToString(SaveOptions.DisableFormatting).replace("<vazor>", "").replace("</vazor>", "")
+                Dim html = GetVbXml().ToHtmlString()
                 _content = System.Text.Encoding.UTF8.GetBytes(html)
             End If
             Return _content

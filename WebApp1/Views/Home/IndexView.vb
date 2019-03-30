@@ -40,32 +40,11 @@ Public Class IndexView
 
     Public Property Path As String = "Views\Home" Implements IVazorView.Path
 
-    Public Function Vazor() As XElement Implements IVazorView.Vazor
-        ViewBag.Title = "Vazor Sample"
-        Return _
- <vazor>
-     <h3> Browse Students</h3>
-     <p>Select from <%= students.Count() %> students:</p>
-     <ul>
-         <%= (Iterator Function()
-                  For Each std In students
-                      Yield <li><%= std.Name %></li>
-                  Next
-              End Function)() %>
-     </ul>
-     <script>
-        var x = 5;
-        document.writeln("students count = <%= students.Count() %>");
-    </script>
- </vazor>
-
-    End Function
-
     Dim _content As Byte()
     Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
         Get
             If _content Is Nothing Then
-                Dim html = Vazor().ToHtmlString()
+                Dim html = GetVbXml().ToHtmlString("<vbxml>")
                 _content = System.Text.Encoding.UTF8.GetBytes(html)
             End If
             Return _content
