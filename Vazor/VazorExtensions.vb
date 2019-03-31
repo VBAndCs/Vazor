@@ -32,7 +32,7 @@ Public Module VazorExtensions
     End Function
 
     <Extension>
-    Public Function ParseTemplate(Of T)(xml As XElement, model As List(Of T)) As String
+    Public Function ParseTemplate(Of T)(xml As XElement, model As IEnumerable(Of T)) As String
         Dim result = From elm In xml.Descendants()
                      Where elm.Attribute("ForEach") IsNot Nothing
 

@@ -23,7 +23,7 @@
         <script>
                  var x = 5;
                  document.writeln("students count = <%= students.Count() %>");
-           </script>
+        </script>
     </vbxml>
 
     End Function
