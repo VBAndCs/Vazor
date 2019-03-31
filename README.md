@@ -83,7 +83,7 @@ End Class
      </ul>
 ```
 
-this code will all al <li> element for each student. To make this happen, you must call the extension method ParseTemplate() and pass the students list to it, so it evalusates the template. So, ise this line in the Content property:
+this code will add an `<li>` element for each student. To make this happen, you must call the extension method ParseTemplate() and pass the students list to it, so it evalusates the template. So, ise this line in the Content property:
 `Dim html = GetVbXml().ParseTemplate(students)`
 instead of:
 `Dim html = GetVbXml().ToHtmlString()`
