@@ -44,7 +44,7 @@ Public Class IndexView
     Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
         Get
             If _content Is Nothing Then
-                Dim html = GetVbXml().ToHtmlString("<vbxml>")
+                Dim html = GetVbXml().ParseTemplate(students)
                 _content = System.Text.Encoding.UTF8.GetBytes(html)
             End If
             Return _content
