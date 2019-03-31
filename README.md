@@ -83,10 +83,15 @@ End Class
      </ul>
 ```
 
-this code will add an `<li>` element for each student. To make this happen, you must call the extension method ParseTemplate() and pass the students list to it, so it evalusates the template. So, ise this line in the Content property:
-`Dim html = GetVbXml().ParseTemplate(students)`
-instead of:
-`Dim html = GetVbXml().ToHtmlString()`
+> this code will add an `<li>` element for each student. To make this happen, you must call the extension method ParseTemplate() and pass the students list to it, so it evalusates the template. So, ise this line in the Content property:
+```VB.NET
+Dim html = GetVbXml().ParseTemplate(students)
+```
+
+> instead of:
+```VB.NET
+Dim html = GetVbXml().ToHtmlString()
+```
 
 # How does Vazor work?
 Vazor uses IFileProvider to define a virtual file system that delivers the html content produced by the View class, to Razor, so that Razor thinks it is a cshtml view and complete the job for us! So, Razor resolves the tag helpers, paths, combine the layout and sections, and do all other stuff!
