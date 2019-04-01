@@ -7,6 +7,8 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "WebApp1", "WebApp1\WebApp1.
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Vazor", "Vazor\Vazor.vbproj", "{23B01F2D-2D73-40C0-9037-18269A4CB24B}"
 EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "VazorPages1", "VazorPages1\VazorPages1.vbproj", "{E5D393D1-F578-400F-AA64-EE00D4DEB3BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{23B01F2D-2D73-40C0-9037-18269A4CB24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23B01F2D-2D73-40C0-9037-18269A4CB24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23B01F2D-2D73-40C0-9037-18269A4CB24B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D393D1-F578-400F-AA64-EE00D4DEB3BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D393D1-F578-400F-AA64-EE00D4DEB3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D393D1-F578-400F-AA64-EE00D4DEB3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D393D1-F578-400F-AA64-EE00D4DEB3BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
