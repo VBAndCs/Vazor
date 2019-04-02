@@ -10,12 +10,12 @@ Public Class IndexView
         Me.students = students
     End Sub
 
-    Private Sub New(students As List(Of Student), viewData As ViewDataDictionary)
+    Private Sub New(students As List(Of Student), ViewData As ViewDataDictionary)
         Me.students = students
-        Me.ViewData = viewData
+        Me.ViewData = ViewData
     End Sub
 
-    Public Shared Function CreateInstance(students As List(Of Student), viewData As ViewDataDictionary) As IndexView
+    Public Shared Function CreateInstance(students As List(Of Student), ViewData As ViewDataDictionary) As IndexView
         Dim result = VazorViewCache.Find(GetType(IndexView), students)
         If result.Found Then
             ' Hash code could cause a collision so, we will do more checks
@@ -25,7 +25,7 @@ Public Class IndexView
                 Return result.View
             End If
         End If
-        Dim view = New IndexView(students, viewData)
+        Dim view = New IndexView(students, ViewData)
         VazorViewCache.Add(view, students)
         Return view
     End Function

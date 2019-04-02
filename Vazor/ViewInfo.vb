@@ -1,4 +1,4 @@
-﻿Friend Class ViewData
+﻿Friend Class ViewInfo
     Public ViewContent As Byte()
     Public Times As Integer
 

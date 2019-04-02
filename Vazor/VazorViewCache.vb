@@ -7,7 +7,7 @@ Public Class VazorViewCache
     Shared lastSweep As Date = Now
 
     Public Shared Sub Add(view As IVazorView, modelData As Object)
-        Dim key = view.GetType().Name & "_" & modelData.GetType.Name & modelData.GetHashCode
+        Dim key = view.GetType().Name & "_" & modelData?.GetType.Name & modelData.GetHashCode
         Dim t = Now
         cache.TryAdd(key, (view, t))
 
@@ -28,7 +28,7 @@ Public Class VazorViewCache
 
     Public Shared Function Find(type As Type, modelData As Object) As (Found As Boolean, View As IVazorView)
         Dim data As (View As IVazorView, LastAccessed As Date)
-        Dim key = type.Name & "_" & modelData.GetType.Name & modelData.GetHashCode
+        Dim key = type.Name & "_" & modelData?.GetType.Name & modelData.GetHashCode
         If cache.TryGetValue(key, data) Then
             data.LastAccessed = now
             Return (True, data.View)
