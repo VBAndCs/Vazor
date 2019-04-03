@@ -4,7 +4,7 @@ Public Class IndexModel : Inherits PageModel
 
     Public Property ViewName As String
         Get
-            Dim iv = IndexView.CreateInstance(Students, ViewData)
+            Dim iv = New IndexView(Students, ViewData)
             ViewName = Vazor.VazorViewMapper.Add(iv)
         End Get
         Private Set(value As String)

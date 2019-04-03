@@ -1,5 +1,5 @@
 ﻿Partial Public Class LayoutView
-    Private Function GetVbXml() As XElement Implements Vazor.IVazorView.GetVbXml
+    Private Shared Function GetVbXml() As XElement
         Return _
  _
     <html>

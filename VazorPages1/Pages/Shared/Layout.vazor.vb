@@ -1,34 +1,18 @@
-﻿Imports Microsoft.AspNetCore.Mvc.ModelBinding
-Imports Microsoft.AspNetCore.Mvc.ViewFeatures
-Imports Vazor
+﻿Imports Vazor
 
 Public Class LayoutView
-    Implements IVazorView
+    Inherits VazorView
 
-    Public Sub New()
+    Public Overrides ReadOnly Property Name As String = "_Layout"
 
-    End Sub
-    Public Sub New(viewData As ViewDataDictionary)
-        Me.ViewData = viewData
-    End Sub
+    Public Overrides ReadOnly Property Path As String = "Views\Shared"
 
-    Public Property ViewData As ViewDataDictionary
+    Public Overrides ReadOnly Property Title As String = "Layout"
 
-    'Public Property ModelState As ModelStateDictionary Implements ILayoutVazor.ModelState
-
-    Public Property Name As String = "_Layout" Implements IVazorView.Name
-
-    Public Property Path As String = "Views\Shared" Implements IVazorView.Path
-
-    Dim _content As Byte() = Nothing
-
-    Public ReadOnly Property Content() As Byte() Implements IVazorView.Content
+    Public Overrides ReadOnly Property Content() As Byte()
         Get
-            If _content Is Nothing Then
-                Dim html = GetVbXml().ToHtmlString()
-                _content = Text.Encoding.UTF8.GetBytes(html)
-            End If
-            Return _content
+            Dim html = GetVbXml().ToHtmlString()
+            Return Encoding.GetBytes(html)
         End Get
     End Property
 

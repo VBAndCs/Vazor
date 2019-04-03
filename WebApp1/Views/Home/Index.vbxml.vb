@@ -1,14 +1,13 @@
 ﻿Partial Public Class IndexView
-    Private Function GetVbXml() As XElement Implements Vazor.IVazorView.GetVbXml
-        ViewData("Title") = "Vazor Sample"
+    Protected Shared Shadows Function GetVbXml(view As IndexView) As XElement
         Return _
  _
         <vbxml>
             <h3> Browse Students</h3>
-            <p>Select from <%= students.Count() %> students:</p>
+            <p>Select from <%= view.Students.Count() %> students:</p>
             <ul>
                 <%= (Iterator Function()
-                         For Each std In students
+                         For Each std In view.Students
                              Yield <li><%= std.Name %></li>
                          Next
                      End Function)() %>
@@ -23,9 +22,10 @@
             </ul>
             <script>
                  var x = 5;
-                 document.writeln("students count = <%= students.Count() %>");
+                 document.writeln("students count = <%= view.Students.Count() %>");
         </script>
         </vbxml>
 
     End Function
+
 End Class
