@@ -7,7 +7,7 @@ Public Class LayoutView
 
     Public Overrides ReadOnly Property Path As String = "Views\Shared"
 
-    Public Overrides ReadOnly Property Title As String = "Layout"
+    Public Overrides ReadOnly Property Title As String = "Vazor Pages"
 
     Public Overrides ReadOnly Property Content() As Byte()
         Get

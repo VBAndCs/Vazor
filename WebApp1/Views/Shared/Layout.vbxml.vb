@@ -1,12 +1,12 @@
 ﻿Partial Public Class LayoutView
-    Protected Shared Function GetVbXml() As XElement
+    Protected Function GetVbXml() As XElement
         Return _
  _
         <html>
             <head>
                 <meta charset="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <title>@ViewData["Title"] - WebApp1</title>
+                <title>@ViewData["Title"] - <%= Title %></title>
 
                 <environment include="Development">
                     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
