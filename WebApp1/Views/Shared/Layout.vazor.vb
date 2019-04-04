@@ -3,11 +3,9 @@
 Public Class LayoutView
     Inherits VazorView
 
-    Public Overrides ReadOnly Property Name As String = "_Layout"
-
-    Public Overrides ReadOnly Property Path As String = "Views\Shared"
-
-    Public Overrides ReadOnly Property Title As String = "Vazor MVC"
+    Public Sub New()
+        MyBase.New("_Layout", "Views\Shared", "Vazor MVC")
+    End Sub
 
     Public Overrides ReadOnly Property Content() As Byte()
         Get
