@@ -4,13 +4,13 @@ Imports System.Threading
 Public Class VazorViewMapper
     Shared map As New ConcurrentDictionary(Of String, ViewInfo)
 
-    Public Shared Function Add(view As IVazorView) As String
+    Public Shared Function Add(view As VazorView) As String
         Dim key = view.Name & "_" & Guid.NewGuid.ToString
         If map.TryAdd(key, New ViewInfo(view.Content, 1)) Then Return key
         Return ""
     End Function
 
-    Public Shared Sub AddStatic(view As IVazorView)
+    Public Shared Sub AddStatic(view As VazorView)
         map.TryAdd(view.Name, New ViewInfo(view.Content, -1))
     End Sub
 

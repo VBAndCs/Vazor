@@ -17,7 +17,7 @@ Public Class IndexView
 
     Public Overrides ReadOnly Property Content() As Byte()
         Get
-            Dim html = GetVbXml(Me).ParseTemplate(Students)
+            Dim html = GetVbXml().ParseTemplate(Students)
             Return Encoding.GetBytes(html)
         End Get
     End Property

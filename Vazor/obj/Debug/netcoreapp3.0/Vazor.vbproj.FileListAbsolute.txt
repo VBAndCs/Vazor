@@ -6,4 +6,3 @@ F:\Vazor\Vazor\obj\Debug\netcoreapp3.0\Vazor.AssemblyInfoInputs.cache
 F:\Vazor\Vazor\obj\Debug\netcoreapp3.0\Vazor.AssemblyInfo.vb
 F:\Vazor\Vazor\obj\Debug\netcoreapp3.0\Vazor.dll
 F:\Vazor\Vazor\obj\Debug\netcoreapp3.0\Vazor.pdb
-F:\Vazor\Vazor\obj\Debug\netcoreapp3.0\Vazor.vbprojAssemblyReference.cache
