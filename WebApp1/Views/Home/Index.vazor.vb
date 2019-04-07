@@ -15,6 +15,10 @@ Public Class IndexView
         viewData("Title") = Title
     End Sub
 
+    Public Shared Function CreateNew(Students As List(Of Student), viewData As ViewDataDictionary) As String
+        Return VazorViewMapper.Add(New IndexView(Students, viewData))
+    End Function
+
     Public Overrides ReadOnly Property Content() As Byte()
         Get
             Dim html = GetVbXml().ParseTemplate(Students)

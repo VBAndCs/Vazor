@@ -57,7 +57,7 @@ Public Class Startup
         app.UseCookiePolicy()
         app.UseAuthorization()
 
-        Vazor.VazorViewMapper.AddStatic(New LayoutView())
+        LayoutView.CreateNew()
 
     End Sub
 End Class

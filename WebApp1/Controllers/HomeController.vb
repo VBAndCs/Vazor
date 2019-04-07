@@ -10,9 +10,7 @@ Namespace Controllers
     Public Class HomeController : Inherits Controller
 
         Public Function Index() As IActionResult
-            Dim iv = New IndexView(Students, ViewData)
-            Dim instanceName = Vazor.VazorViewMapper.Add(iv)
-            Return View(instanceName)
+            Return View(IndexView.CreateNew(Students, ViewData))
         End Function
 
         Public Function Privacy() As IActionResult

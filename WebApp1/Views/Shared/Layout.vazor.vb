@@ -7,6 +7,10 @@ Public Class LayoutView
         MyBase.New("_Layout", "Views\Shared", "Vazor MVC")
     End Sub
 
+    Friend Shared Sub CreateNew()
+        Vazor.VazorViewMapper.AddStatic(New LayoutView())
+    End Sub
+
     Public Overrides ReadOnly Property Content() As Byte()
         Get
             Dim html = GetVbXml().ToHtmlString()
