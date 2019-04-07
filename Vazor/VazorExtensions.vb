@@ -1,4 +1,5 @@
-﻿Imports System.Runtime.CompilerServices
+﻿Imports System.Reflection
+Imports System.Runtime.CompilerServices
 
 Public Module VazorExtensions
     <Extension>
@@ -37,14 +38,14 @@ Public Module VazorExtensions
                      Where elm.Attribute("ForEach") IsNot Nothing
 
         Dim newHtml As New Text.StringBuilder(xml.ToString(SaveOptions.DisableFormatting))
-        Dim mFields = GetType(T).GetFields()
-        Dim mProperties = GetType(T).GetProperties()
+        Dim mFields() As FieldInfo
+        Dim mProperties() As PropertyInfo
 
 
         For Each elm In result
             Dim content = elm.ToString(SaveOptions.DisableFormatting)
             Dim attrValue = elm.Attribute("ForEach").Value
-            Dim tag = content.Replace($" ForEach={Chr(34) + attrValue + Chr(34)}", "")
+            Dim tag = content.Replace($" ForEach={"""" + attrValue + """"}", "")
             Dim newContent As New Text.StringBuilder()
 
             Dim Evaluate = Sub(m As Object)
@@ -64,10 +65,16 @@ Public Module VazorExtensions
 
             Dim list = CType(model, IEnumerable)
             If list IsNot Nothing Then
+                Dim type = list.GetType().GetGenericArguments()(0)
+                mFields = type.GetFields()
+                mProperties = type.GetProperties()
                 For Each m In list
                     Evaluate(m)
                 Next
             Else
+                mFields = GetType(T).GetFields()
+                mProperties = GetType(T).GetProperties()
+
                 Evaluate(model)
             End If
             newHtml.Replace(content, newContent.ToString())
