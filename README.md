@@ -1,4 +1,5 @@
 ﻿# Vazor 1.0
+Copyright (c) 2019 Mohammad Hamdy Ghanem
 These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 
 Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET, including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
@@ -8,7 +9,19 @@ https://github.com/VBAndCs/Vazor-DotNetCore2
 Till now, there is no project template for that, so, you need to clone this repo to your PC, and modify WebApp1 or VazorPages1 to build your web app. 
 I welcome all contributions to enhance this works and create a project template.
 
-# Create a Vazor View:
+# Project and Item Templates
+Download this file:
+https://github.com/VBAndCs/Vazor/blob/master/VazorTemplateSetup.zip
+the unzip it. Double-click the file VazorTemplateSetup.vsix to setuo the Vazor templates:
+1- A Vazor project template for ASP.NET MVC Core 2.2 .
+2- A Vazor project template for ASP.NET MVC Core 3.0 .
+3- A Vazor project template for ASP.NET Web Pages Core 2.2 .
+4- A Vazor project template for ASP.NET Web Pages Core 3.0 .
+5- A VazorView item template to add a new vazor view (.vazor and .vbxml files) to the MVC project.
+6- A VazorPage item template to add a new vazor page (.cshtml, .cshtml.vb, .vazor and .vbxml files) to the Razor Pages project.
+After installation, open .net and create a new project. In the search box, write Vazor, and choose one of the 4 vazor project templates. In the project created, right-click a folder in solution explorer and select Add/New Item. From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
+
+# Vazor Viewes:
 Vazor uses xml literals to compose the HTML code, so all you need is to create a class to represent your view, and make it inherit Vazor.VazorView class. You can name the class as you want, but you must pass the view name without any the extension (like "Index", and "_layout") to the Name property by a call to the base class constructor.
 You can define a field or a property to hold your model data (like a list of students), and receive these data through the constructor of the class.
 Write the vbxml code that represents the view in the GetVbXml Function, and use the Content property to deliver the rendered View as a byte array. I made this additional step to allow any further processing of the HTML content away from the vbxml code.
