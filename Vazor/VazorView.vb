@@ -1,4 +1,6 @@
-﻿Public MustInherit Class VazorView
+﻿
+
+Public MustInherit Class VazorView
 
     Public ReadOnly Property Name As String
 
