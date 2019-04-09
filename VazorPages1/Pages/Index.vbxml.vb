@@ -6,8 +6,10 @@
 ' To go back to edit vb code, close the file, and double click on
 ' "Index.vbxml.vb" in solution explorer.
 
-Partial Public Class IndexView
-    Protected Function GetVbXml() As XElement
+Imports Microsoft.AspNetCore.Mvc.ViewFeatures
+
+Partial Public Class IndexModel
+    Protected Function GetVbXml(students As List(Of Student), viewData As ViewDataDictionary) As XElement
         ' <vbxml> is virtual node, and will be deleted.
         ' It is only used to contain all XML node in one root.
         ' If your html code is contained in one parent node, use it instead
@@ -16,11 +18,11 @@ Partial Public Class IndexView
  _
         <vbxml>
             <h3> Browse Students</h3>
-            <p>Select from <%= Students.Count() %> students:</p>
+            <p>Select from <%= students.Count() %> students:</p>
             <ul>
                 <!--Use lambda expressions to execute vb code block-->
                 <%= (Iterator Function()
-                         For Each std In Students
+                         For Each std In students
                              Yield <li><%= std.Name %></li>
                          Next
                      End Function)() %>
@@ -36,7 +38,7 @@ Partial Public Class IndexView
             </ul>
             <script>
                  var x = 5;
-                 document.writeln("students count = <%= Students.Count() %>");
+                 document.writeln("students count = <%= students.Count() %>");
         </script>
         </vbxml>
 
