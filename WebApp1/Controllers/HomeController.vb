@@ -10,7 +10,7 @@ Namespace Controllers
     Public Class HomeController : Inherits Controller
 
         Public Function Index() As IActionResult
-            Return View(IndexView.CreateNew(Students, ViewData))
+            Return View(IndexView.CreateNew(Students, ViewData), Students)
         End Function
 
         Public Function Privacy() As IActionResult

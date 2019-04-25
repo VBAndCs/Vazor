@@ -145,6 +145,10 @@
               "version": "[3.0.0-preview3-27504-2, )",
               "autoReferenced": true
             },
+            "ZML.1.0": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": {
               "include": "None",
               "suppressParent": "All",

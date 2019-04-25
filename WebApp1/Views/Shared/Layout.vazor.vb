@@ -8,7 +8,7 @@ Public Class LayoutView
     End Sub
 
     Friend Shared Sub CreateNew()
-        Vazor.VazorViewMapper.AddStatic(New LayoutView())
+        VazorViewMapper.AddStatic(New LayoutView())
     End Sub
 
     Public Overrides ReadOnly Property Content() As Byte()

@@ -331,3 +331,4 @@ F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.AssemblyInfo.vb
 F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.vbproj.CopyComplete
 F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.dll
 F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.pdb
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\ZML.dll

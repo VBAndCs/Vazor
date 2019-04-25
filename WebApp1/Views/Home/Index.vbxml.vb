@@ -15,7 +15,10 @@ Partial Public Class IndexView
 
         Return _
  _
-        <vbxml>
+        <zml xmlns:z="zml">
+            <z:model type="List(Of WebApp1.Student)"/>
+            <z:viewdata Title='"test"' Message='"OK"' Key='"value"'/>
+
             <h3 fff=""> Browse Students</h3>
             <p>Select from <%= Students.Count() %> students:</p>
             <ul>
@@ -26,22 +29,25 @@ Partial Public Class IndexView
                          Next
                      End Function)() %>
             </ul>
-
-            <p>Students details:</p>
-            <ul>
-                <!--Use my ForEach item template to generate html tags for each elemnt in the data model-->
-                <li ForEach="m">
-                Id: <m.Id/><br/>
-                Name: <m.Name/><br/>
-                    <p>Grade: <m.Grade/></p>
-                </li>
-            </ul>
+            <!--Or use ZML tags directly-->
+            <z:if condition="Model.Count > 1 andalso not (Model.Count >= 10)">
+                <p>Students details:</p>
+                <ul>
+                    <z:foreach var="m" in="Model">
+                        <li>
+                            <div>Id: @m.Id</div><br/>
+                            <div>Name: @m.Name</div><br/>
+                            <p>Grade: @m.Grade</p>
+                        </li>
+                    </z:foreach>
+                </ul>
+            </z:if>
             <script>
                  var x = 5;
-                document.writeln("students count = <%= Students.Count() %>");
+                document.writeln("students count = @Model.Count");
                 
         </script>
-        </vbxml>
+        </zml>
 
     End Function
 

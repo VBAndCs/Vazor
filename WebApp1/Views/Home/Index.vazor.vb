@@ -1,5 +1,6 @@
 ﻿Imports Microsoft.AspNetCore.Mvc.ViewFeatures
 Imports Vazor
+Imports ZML
 
 ' To add anew vzor view, right-click the folder in solution explorer
 ' click Add/New item, and chosse the "VazorView" item from the window
@@ -35,7 +36,7 @@ Public Class IndexView
 
     Public Overrides ReadOnly Property Content() As Byte()
         Get
-            Dim html = GetVbXml().ParseTemplate(Students)
+            Dim html = GetVbXml().ParseZml()
             Return Encoding.GetBytes(html)
         End Get
     End Property

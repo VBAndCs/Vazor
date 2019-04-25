@@ -1,39 +1,25 @@
-﻿# Vazor 1.1
-
+﻿# Vazor 1.6
 Copyright (c) 2019 Mohammad Hamdy Ghanem
-
 These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 
+Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
 
-Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET, including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
-Note that projects is this repo use .NET Core 3.0 SDK preview3. Use this repo for .NET Core 2.2 version:
-https://github.com/VBAndCs/Vazor-DotNetCore2
+# Adding ZML support in ver 1.6:
+Now, you can use ZML tags inside vbxml code, and call ParseZML to compile ZML tags C# Razor code.
+For more info, see [ZML repo](https://github.com/VBAndCs/ZML).
 
-Till now, there is no project template for that, so, you need to clone this repo to your PC, and modify WebApp1 or VazorPages1 to build your web app. 
-I welcome all contributions to enhance this works and create a project template.
 
 # Project and Item Templates
-
 Download this file:
-
 https://github.com/VBAndCs/Vazor/blob/master/VazorTemplateSetup.zip?raw=true
-
 then unzip it. Double-click the file VazorTemplateSetup.vsix to setuo the Vazor templates:
-
 1- A Vazor project template for ASP.NET MVC Core 2.2 .
-
 2- A Vazor project template for ASP.NET MVC Core 3.0 .
-
 3- A Vazor project template for ASP.NET Web Pages Core 2.2 .
-
 4- A Vazor project template for ASP.NET Web Pages Core 3.0 .
-
 5- A VazorView item template to add a new vazor view (.vazor and .vbxml.vb files) to the MVC project.
-
 6- A VazorPage item template to add a new vazor page (.cshtml, .cshtml.vb, and .vbxml.vb files) to the Razor Pages project.
-
 After installation, open .net and create a new project. In the search box, write Vazor, and choose one of the 4 vazor project templates. In the project created, right-click a folder in solution explorer and select Add/New Item. From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
-
 
 # Vazor Viewes:
 Vazor uses xml literals to compose the HTML code, so all you need is to create a class to represent your view, and make it inherit Vazor.VazorView class. You can name the class as you want, but you must pass the view name without any the extension (like "Index", and "_layout") to the Name property by a call to the base class constructor.
@@ -148,10 +134,10 @@ The following image shows the rendered Page resulted from:
 # Useing Vazor Views:
 * To use Vazor view classes instead of cshtml files, configure the virtual file system by adding this to the Startup.ConfigureServices method:
 ```VB.NET
-services.Configure(Of MvcRazorRuntimeCompilationOptions)(
-  Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
+services.Configure(Of RazorViewEngineOptions)(
+    Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
 )
-```
+ ```
 
 * If you converted the _Layout.cshtml view to a Vazor Layout class (as in the sample project), you must map it in the Startup.Configure method. The layout view has a static content, so we will have only one instance of it to use with all pages. Add this in the  Configure method:
 `Vazor.VazorViewMapper.AddStatic(New LayoutView())`

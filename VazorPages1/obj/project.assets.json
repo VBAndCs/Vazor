@@ -350,6 +350,15 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "ZML.1.0/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ZML.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZML.dll": {}
+        }
+      },
       "Vazor/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -974,6 +983,20 @@
         "version.txt"
       ]
     },
+    "ZML.1.0/1.0.0": {
+      "sha512": "YxQPmMxhMWDI9GZkiCfVGqbnDutSKFnuFt1PdpIfvTeXVQtSUVr09T6o2wES5cYpW8/5xCr9VV5uD9s9qCirYg==",
+      "type": "package",
+      "path": "zml.1.0/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/ZML.deps.json",
+        "lib/netstandard2.0/ZML.dll",
+        "lib/netstandard2.0/ZML.pdb",
+        "zml.1.0.1.0.0.nupkg.sha512",
+        "zml.1.0.nuspec"
+      ]
+    },
     "Vazor/1.0.0": {
       "type": "project",
       "path": "../Vazor/Vazor.vbproj",
@@ -987,6 +1010,7 @@
       "Microsoft.NETCore.Platforms >= 3.0.0-preview3.19128.7",
       "Microsoft.WindowsDesktop.App >= 3.0.0-preview3-27504-2",
       "Vazor >= 1.0.0",
+      "ZML.1.0 >= 1.0.0",
       "runtime.win-x64.Microsoft.NETCore.DotNetAppHost >= 3.0.0-preview3-27503-5"
     ]
   },
@@ -1064,6 +1088,10 @@
             "target": "Package",
             "version": "[3.0.0-preview3-27504-2, )",
             "autoReferenced": true
+          },
+          "ZML.1.0": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": {
             "include": "None",

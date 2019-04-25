@@ -24,10 +24,22 @@ Public Class VazorViewMapper
                 map.TryRemove(viewName, Nothing)
             End If
             Return New IO.MemoryStream(vd.ViewContent)
+        ElseIf Not viewName.StartsWith("_") Then
+            Return New IO.MemoryStream(Text.Encoding.UTF8.GetBytes(CreatePage(viewName)))
+
         Else
             Return Nothing
         End If
     End Function
 
+    Private Shared Function CreatePage(viewName As String) As String
+        Return _
+$"@page
+@model {viewName}Model
+
+    <div>
+        @Html.Partial(Model.ViewName + {""""}.cshtml{""""})
+    </div>"
+    End Function
 End Class
 
