@@ -225,35 +225,13 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
+      "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.NETCore.Targets/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "2.0.0",
-          "Microsoft.NETCore.Targets": "2.0.0"
-        },
-        "compile": {
-          "ref/netcoreapp3.0/_._": {}
-        },
-        "build": {
-          "build/netcoreapp3.0/_._": {}
         }
       },
       "Newtonsoft.Json/12.0.1": {
@@ -277,7 +255,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
+      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27525-12": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/win-x64/native/_._": {
@@ -350,7 +328,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "ZML.1.0/1.0.0": {
+      "ZML.1.0/1.1.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/ZML.dll": {}
@@ -359,11 +337,12 @@
           "lib/netstandard2.0/ZML.dll": {}
         }
       },
-      "Vazor/1.0.0": {
+      "Vazor/1.7.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1"
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
+          "ZML.1.0": "1.1.2"
         },
         "compile": {
           "bin/placeholder/Vazor.dll": {}
@@ -644,97 +623,18 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
-      "sha512": "4/k52fBHvM1RNPoBMik0Y3wIovsUGaTadNGH75iLGjQCJPRq2UBivEkhYrYkIFnu+K9kTYJcmXCDF6SFzMBrqA==",
+    "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {
+      "sha512": "HC9pXnJR+jEHn4vBRH/FwxRCY23QpcZvouC1bl38ygbE3c2mkA6CZGhk7wRu9cA1WOiSV6aJKwcF0VzJZhWFXQ==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/3.0.0-preview3.19128.7",
+      "path": "microsoft.netcore.platforms/3.0.0-preview4.19164.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.0.0-preview3.19128.7.nupkg.sha512",
+        "microsoft.netcore.platforms.3.0.0-preview4.19164.7.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "Microsoft.NETCore.Targets/2.0.0": {
-      "sha512": "odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
-      "type": "package",
-      "path": "microsoft.netcore.targets/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.2.0.0.nupkg.sha512",
-        "microsoft.netcore.targets.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-      "sha512": "t7Iw6nkx03aOXgZ7L2ZJLN7hGY7FlUaxIyH6UbGhjHCJABxfV8Bx3xOe6E63xa1HVeoccCAdNPctTX2s2zj5SQ==",
-      "type": "package",
-      "path": "microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "build/netcoreapp3.0/Microsoft.WindowsDesktop.App.targets",
-        "build/netcoreapp3.0/ref-mscorlib/System.ComponentModel.dll",
-        "build/netcoreapp3.0/ref-mscorlib/System.Runtime.CompilerServices.VisualC.dll",
-        "build/netcoreapp3.0/ref-mscorlib/System.Runtime.dll",
-        "build/netcoreapp3.0/ref-mscorlib/mscorlib.dll",
-        "microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512",
-        "microsoft.windowsdesktop.app.nuspec",
-        "ref/netcoreapp3.0/Accessibility.dll",
-        "ref/netcoreapp3.0/Microsoft.Win32.Registry.dll",
-        "ref/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
-        "ref/netcoreapp3.0/PresentationCore-CommonResources.dll",
-        "ref/netcoreapp3.0/PresentationCore.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Aero.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Aero2.dll",
-        "ref/netcoreapp3.0/PresentationFramework.AeroLite.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Classic.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Luna.dll",
-        "ref/netcoreapp3.0/PresentationFramework.Royale.dll",
-        "ref/netcoreapp3.0/PresentationFramework.dll",
-        "ref/netcoreapp3.0/PresentationUI.dll",
-        "ref/netcoreapp3.0/ReachFramework.dll",
-        "ref/netcoreapp3.0/System.CodeDom.dll",
-        "ref/netcoreapp3.0/System.Configuration.ConfigurationManager.dll",
-        "ref/netcoreapp3.0/System.Design.dll",
-        "ref/netcoreapp3.0/System.Drawing.Common.dll",
-        "ref/netcoreapp3.0/System.Drawing.Design.dll",
-        "ref/netcoreapp3.0/System.Drawing.dll",
-        "ref/netcoreapp3.0/System.Printing.dll",
-        "ref/netcoreapp3.0/System.Security.AccessControl.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Cng.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Xml.dll",
-        "ref/netcoreapp3.0/System.Security.Permissions.dll",
-        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
-        "ref/netcoreapp3.0/System.Windows.Controls.Ribbon.dll",
-        "ref/netcoreapp3.0/System.Windows.Extensions.dll",
-        "ref/netcoreapp3.0/System.Windows.Forms.Design.Editors.dll",
-        "ref/netcoreapp3.0/System.Windows.Forms.Design.dll",
-        "ref/netcoreapp3.0/System.Windows.Forms.dll",
-        "ref/netcoreapp3.0/System.Windows.Input.Manipulations.dll",
-        "ref/netcoreapp3.0/System.Windows.Presentation.dll",
-        "ref/netcoreapp3.0/System.Xaml.dll",
-        "ref/netcoreapp3.0/UIAutomationClient.dll",
-        "ref/netcoreapp3.0/UIAutomationClientSideProviders.dll",
-        "ref/netcoreapp3.0/UIAutomationProvider.dll",
-        "ref/netcoreapp3.0/UIAutomationTypes.dll",
-        "ref/netcoreapp3.0/WindowsBase.dll",
-        "ref/netcoreapp3.0/WindowsFormsIntegration.dll",
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -800,19 +700,20 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
-      "sha512": "9xq1NTCrWg3A4/6K/COActt25NJaw1a6bx0CTIkgbYv2TkpveKXZCCSFyDnT5Ff9nBvZkBq4Y4r/tZNIU5T8pg==",
+    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27525-12": {
+      "sha512": "tYk3Y7EMa2rZxuhi4nHMRmBBmHpd35t2MKghy8nDY81iIgd2Q/RpfoXgOeVzbEhI04ltYQgYnQzZASPjkXyDTw==",
       "type": "package",
-      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview3-27503-5",
+      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview4-27525-12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview3-27503-5.nupkg.sha512",
+        "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview4-27525-12.nupkg.sha512",
         "runtime.win-x64.microsoft.netcore.dotnetapphost.nuspec",
         "runtimes/win-x64/native/apphost.exe",
         "runtimes/win-x64/native/comhost.dll",
+        "runtimes/win-x64/native/ijwhost.dll",
         "version.txt"
       ]
     },
@@ -983,21 +884,21 @@
         "version.txt"
       ]
     },
-    "ZML.1.0/1.0.0": {
-      "sha512": "YxQPmMxhMWDI9GZkiCfVGqbnDutSKFnuFt1PdpIfvTeXVQtSUVr09T6o2wES5cYpW8/5xCr9VV5uD9s9qCirYg==",
+    "ZML.1.0/1.1.2": {
+      "sha512": "7Hzs9BkuNkabwxGl9isSl+xJH1g9AVIqKmouxE1A81fz2i8Rk4g5dbwFiIqfyG2EkiMiSZbh/do2Lpd3yziG/g==",
       "type": "package",
-      "path": "zml.1.0/1.0.0",
+      "path": "zml.1.0/1.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/ZML.deps.json",
         "lib/netstandard2.0/ZML.dll",
         "lib/netstandard2.0/ZML.pdb",
-        "zml.1.0.1.0.0.nupkg.sha512",
+        "zml.1.0.1.1.2.nupkg.sha512",
         "zml.1.0.nuspec"
       ]
     },
-    "Vazor/1.0.0": {
+    "Vazor/1.7.0": {
       "type": "project",
       "path": "../Vazor/Vazor.vbproj",
       "msbuildProject": "../Vazor/Vazor.vbproj"
@@ -1007,11 +908,10 @@
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.0.0-preview3-19153-02",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.0.0-preview3-19153-02",
-      "Microsoft.NETCore.Platforms >= 3.0.0-preview3.19128.7",
-      "Microsoft.WindowsDesktop.App >= 3.0.0-preview3-27504-2",
-      "Vazor >= 1.0.0",
-      "ZML.1.0 >= 1.0.0",
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost >= 3.0.0-preview3-27503-5"
+      "Microsoft.NETCore.Platforms >= 3.0.0-preview4.19164.7",
+      "Vazor >= 1.7.0",
+      "ZML.1.0 >= 1.1.2",
+      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost >= 3.0.0-preview4-27525-12"
     ]
   },
   "packageFolders": {
@@ -1079,25 +979,18 @@
           "Microsoft.NETCore.Platforms": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3.19128.7, )",
-            "autoReferenced": true
-          },
-          "Microsoft.WindowsDesktop.App": {
-            "include": "None",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview3-27504-2, )",
+            "version": "[3.0.0-preview4.19164.7, )",
             "autoReferenced": true
           },
           "ZML.1.0": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[1.1.2, )"
           },
           "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": {
             "include": "None",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.0-preview3-27503-5, )",
+            "version": "[3.0.0-preview4-27525-12, )",
             "autoReferenced": true
           }
         },

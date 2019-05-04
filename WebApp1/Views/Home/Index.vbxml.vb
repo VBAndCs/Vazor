@@ -8,7 +8,7 @@
 
 Partial Public Class IndexView
 
-    Protected Function GetVbXml() As XElement
+    Public Overrides Function GetVbXml() As XElement
         ' <vbxml> is virtual node, and will be deleted.
         ' It is only used to contain all XML node in one root.
         ' If your html code is contained in one parent node, use it instead

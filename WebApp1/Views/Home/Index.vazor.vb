@@ -34,11 +34,4 @@ Public Class IndexView
     ' GetVbXml( ) is defiend in the Index.vbxml.vb file, 
     ' and it contains the view design
 
-    Public Overrides ReadOnly Property Content() As Byte()
-        Get
-            Dim html = GetVbXml().ParseZml()
-            Return Encoding.GetBytes(html)
-        End Get
-    End Property
-
 End Class

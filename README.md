@@ -1,4 +1,4 @@
-﻿# Vazor 1.6
+﻿# Vazor 1.7
 Copyright (c) 2019 Mohammad Hamdy Ghanem
 These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 

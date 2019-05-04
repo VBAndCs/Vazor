@@ -1,16 +1,16 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v3.0",
-    "signature": "e96b4d0f1dc0fb0d380e32fd2f8d71a17755af5a"
+    "signature": "3102f7d8e4444116287335560d79fc36c03d6200"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "Vazor/1.0.0": {
+      "Vazor/1.7.0": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
-          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
-          "Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2"
+          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19164.7",
+          "ZML.1.0": "1.1.2"
         },
         "runtime": {
           "Vazor.dll": {}
@@ -39,27 +39,21 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {},
-      "Microsoft.NETCore.Targets/2.0.0": {},
-      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
-          "Microsoft.NETCore.Targets": "2.0.0"
-        }
-      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {},
       "System.Memory/4.5.2": {},
-      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {},
+      "ZML.1.0/1.1.2": {
         "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.5.0",
-            "fileVersion": "4.7.19.12807"
+          "lib/netstandard2.0/ZML.dll": {
+            "assemblyVersion": "1.1.2.0",
+            "fileVersion": "1.1.2.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "Vazor/1.0.0": {
+    "Vazor/1.7.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -78,26 +72,12 @@
       "path": "microsoft.extensions.primitives/3.0.0-preview3.19153.1",
       "hashPath": "microsoft.extensions.primitives.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
+    "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4/k52fBHvM1RNPoBMik0Y3wIovsUGaTadNGH75iLGjQCJPRq2UBivEkhYrYkIFnu+K9kTYJcmXCDF6SFzMBrqA==",
-      "path": "microsoft.netcore.platforms/3.0.0-preview3.19128.7",
-      "hashPath": "microsoft.netcore.platforms.3.0.0-preview3.19128.7.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Targets/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
-      "path": "microsoft.netcore.targets/2.0.0",
-      "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
-    },
-    "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-t7Iw6nkx03aOXgZ7L2ZJLN7hGY7FlUaxIyH6UbGhjHCJABxfV8Bx3xOe6E63xa1HVeoccCAdNPctTX2s2zj5SQ==",
-      "path": "microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
-      "hashPath": "microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512"
+      "sha512": "sha512-HC9pXnJR+jEHn4vBRH/FwxRCY23QpcZvouC1bl38ygbE3c2mkA6CZGhk7wRu9cA1WOiSV6aJKwcF0VzJZhWFXQ==",
+      "path": "microsoft.netcore.platforms/3.0.0-preview4.19164.7",
+      "hashPath": "microsoft.netcore.platforms.3.0.0-preview4.19164.7.nupkg.sha512"
     },
     "System.Memory/4.5.2": {
       "type": "package",
@@ -112,6 +92,13 @@
       "sha512": "sha512-6pNB8NAgWC/uTy52WX/gCz9b5FSy27Fti0IrYvF1+L07RR8KKCVjyWdyQxB7lFUz0hij5lP83Ob9OPkVzSGA7g==",
       "path": "system.runtime.compilerservices.unsafe/4.6.0-preview3.19128.7",
       "hashPath": "system.runtime.compilerservices.unsafe.4.6.0-preview3.19128.7.nupkg.sha512"
+    },
+    "ZML.1.0/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7Hzs9BkuNkabwxGl9isSl+xJH1g9AVIqKmouxE1A81fz2i8Rk4g5dbwFiIqfyG2EkiMiSZbh/do2Lpd3yziG/g==",
+      "path": "zml.1.0/1.1.2",
+      "hashPath": "zml.1.0.1.1.2.nupkg.sha512"
     }
   }
 }

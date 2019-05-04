@@ -64,25 +64,18 @@
             "Microsoft.NETCore.Platforms": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3.19128.7, )",
-              "autoReferenced": true
-            },
-            "Microsoft.WindowsDesktop.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview3-27504-2, )",
+              "version": "[3.0.0-preview4.19164.7, )",
               "autoReferenced": true
             },
             "ZML.1.0": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[1.1.2, )"
             },
             "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": {
               "include": "None",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3-27503-5, )",
+              "version": "[3.0.0-preview4-27525-12, )",
               "autoReferenced": true
             }
           },
@@ -95,7 +88,7 @@
       }
     },
     "F:\\Vazor\\Vazor\\Vazor.vbproj": {
-      "version": "1.0.0",
+      "version": "1.7.0",
       "restore": {
         "projectUniqueName": "F:\\Vazor\\Vazor\\Vazor.vbproj",
         "projectName": "Vazor",
@@ -146,15 +139,12 @@
             "Microsoft.NETCore.Platforms": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview3.19128.7, )",
+              "version": "[3.0.0-preview4.19164.7, )",
               "autoReferenced": true
             },
-            "Microsoft.WindowsDesktop.App": {
-              "include": "None",
-              "suppressParent": "All",
+            "ZML.1.0": {
               "target": "Package",
-              "version": "[3.0.0-preview3-27504-2, )",
-              "autoReferenced": true
+              "version": "[1.1.2, )"
             }
           },
           "imports": [

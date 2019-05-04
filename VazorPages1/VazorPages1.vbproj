@@ -8,7 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview3-19153-02" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.0.0-preview3-19153-02" />
-    <PackageReference Include="ZML.1.0" Version="1.0.0" />
+    <PackageReference Include="ZML.1.0" Version="1.1.2" />
   </ItemGroup>
 
   <ItemGroup>

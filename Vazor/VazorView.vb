@@ -1,6 +1,4 @@
-﻿
-
-Public MustInherit Class VazorView
+﻿Public MustInherit Class VazorView
 
     Public ReadOnly Property Name As String
 
@@ -21,7 +19,12 @@ Public MustInherit Class VazorView
         Me.Encoding = Encoding
     End Sub
 
-    Public MustOverride ReadOnly Property Content() As Byte()
+    Public Overridable ReadOnly Property Content() As Byte()
+        Get
+            Dim html = GetVbXml().ParseZml
+            Return Encoding.GetBytes(html)
+        End Get
+    End Property
 
-
+    Public MustOverride Function GetVbXml() As XElement
 End Class

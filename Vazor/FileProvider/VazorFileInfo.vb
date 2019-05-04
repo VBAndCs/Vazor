@@ -7,6 +7,7 @@ Public Class VazorFileInfo
 
     Private view As MemoryStream
     Private path As String
+
     Public Sub New(ByVal path As String)
         Me.path = path
         view = VazorViewMapper.Find(path)

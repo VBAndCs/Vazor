@@ -79,7 +79,6 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.StaticFiles.d
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.WebSockets.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.WebUtilities.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.CSharp.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.DotNet.PlatformAbstractions.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Caching.Memory.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -293,7 +292,6 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abst
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\System.Text.Encoding.CodePages.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll

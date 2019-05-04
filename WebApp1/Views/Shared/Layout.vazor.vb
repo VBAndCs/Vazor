@@ -11,11 +11,5 @@ Public Class LayoutView
         VazorViewMapper.AddStatic(New LayoutView())
     End Sub
 
-    Public Overrides ReadOnly Property Content() As Byte()
-        Get
-            Dim html = GetVbXml().ToHtmlString()
-            Return Encoding.GetBytes(html)
-        End Get
-    End Property
 
 End Class

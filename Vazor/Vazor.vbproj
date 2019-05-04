@@ -4,6 +4,14 @@
     <RootNamespace>Vazor</RootNamespace>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+    <Version>1.7.0</Version>
+    <Authors>Mohammed Hamdy Ghanem</Authors>
+    <Description>Vazor is a VB.NET Razor that uses vbxml code (VB and xml literals) with zml support to create ASP.NET MVC Core Views and Pages.
+</Description>
+    <Copyright>(c) Mohammed Hamdy Ghanem 2019</Copyright>
+    <PackageProjectUrl>https://github.com/VBAndCs/Vazor</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VBAndCs/Vazor</RepositoryUrl>
+    <PackageTags>VB.NET Razor ASP.NET MVC Core XML ZML</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="ZML.1.0" Version="1.1.2" />    
   </ItemGroup>
 
 

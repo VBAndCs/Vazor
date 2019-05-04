@@ -1,15 +1,22 @@
-﻿
+﻿' ZML Parser: Converts ZML tags to C# Razor statements.
+' Copyright (c) 2019 Mohammad Hamdy Ghanem
+
 
 Imports System.Reflection
 Imports System.Runtime.CompilerServices
+Imports ZML
 
 Public Module VazorExtensions
+    Public Const Ampersand = "__amp__;"
+    Public Const GreaterThan = "__gtn__;"
+    Public Const LessThan = "__ltn__;"
+
     <Extension>
     Public Function ToHtmlString(x As XElement, ParamArray tagsToRemove() As String) As String
         Dim html = x.ToString(SaveOptions.DisableFormatting).
             Replace("<vbxml>", "").
             Replace("</vbxml>", "").
-            Replace("_vazor_amp_", "&")
+            Replace(Ampersand, "&")
 
         For Each tag In tagsToRemove
             Dim open, close As String
@@ -95,10 +102,18 @@ Public Module VazorExtensions
 
         newHtml.Replace("<vbxml>", "").
             Replace("</vbxml>", "").
-            Replace("_vazor_amp_", "&")
+            Replace(Ampersand, "&")
 
         Return newHtml.ToString()
     End Function
 
+    <Extension>
+    Public Function ParseZML(x As XElement) As String
+        Return ZML.ParseZml(x)
+    End Function
 
+    <Extension>
+    Public Function ParseZML(s As String) As String
+        Return ZML.ParseZml(s)
+    End Function
 End Module

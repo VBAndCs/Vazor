@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v3.0",
-    "signature": "6598e1f725d74d4499e3f57007ec4d450fb9e202"
+    "signature": "9cb3c8997057c60a39456ebf5ae4a8fabafbc973"
   },
   "compilationOptions": {
     "languageVersion": "",
@@ -20,11 +20,10 @@
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.0.0-preview3-19153-02",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.0.0-preview3-19153-02",
-          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
-          "Microsoft.WindowsDesktop.App": "3.0.0-preview3-27504-2",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19164.7",
           "Vazor": "1.0.0",
-          "ZML.1.0": "1.0.0",
-          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview3-27503-5",
+          "ZML.1.0": "1.1.2",
+          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27525-12",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -100,7 +99,6 @@
           "Microsoft.AspNetCore.WebSockets": "3.0.0.0",
           "Microsoft.AspNetCore.WebUtilities": "3.0.0.0",
           "Microsoft.CSharp.Reference": "4.0.0.0",
-          "Microsoft.DotNet.PlatformAbstractions": "3.0.0.0",
           "Microsoft.Extensions.Caching.Abstractions": "3.0.0.0",
           "Microsoft.Extensions.Caching.Memory": "3.0.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "3.0.0.0",
@@ -523,9 +521,6 @@
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.19.15301"
           }
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
@@ -538,19 +533,9 @@
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.19.15301"
           }
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {},
-      "Microsoft.NETCore.Targets/2.0.0": {},
-      "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
-          "Microsoft.NETCore.Targets": "2.0.0"
-        }
-      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {},
       "Newtonsoft.Json/12.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -576,24 +561,14 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {},
+      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27525-12": {},
       "System.Collections.Immutable/1.5.0": {},
       "System.Memory/4.5.2": {},
       "System.Reflection.Metadata/1.6.0": {},
-      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
-        "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.5.0",
-            "fileVersion": "4.7.19.12807"
-          }
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
+      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {},
       "System.Text.Encoding.CodePages/4.5.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview3.19128.7",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19164.7",
           "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview3.19128.7"
         },
         "runtime": {
@@ -615,11 +590,11 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.0": {},
-      "ZML.1.0/1.0.0": {
+      "ZML.1.0/1.1.2": {
         "runtime": {
           "lib/netstandard2.0/ZML.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "1.1.2.0",
+            "fileVersion": "1.1.2.0"
           }
         },
         "compile": {
@@ -628,7 +603,8 @@
       },
       "Vazor/1.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1"
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
+          "ZML.1.0": "1.1.2"
         },
         "runtime": {
           "Vazor.dll": {}
@@ -1084,12 +1060,6 @@
       "Microsoft.CSharp.Reference/4.0.0.0": {
         "compile": {
           "Microsoft.CSharp.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.DotNet.PlatformAbstractions/3.0.0.0": {
-        "compile": {
-          "Microsoft.DotNet.PlatformAbstractions.dll": {}
         },
         "compileOnly": true
       },
@@ -2391,26 +2361,12 @@
       "path": "microsoft.extensions.primitives/3.0.0-preview3.19153.1",
       "hashPath": "microsoft.extensions.primitives.3.0.0-preview3.19153.1.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/3.0.0-preview3.19128.7": {
+    "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4/k52fBHvM1RNPoBMik0Y3wIovsUGaTadNGH75iLGjQCJPRq2UBivEkhYrYkIFnu+K9kTYJcmXCDF6SFzMBrqA==",
-      "path": "microsoft.netcore.platforms/3.0.0-preview3.19128.7",
-      "hashPath": "microsoft.netcore.platforms.3.0.0-preview3.19128.7.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Targets/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
-      "path": "microsoft.netcore.targets/2.0.0",
-      "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
-    },
-    "Microsoft.WindowsDesktop.App/3.0.0-preview3-27504-2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-t7Iw6nkx03aOXgZ7L2ZJLN7hGY7FlUaxIyH6UbGhjHCJABxfV8Bx3xOe6E63xa1HVeoccCAdNPctTX2s2zj5SQ==",
-      "path": "microsoft.windowsdesktop.app/3.0.0-preview3-27504-2",
-      "hashPath": "microsoft.windowsdesktop.app.3.0.0-preview3-27504-2.nupkg.sha512"
+      "sha512": "sha512-HC9pXnJR+jEHn4vBRH/FwxRCY23QpcZvouC1bl38ygbE3c2mkA6CZGhk7wRu9cA1WOiSV6aJKwcF0VzJZhWFXQ==",
+      "path": "microsoft.netcore.platforms/3.0.0-preview4.19164.7",
+      "hashPath": "microsoft.netcore.platforms.3.0.0-preview4.19164.7.nupkg.sha512"
     },
     "Newtonsoft.Json/12.0.1": {
       "type": "package",
@@ -2426,12 +2382,12 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview3-27503-5": {
+    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27525-12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9xq1NTCrWg3A4/6K/COActt25NJaw1a6bx0CTIkgbYv2TkpveKXZCCSFyDnT5Ff9nBvZkBq4Y4r/tZNIU5T8pg==",
-      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview3-27503-5",
-      "hashPath": "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview3-27503-5.nupkg.sha512"
+      "sha512": "sha512-tYk3Y7EMa2rZxuhi4nHMRmBBmHpd35t2MKghy8nDY81iIgd2Q/RpfoXgOeVzbEhI04ltYQgYnQzZASPjkXyDTw==",
+      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview4-27525-12",
+      "hashPath": "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview4-27525-12.nupkg.sha512"
     },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",
@@ -2475,12 +2431,12 @@
       "path": "system.threading.tasks.extensions/4.5.0",
       "hashPath": "system.threading.tasks.extensions.4.5.0.nupkg.sha512"
     },
-    "ZML.1.0/1.0.0": {
+    "ZML.1.0/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YxQPmMxhMWDI9GZkiCfVGqbnDutSKFnuFt1PdpIfvTeXVQtSUVr09T6o2wES5cYpW8/5xCr9VV5uD9s9qCirYg==",
-      "path": "zml.1.0/1.0.0",
-      "hashPath": "zml.1.0.1.0.0.nupkg.sha512"
+      "sha512": "sha512-7Hzs9BkuNkabwxGl9isSl+xJH1g9AVIqKmouxE1A81fz2i8Rk4g5dbwFiIqfyG2EkiMiSZbh/do2Lpd3yziG/g==",
+      "path": "zml.1.0/1.1.2",
+      "hashPath": "zml.1.0.1.1.2.nupkg.sha512"
     },
     "Vazor/1.0.0": {
       "type": "project",
@@ -2858,11 +2814,6 @@
       "sha512": ""
     },
     "Microsoft.CSharp.Reference/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.DotNet.PlatformAbstractions/3.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

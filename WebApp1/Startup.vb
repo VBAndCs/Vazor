@@ -49,8 +49,8 @@ Public Class Startup
         app.UseRouting(
              Sub(routes)
                  routes.MapControllerRoute(
-                     name:="default",
-                     template:="{controller=Home}/{action=Index}/{id?}")
+                     "default",
+                     "{controller=Home}/{action=Index}/{id?}")
                  routes.MapRazorPages()
              End Sub)
 
