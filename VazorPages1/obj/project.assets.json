@@ -337,7 +337,7 @@
           "lib/netstandard2.0/ZML.dll": {}
         }
       },
-      "Vazor/1.7.0": {
+      "Vazor/1.8.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
@@ -898,7 +898,7 @@
         "zml.1.0.nuspec"
       ]
     },
-    "Vazor/1.7.0": {
+    "Vazor/1.8.3": {
       "type": "project",
       "path": "../Vazor/Vazor.vbproj",
       "msbuildProject": "../Vazor/Vazor.vbproj"
@@ -909,7 +909,7 @@
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.0.0-preview3-19153-02",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.0.0-preview3-19153-02",
       "Microsoft.NETCore.Platforms >= 3.0.0-preview4.19164.7",
-      "Vazor >= 1.7.0",
+      "Vazor >= 1.8.3",
       "ZML.1.0 >= 1.1.2",
       "runtime.win-x64.Microsoft.NETCore.DotNetAppHost >= 3.0.0-preview4-27525-12"
     ]

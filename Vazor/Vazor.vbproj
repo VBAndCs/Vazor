@@ -4,7 +4,7 @@
     <RootNamespace>Vazor</RootNamespace>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
-    <Version>1.7.0</Version>
+    <Version>1.8.3</Version>
     <Authors>Mohammed Hamdy Ghanem</Authors>
     <Description>Vazor is a VB.NET Razor that uses vbxml code (VB and xml literals) with zml support to create ASP.NET MVC Core Views and Pages.
 </Description>

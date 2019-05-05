@@ -185,7 +185,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.7.0",
+    "version": "1.8.3",
     "restore": {
       "projectUniqueName": "F:\\Vazor\\Vazor\\Vazor.vbproj",
       "projectName": "Vazor",

@@ -21,7 +21,7 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.0.0-preview3-19153-02",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.0.0-preview3-19153-02",
           "Microsoft.NETCore.Platforms": "3.0.0-preview4.19164.7",
-          "Vazor": "1.0.0",
+          "Vazor": "1.8.3",
           "ZML.1.0": "1.1.2",
           "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27525-12",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
@@ -601,7 +601,7 @@
           "lib/netstandard2.0/ZML.dll": {}
         }
       },
-      "Vazor/1.0.0": {
+      "Vazor/1.8.3": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
           "ZML.1.0": "1.1.2"
@@ -2438,7 +2438,7 @@
       "path": "zml.1.0/1.1.2",
       "hashPath": "zml.1.0.1.1.2.nupkg.sha512"
     },
-    "Vazor/1.0.0": {
+    "Vazor/1.8.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

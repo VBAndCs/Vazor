@@ -1,4 +1,4 @@
-﻿# Vazor 1.7
+﻿# Vazor 1.8
 Copyright (c) 2019 Mohammad Hamdy Ghanem
 These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 
@@ -58,7 +58,7 @@ End Class
 I separated the vbxml code in a partial class, so the view design is separated from vazor code. You will find this in the Index.vbxml.vb file:
 ```VB.NET
 Partial Public Class IndexView
-    Protected Shared Shadows Function GetVbXml(view As IndexView) As XElement
+    Public overrides Function GetVbXml(view As IndexView) As XElement
         Return _
  _
         <vbxml>
@@ -139,17 +139,39 @@ services.Configure(Of RazorViewEngineOptions)(
 )
  ```
 
-* If you converted the _Layout.cshtml view to a Vazor Layout class (as in the sample project), you must map it in the Startup.Configure method. The layout view has a static content, so we will have only one instance of it to use with all pages. Add this in the  Configure method:
-`Vazor.VazorViewMapper.AddStatic(New LayoutView())`
-You must do the same for any shared view class with a static content, that doesn't depend on the model data, and its html output is always the same. If the layout has a different title for each page, use `<Title>@ViewBag.Title</Title>` in vbxml code to let Razor evaluate this. Yes, this is a Vazor/Razor mixed view!
-If you used `<Title><%= ViewBag.Title% ></Title>` VB will try to evaluate it and will cause an exception because the ViewBag is empty at this moment. If you need to do more changes in the layout with every page, put them as a separate sections.
+* If you converted the _Layout.cshtml view to a Vazor Layout class (as in 
 
-* To use the page View classes in MVC projects, map them in the controllers actions methods. For example, the IndexView class should be used in the Home.Index action method like this:
+the sample project), let it inherit the VazorSharedView class defiended in 
+
+Vazor 1.8.3, so you can create and map all shared views by using this 
+
+single line of code in the Startup.Configure method:
+`Vazor.VazorSharedView.CreateAll( )`
+The layout view has a static content, so we will have only one instance of it 
+
+to use with all pages.
+You must do the same for any shared view class with a static content, that 
+
+doesn't contain any vb code, so its html output is always the same. If the 
+
+layout has a different title for each page, use 
+
+`<Title>@ViewBag.Title</Title>` in vbxml code to let Razor evaluate this. 
+
+Yes, this is a Vazor/Razor mixed view!
+If you used `<Title><%= ViewBag.Title% ></Title>` VB will try to evaluate it 
+
+and will cause an exception because the ViewBag is empty at this moment. 
+* To use the page View classes in MVC projects, map them in the 
+
+controllers actions methods. For example, the IndexView class should be 
+
+used in the Home.Index action method like this:
 ```VB.NET
 Public Function Index() As IActionResult
-   Dim iv = IndexView.CreateInstance(Students, ViewBag)
+   Dim iv = IndexView.CreateNew(Students, ViewBag)
    Dim instanceName = Vazor.VazorViewMapper.Add(iv)
-   Return View(instanceName)
+   Return View(instanceName, Students)
 End Function
 ```
 

@@ -1,4 +1,10 @@
-﻿Partial Public Class LayoutView
+﻿Public Class LayoutView
+    Inherits Vazor.VazorSharedView
+
+    Public Sub New()
+        MyBase.New("_Layout", "Views\Shared", "Vazor MVC")
+    End Sub
+
     Public Overrides Function GetVbXml() As XElement
         Return _
  _

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "Vazor/1.7.0": {
+      "Vazor/1.8.3": {
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
           "Microsoft.NETCore.Platforms": "3.0.0-preview4.19164.7",
@@ -53,7 +53,7 @@
     }
   },
   "libraries": {
-    "Vazor/1.7.0": {
+    "Vazor/1.8.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
