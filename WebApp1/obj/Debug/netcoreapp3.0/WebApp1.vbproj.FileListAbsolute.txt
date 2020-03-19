@@ -12,7 +12,6 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Authenticatio
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Authorization.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Authorization.Policy.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Components.Browser.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Components.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
@@ -68,13 +67,11 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Server.IIS.dl
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Server.Kestrel.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Session.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.SignalR.Common.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.SignalR.Core.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.SignalR.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.StaticFiles.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.WebSockets.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.WebUtilities.dll
@@ -94,7 +91,6 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Configuration
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Configuration.Xml.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.DependencyInjection.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.DependencyModel.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -130,7 +126,6 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Win32.Primitives.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Win32.Registry.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\mscorlib.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\netstandard.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Newtonsoft.Json.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\System.AppContext.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\System.Buffers.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\System.Collections.Concurrent.dll
@@ -288,11 +283,8 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.CSharp.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.CodeAnalysis.Razor.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.Extensions.FileProviders.Abstractions.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\System.Text.Encoding.CodePages.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\cs\Microsoft.CodeAnalysis.resources.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\de\Microsoft.CodeAnalysis.resources.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -319,7 +311,6 @@ F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\ru\Microsoft.CodeAnalysis.CSharp.resour
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Vazor.dll
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\Vazor.pdb
 F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.vbprojAssemblyReference.cache
@@ -330,3 +321,22 @@ F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.vbproj.CopyComplete
 F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.dll
 F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.pdb
 F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\ZML.dll
+F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\staticwebassets\WebApp1.StaticWebAssets.Manifest.cache
+F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\staticwebassets\WebApp1.StaticWebAssets.xml
+F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.MvcApplicationPartsAssemblyInfo.vb
+F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.MvcApplicationPartsAssemblyInfo.cache
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\appsettings.Development.json
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\appsettings.json
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\My Project\launchSettings.json
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Components.Authorization.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Components.Forms.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Components.Server.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Components.Web.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.Metadata.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\Microsoft.Extensions.Logging.EventLog.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\System.Data.DataSetExtensions.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\System.Diagnostics.EventLog.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\System.Text.Encoding.CodePages.dll
+F:\Vazor\WebApp1\bin\Debug\netcoreapp3.0\refs\System.Windows.Extensions.dll
+F:\Vazor\WebApp1\obj\Debug\netcoreapp3.0\WebApp1.genruntimeconfig.cache

@@ -200,32 +200,7 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview3.19153.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.0.0-preview3.19153.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
-        }
-      },
-      "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.2",
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview3.19128.7"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
-        }
-      },
-      "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {
+      "Microsoft.NETCore.Platforms/2.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -255,15 +230,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27525-12": {
-        "type": "package",
-        "runtimeTargets": {
-          "runtimes/win-x64/native/_._": {
-            "assetType": "native",
-            "rid": "win-x64"
-          }
-        }
-      },
       "System.Collections.Immutable/1.5.0": {
         "type": "package",
         "compile": {
@@ -271,15 +237,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Collections.Immutable.dll": {}
-        }
-      },
-      "System.Memory/4.5.2": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Reflection.Metadata/1.6.0": {
@@ -291,10 +248,10 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/_._": {}
         },
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -337,13 +294,9 @@
           "lib/netstandard2.0/ZML.dll": {}
         }
       },
-      "Vazor/1.8.3": {
+      "Vazor/1.9.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
-          "ZML.1.0": "1.1.2"
-        },
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/Vazor.dll": {}
         },
@@ -595,45 +548,17 @@
         "version.txt"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview3.19153.1": {
-      "sha512": "Fl5D5QvkN7nwzuLDHn31TVjuSi0mf/Jw9JnDta16kG45ANqA+kvUmD2yJiLcw16NYp3YSt6Vl1F6/SWy8WWqWA==",
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0-preview3.19153.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
-        "microsoft.extensions.fileproviders.abstractions.3.0.0-preview3.19153.1.nupkg.sha512",
-        "microsoft.extensions.fileproviders.abstractions.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
-      "sha512": "HG3Fk+VxJPdqPWIUbvOUBBLCGmz5esbJlmvq986v7mkJvdpa6zcPdIkfhaJ9zoWh81YhOt2y1KdvYNL7l6qXmQ==",
-      "type": "package",
-      "path": "microsoft.extensions.primitives/3.0.0-preview3.19153.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll",
-        "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.3.0.0-preview3.19153.1.nupkg.sha512",
-        "microsoft.extensions.primitives.nuspec"
-      ]
-    },
-    "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {
-      "sha512": "HC9pXnJR+jEHn4vBRH/FwxRCY23QpcZvouC1bl38ygbE3c2mkA6CZGhk7wRu9cA1WOiSV6aJKwcF0VzJZhWFXQ==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/3.0.0-preview4.19164.7",
+      "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.0.0-preview4.19164.7.nupkg.sha512",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -700,23 +625,6 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27525-12": {
-      "sha512": "tYk3Y7EMa2rZxuhi4nHMRmBBmHpd35t2MKghy8nDY81iIgd2Q/RpfoXgOeVzbEhI04ltYQgYnQzZASPjkXyDTw==",
-      "type": "package",
-      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview4-27525-12",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview4-27525-12.nupkg.sha512",
-        "runtime.win-x64.microsoft.netcore.dotnetapphost.nuspec",
-        "runtimes/win-x64/native/apphost.exe",
-        "runtimes/win-x64/native/comhost.dll",
-        "runtimes/win-x64/native/ijwhost.dll",
-        "version.txt"
-      ]
-    },
     "System.Collections.Immutable/1.5.0": {
       "sha512": "EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
       "type": "package",
@@ -736,27 +644,6 @@
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
         "system.collections.immutable.1.5.0.nupkg.sha512",
         "system.collections.immutable.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Memory/4.5.2": {
-      "sha512": "fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
-      "type": "package",
-      "path": "system.memory/4.5.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.2.nupkg.sha512",
-        "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -782,10 +669,10 @@
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
-      "sha512": "6pNB8NAgWC/uTy52WX/gCz9b5FSy27Fti0IrYvF1+L07RR8KKCVjyWdyQxB7lFUz0hij5lP83Ob9OPkVzSGA7g==",
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "sha512": "YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview3.19128.7",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -797,11 +684,13 @@
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/uap10.0.16300/_._",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.6.0-preview3.19128.7.nupkg.sha512",
+        "ref/uap10.0.16300/_._",
+        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -898,7 +787,7 @@
         "zml.1.0.nuspec"
       ]
     },
-    "Vazor/1.8.3": {
+    "Vazor/1.9.0": {
       "type": "project",
       "path": "../Vazor/Vazor.vbproj",
       "msbuildProject": "../Vazor/Vazor.vbproj"
@@ -908,53 +797,43 @@
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.0.0-preview3-19153-02",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.0.0-preview3-19153-02",
-      "Microsoft.NETCore.Platforms >= 3.0.0-preview4.19164.7",
-      "Vazor >= 1.8.3",
-      "ZML.1.0 >= 1.1.2",
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost >= 3.0.0-preview4-27525-12"
+      "Vazor >= 1.9.0",
+      "ZML.1.0 >= 1.1.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mhmd\\.nuget\\packages\\": {},
-    "C:\\ProgramData\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\MHG\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Vazor\\VazorPages1\\VazorPages1.vbproj",
+      "projectUniqueName": "F:\\_VS.NET\\Vazor 3\\Vazor\\VazorPages1\\VazorPages1.vbproj",
       "projectName": "VazorPages1",
-      "projectPath": "F:\\Vazor\\VazorPages1\\VazorPages1.vbproj",
-      "packagesPath": "C:\\Users\\mhmd\\.nuget\\packages\\",
-      "outputPath": "F:\\Vazor\\VazorPages1\\obj\\",
+      "projectPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\VazorPages1\\VazorPages1.vbproj",
+      "packagesPath": "C:\\Users\\MHG\\.nuget\\packages\\",
+      "outputPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\VazorPages1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\ProgramData\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mhmd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\MHG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "F:\\Vazor\\Vazor\\Vazor.vbproj": {
-              "projectPath": "F:\\Vazor\\Vazor\\Vazor.vbproj"
+            "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj": {
+              "projectPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj"
             }
           }
         }
@@ -976,30 +855,60 @@
             "target": "Package",
             "version": "[3.0.0-preview3-19153-02, )"
           },
-          "Microsoft.NETCore.Platforms": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview4.19164.7, )",
-            "autoReferenced": true
-          },
           "ZML.1.0": {
             "target": "Package",
             "version": "[1.1.2, )"
-          },
-          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": {
-            "include": "None",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[3.0.0-preview4-27525-12, )",
-            "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x86",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Vazor is not compatible with netcoreapp3.0 (.NETCoreApp,Version=v3.0). Project Vazor supports: netcoreapp3.1 (.NETCoreApp,Version=v3.1)",
+      "libraryId": "Vazor",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
 }

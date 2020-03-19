@@ -1,47 +1,52 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v3.0",
-    "signature": "3102f7d8e4444116287335560d79fc36c03d6200"
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
       "Vazor/1.8.3": {
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.0.0-preview3.19153.1",
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19164.7",
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.0",
           "ZML.1.0": "1.1.2"
         },
         "runtime": {
           "Vazor.dll": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview3.19153.1": {
+      "Microsoft.Extensions.FileProviders.Abstractions/3.1.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.0.0-preview3.19153.1"
+          "Microsoft.Extensions.Primitives": "3.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.19.15301"
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
           }
         }
       },
-      "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
+      "Microsoft.Extensions.Primitives/3.1.0": {
         "dependencies": {
           "System.Memory": "4.5.2",
-          "System.Runtime.CompilerServices.Unsafe": "4.6.0-preview3.19128.7"
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.19.15301"
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
           }
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {},
       "System.Memory/4.5.2": {},
-      "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {},
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.6.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "ZML.1.0/1.1.2": {
         "runtime": {
           "lib/netstandard2.0/ZML.dll": {
@@ -58,26 +63,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Extensions.FileProviders.Abstractions/3.0.0-preview3.19153.1": {
+    "Microsoft.Extensions.FileProviders.Abstractions/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Fl5D5QvkN7nwzuLDHn31TVjuSi0mf/Jw9JnDta16kG45ANqA+kvUmD2yJiLcw16NYp3YSt6Vl1F6/SWy8WWqWA==",
-      "path": "microsoft.extensions.fileproviders.abstractions/3.0.0-preview3.19153.1",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.0.0-preview3.19153.1.nupkg.sha512"
+      "sha512": "sha512-G3iBMOnn3tETEUvkE9J3a23wQpRkiXZp73zR0XNlicjLFhkeWW1FCaC2bTjrgHhPi2KO6x0BXnHvVuJPIlygBQ==",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.1.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.1.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Primitives/3.0.0-preview3.19153.1": {
+    "Microsoft.Extensions.Primitives/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HG3Fk+VxJPdqPWIUbvOUBBLCGmz5esbJlmvq986v7mkJvdpa6zcPdIkfhaJ9zoWh81YhOt2y1KdvYNL7l6qXmQ==",
-      "path": "microsoft.extensions.primitives/3.0.0-preview3.19153.1",
-      "hashPath": "microsoft.extensions.primitives.3.0.0-preview3.19153.1.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Platforms/3.0.0-preview4.19164.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HC9pXnJR+jEHn4vBRH/FwxRCY23QpcZvouC1bl38ygbE3c2mkA6CZGhk7wRu9cA1WOiSV6aJKwcF0VzJZhWFXQ==",
-      "path": "microsoft.netcore.platforms/3.0.0-preview4.19164.7",
-      "hashPath": "microsoft.netcore.platforms.3.0.0-preview4.19164.7.nupkg.sha512"
+      "sha512": "sha512-LEKAnX7lhUhSoIc2XraCTK3M4IU/LdVUzCe464Sa4+7F4ZJuXHHRzZli2mDbiT4xzAZhgqXbvfnb5+CNDcQFfg==",
+      "path": "microsoft.extensions.primitives/3.1.0",
+      "hashPath": "microsoft.extensions.primitives.3.1.0.nupkg.sha512"
     },
     "System.Memory/4.5.2": {
       "type": "package",
@@ -86,12 +84,12 @@
       "path": "system.memory/4.5.2",
       "hashPath": "system.memory.4.5.2.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.6.0-preview3.19128.7": {
+    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6pNB8NAgWC/uTy52WX/gCz9b5FSy27Fti0IrYvF1+L07RR8KKCVjyWdyQxB7lFUz0hij5lP83Ob9OPkVzSGA7g==",
-      "path": "system.runtime.compilerservices.unsafe/4.6.0-preview3.19128.7",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.6.0-preview3.19128.7.nupkg.sha512"
+      "sha512": "sha512-IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
     },
     "ZML.1.0/1.1.2": {
       "type": "package",

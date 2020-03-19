@@ -1,42 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Vazor\\Vazor\\Vazor.vbproj": {}
+    "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj": {}
   },
   "projects": {
-    "F:\\Vazor\\Vazor\\Vazor.vbproj": {
-      "version": "1.8.3",
+    "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj": {
+      "version": "1.9.0",
       "restore": {
-        "projectUniqueName": "F:\\Vazor\\Vazor\\Vazor.vbproj",
+        "projectUniqueName": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj",
         "projectName": "Vazor",
-        "projectPath": "F:\\Vazor\\Vazor\\Vazor.vbproj",
-        "packagesPath": "C:\\Users\\mhmd\\.nuget\\packages\\",
-        "outputPath": "F:\\Vazor\\Vazor\\obj\\",
+        "projectPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj",
+        "packagesPath": "C:\\Users\\MHG\\.nuget\\packages\\",
+        "outputPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mhmd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\MHG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
-          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -47,17 +40,11 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.Extensions.FileProviders.Abstractions": {
               "target": "Package",
-              "version": "[3.0.0-preview3.19153.1, )"
-            },
-            "Microsoft.NETCore.Platforms": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview4.19164.7, )",
-              "autoReferenced": true
+              "version": "[3.1.0, )"
             },
             "ZML.1.0": {
               "target": "Package",
@@ -65,10 +52,21 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

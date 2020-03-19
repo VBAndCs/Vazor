@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MKWkspu65EgfLRdpfLSfRJr9tVxIvyOpTm8i7ef3mtGhaTSapnObgZKwnr3TNj6GIKaTwDLvHQehzsNKV5gvQw==",
+  "success": true,
+  "projectFilePath": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MHG\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.0\\microsoft.extensions.fileproviders.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\MHG\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
+    "C:\\Users\\MHG\\.nuget\\packages\\zml.1.0\\1.1.2\\zml.1.0.1.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

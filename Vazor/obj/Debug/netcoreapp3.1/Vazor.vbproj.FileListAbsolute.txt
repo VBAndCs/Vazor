@@ -1,0 +1,10 @@
+F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Debug\netcoreapp3.1\Vazor.deps.json
+F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Debug\netcoreapp3.1\Vazor.dll
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.AssemblyInfoInputs.cache
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.AssemblyInfo.vb
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\staticwebassets\Vazor.StaticWebAssets.Manifest.cache
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\staticwebassets\Vazor.StaticWebAssets.xml
+F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Debug\netcoreapp3.1\Vazor.pdb
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.vbproj.CoreCompileInputs.cache
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.dll
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.pdb

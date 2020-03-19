@@ -3,7 +3,7 @@
     "tfm": "netcoreapp3.0",
     "framework": {
       "name": "Microsoft.AspNetCore.App",
-      "version": "3.0.0-preview4-19172-03"
+      "version": "3.0.0"
     },
     "configProperties": {
       "System.GC.Server": true

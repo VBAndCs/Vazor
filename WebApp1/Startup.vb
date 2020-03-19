@@ -6,6 +6,7 @@ Imports Microsoft.AspNetCore.Mvc
 Imports Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
 Imports Microsoft.Extensions.Configuration
 Imports Microsoft.Extensions.DependencyInjection
+Imports Microsoft.Extensions.FileProviders
 Imports Microsoft.Extensions.Hosting
 
 Public Class Startup
@@ -17,24 +18,18 @@ Public Class Startup
 
     ' This method gets called by the runtime. Use this method to add services to the container.
     Public Sub ConfigureServices(services As IServiceCollection)
-        services.Configure(Of CookiePolicyOptions)(
-            Sub(options)
-                ' This lambda determines whether user consent for non-essential cookies Is needed for a given request.
-                options.CheckConsentNeeded = Function(context) True
-                options.MinimumSameSitePolicy = SameSiteMode.None
-            End Sub)
+        services.AddControllersWithViews()
 
-        services.AddMvc().AddRazorRuntimeCompilation()
-        services.AddMvc().AddNewtonsoftJson()
-
+        ' Enable Vazor
         services.Configure(Of MvcRazorRuntimeCompilationOptions)(
                    Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
-           )
+        )
     End Sub
 
     ' This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     Public Sub Configure(app As IApplicationBuilder, env As IWebHostEnvironment)
 
+        ' Let Vazor Compile the Shared Views
         Vazor.VazorSharedView.CreateAll()
 
         If (env.IsDevelopment()) Then
@@ -48,17 +43,15 @@ Public Class Startup
         app.UseHttpsRedirection()
         app.UseStaticFiles()
 
-        app.UseRouting(
-             Sub(routes)
-                 routes.MapControllerRoute(
-                     "default",
-                     "{controller=Home}/{action=Index}/{id?}")
-                 routes.MapRazorPages()
-             End Sub)
-
-        app.UseCookiePolicy()
+        app.UseRouting()
         app.UseAuthorization()
 
+        app.UseEndpoints(
+             Sub(routes)
+                 routes.MapControllerRoute(
+                     name:="default",
+                     pattern:="{controller=Home}/{action=Index}/{id?}")
+             End Sub)
 
     End Sub
 End Class
