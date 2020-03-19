@@ -8,3 +8,4 @@ F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Debug\netcoreapp3.1\Vazor.pdb
 F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.vbproj.CoreCompileInputs.cache
 F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.dll
 F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.pdb
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Debug\netcoreapp3.1\Vazor.vbprojAssemblyReference.cache

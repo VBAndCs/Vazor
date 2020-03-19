@@ -17,23 +17,15 @@ Public Class Startup
 
     ' This method gets called by the runtime. Use this method to add services to the container.
     Public Sub ConfigureServices(services As IServiceCollection)
-        services.Configure(Of CookiePolicyOptions)(
-            Sub(options)
-                ' This lambda determines whether user consent for non-essential cookies Is needed for a given request.
-                options.CheckConsentNeeded = Function(context) True
-                options.MinimumSameSitePolicy = SameSiteMode.None
-            End Sub)
-
-        services.AddMvc().AddRazorRuntimeCompilation()
-        services.AddMvc().AddNewtonsoftJson()
-
-        services.Configure(Of MvcRazorRuntimeCompilationOptions)(
-                   Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
-           )
+        services.AddRazorPages(). ' Enable Vazor
+            AddRazorRuntimeCompilation(
+                 Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
+            )
     End Sub
 
     ' This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     Public Sub Configure(app As IApplicationBuilder, env As IWebHostEnvironment)
+        ' Compile Shared Vazor Views
         Vazor.VazorSharedView.CreateAll()
 
         If (env.IsDevelopment()) Then
@@ -47,10 +39,11 @@ Public Class Startup
         app.UseHttpsRedirection()
         app.UseStaticFiles()
 
-        app.UseRouting(Sub(routes) routes.MapRazorPages())
-
-        app.UseCookiePolicy()
+        app.UseRouting()
         app.UseAuthorization()
 
+        app.UseEndpoints(
+               Sub(routes) routes.MapRazorPages()
+        )
     End Sub
 End Class
