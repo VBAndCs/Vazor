@@ -18,12 +18,13 @@ Public Class Startup
 
     ' This method gets called by the runtime. Use this method to add services to the container.
     Public Sub ConfigureServices(services As IServiceCollection)
-        services.AddControllersWithViews()
+        services.AddControllersWithViews(). ' Enable Vazor
+            AddRazorRuntimeCompilation(
+                 Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
+            )
 
-        ' Enable Vazor
-        services.Configure(Of MvcRazorRuntimeCompilationOptions)(
-                   Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
-        )
+
+
     End Sub
 
     ' This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
