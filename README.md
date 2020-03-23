@@ -249,9 +249,8 @@ And you have a mix of all those type of views in one project!
 Have fun.
 
 # To Do:
-1. We need VB.NET project templates for MVC , Razor Pages and Blazor.
-2. We need editor support for html5 in xml literals, like intellisense support for tag names, attributes and Tag Helpers.
-3. I hope VB allows us to write code directly inside `<%= %>` without the using lambda expressions tricks.
+1. We need editor support for html5 in xml literals, like intellisense support for tag names, attributes and Tag Helpers.
+2. I hope VB allows us to write code directly inside `<( )>` without the using lambda expressions tricks.
 
 I hope VB team give us the support wee need to make the most of xml literals.
 
