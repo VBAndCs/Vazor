@@ -52,9 +52,25 @@ Public Class IndexView
         viewData("Title") = Title
     End Sub
 
+    Public Shared Function CreateNew(Students As List(Of Student), viewData As ViewDataDictionary) As String
+        Return VazorViewMapper.Add(New IndexView(Students, viewData))
+    End Function
 End Class
 ```
 
+note that you need to call the `IndexView.CreateNew` method and pass it as a parameter to the `View` method in the action method, like this:
+```VB.NET
+Public Class HomeController : Inherits Controller
+
+  Public Function Index() As IActionResult
+     Return View(IndexView.CreateNew(Students, ViewData), Students)
+  End Function
+
+  '......
+End Class
+```
+
+The only step left is to design the view.
 I separated the vbxml code in a partial class, so the view design is separated from vazor code. You will find this in the Index.vbxml.vb file:
 ```VB.NET
 Partial Public Class IndexView
@@ -90,6 +106,7 @@ Partial Public Class IndexView
 End Class
 ```
 
+
 # VBXML Code Rules:
 In vbxml code you can follow these rules:
 * XML literals have only one root. So, it you don't eant to add extra html5 tag to contain the page content, wrap your code in a `<vbxml>` tag.
@@ -110,14 +127,29 @@ In vbxml code you can follow these rules:
      </ul>
 ```
 
-this code will add an `<li>` element for each student. To make this happen, you must call the extension method ParseTemplate() and pass the students list to it, so it evaluates the template, like I did in the Content property:
+this code will add an `<li>` element for each student. To make this happen, override the VazorView.Content property and call the extension method ParseTemplate() and pass the students list to it, so it evaluates the template. Add this to the IndexView class:
 ```VB.NET
-Dim html = GetVbXml().ParseTemplate(students)
+    Public Overrides ReadOnly Property Content() As Byte()
+        Get
+            Dim html = GetVbXml().ParseTemplate(students)
+            Return Encoding.GetBytes(html)
+        End Get
+    End Property
 ```
 
 If you don't want to use the data template, use the ToHtmlString like this:
 ```VB.NET
 Dim html = GetVbXml().ToHtmlString()
+```
+
+Note that the original Content propert written in the VazorView class calls the ParseZml method to allow you to use ZML tangs insid vbxml code.
+```VB.NET
+    Public Overridable ReadOnly Property Content() As Byte()
+        Get
+            Dim html = GetVbXml().ParseZml
+            Return Encoding.GetBytes(html)
+        End Get
+    End Property
 ```
 
 # How does Vazor work?
