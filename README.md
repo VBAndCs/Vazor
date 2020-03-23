@@ -164,11 +164,12 @@ The following image shows the rendered Page resulted from:
 ![untitled1](https://user-images.githubusercontent.com/48354902/55183329-3eae4d00-5198-11e9-933d-49e9264c8161.jpg)
 
 # Useing Vazor Views:
-* To use Vazor view classes instead of cshtml files, configure the virtual file system by adding this to the Startup.ConfigureServices method:
+* To use Vazor view classes instead of cshtml files, configure the virtual file system by adding this to the Startup.ConfigureServices method. For MVC apps use:
 ```VB.NET
-services.Configure(Of RazorViewEngineOptions)(
-    Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
-)
+services.AddControllersWithViews(). ' Enable Vazor
+   AddRazorRuntimeCompilation(
+        Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
+   ) 
  ```
 
 * If you converted the _Layout.cshtml view to a Vazor Layout class (as in 
@@ -191,26 +192,21 @@ layout has a different title for each page, use
 `<Title>@ViewBag.Title</Title>` in vbxml code to let Razor evaluate this. 
 
 Yes, this is a Vazor/Razor mixed view!
-If you used `<Title><%= ViewBag.Title% ></Title>` VB will try to evaluate it 
-
-and will cause an exception because the ViewBag is empty at this moment. 
-* To use the page View classes in MVC projects, map them in the 
-
-controllers actions methods. For example, the IndexView class should be 
-
-used in the Home.Index action method like this:
-```VB.NET
-Public Function Index() As IActionResult
-   Dim iv = IndexView.CreateNew(Students, ViewBag)
-   Dim instanceName = Vazor.VazorViewMapper.Add(iv)
-   Return View(instanceName, Students)
-End Function
-```
+If you used `<Title><%= ViewBag.Title% ></Title>` VB will try to evaluate it and will cause an exception because the ViewBag is empty at this moment. 
 
 The VazorViewMapper appends a unique Id to the name of the view. Remember that many users can open the same page in the same time, and the model data can be different for each of them, so the ViewIndex class will generate a different page for each user. VazorViewMapper gives each page a unique name, so Razor can render them for each user correctly.
 You should use the same way in all action methods (of course with the appropriate view class)
 
-* To use the page View classes in Razor Pages projects, we have to keep the cshtml file of the page body, because it is the entry point that references the PageModel calss. So, we will use the cshtml file as an empty shell and inject our vbxml view inside it as a partial view. Take the Index.cshtml file as an example:
+* To use the page View classes in Razor Pages projects, configuare the Vazor virtual file provider in the Startup.ConfigureServices Method like this:
+For Razor pages apps use:
+```VB.NET
+services.AddRazorPages(). ' Enable Vazor
+   AddRazorRuntimeCompilation(
+        Sub(options) options.FileProviders.Add(New Vazor.VazorViewProvider())
+   )
+```
+
+To use Vazor to design Razor pages, we have to keep the cshtml file of the page body, because it is the entry point that references the PageModel calss. So, we will use the cshtml file as an empty shell and inject our vbxml view inside it as a partial view. Take the Index.cshtml file as an example:
 
 ```Razor
 @page
