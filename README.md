@@ -1,8 +1,9 @@
 ﻿# Vazor 1.9
-Copyright (c) 2019 Mohammad Hamdy Ghanem
+Copyright (c) 2019 Mohammad Hamdy Ghanem.
 These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 
 ![vazorpng](https://user-images.githubusercontent.com/48354902/77369645-c1e08f80-6d67-11ea-9929-c62b5529154e.png)
+
 Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
 
 # A complere Vazor website sample:
