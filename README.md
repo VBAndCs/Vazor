@@ -2,12 +2,11 @@
 Copyright (c) 2019 Mohammad Hamdy Ghanem
 These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 
-Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
 ![vazorpng](https://user-images.githubusercontent.com/48354902/77369645-c1e08f80-6d67-11ea-9929-c62b5529154e.png)
+Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
 
 # A complere Vazor website sample:
-[eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET)
-A Full ASP.NET Core 3.1 in VB.NET powered by Vazor and ZML.
+[eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) is a full ASP.NET Core 3.1 in VB.NET powered by Vazor and ZML.
 
 # Adding ZML support in ver 1.6:
 Now, you can use ZML tags inside vbxml code, and call ParseZML to compile ZML tags C# Razor code.
