@@ -30,7 +30,7 @@ After installation, open .net and create a new project. In the search box, write
 # Vazor Viewes:
 Vazor uses xml literals to compose the HTML code, so all you need is to create a class to represent your view, and make it inherit Vazor.VazorView class. You can name the class as you want, but you must pass the view name without any the extension (like "Index", and "_layout") to the Name property by a call to the base class constructor.
 You can define a field or a property to hold your model data (like a list of students), and receive these data through the constructor of the class.
-Write the vbxml code that represents the view in the GetVbXml Function, and use the Content property to deliver the rendered View as a byte array. I made this additional step to allow any further processing of the HTML content away from the vbxml code.
+Write the vbxml code that represents the view in the GetVbXml Function.
 Do not forget that our view is a VB class, and there is no limit to what you can do with it.
 
 This is an example of a class to represent the Index View. You will find it in the Index.vazor.vb file:
@@ -52,12 +52,6 @@ Public Class IndexView
         viewData("Title") = Title
     End Sub
 
-    Public Overrides ReadOnly Property Content() As Byte()
-        Get
-            Dim html = GetVbXml(Me).ParseTemplate(Students)
-            Return Encoding.GetBytes(html)
-        End Get
-    End Property
 End Class
 ```
 
