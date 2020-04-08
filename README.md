@@ -1,11 +1,30 @@
-﻿# Vazor 1.9
-Copyright (c) 2019 Mohammad Hamdy Ghanem.
+﻿# Vazor 2.0
+Copyright (c) 2019-2020 Mohammad Hamdy Ghanem.
 
 These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
 
 ![vazorpng](https://user-images.githubusercontent.com/48354902/77369645-c1e08f80-6d67-11ea-9929-c62b5529154e.png)
 
 Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
+
+# Html5 Auto-Completion in Vazor:
+And here is the [VSIX installer](https://github.com/VBAndCs/Vazor/blob/master/vbxmlCompletionProviderVSIX.zip?raw=true) to add an Html5 CompletionProvider inside XML literals to your VS as an extension:
+![untitled1](https://user-images.githubusercontent.com/48354902/78731288-9e107280-793f-11ea-8927-db336c28b6f9.jpg)
+
+It provide auto completion only inside vbxml tags:
+```VB.NET
+Dim x = <vbxml>
+   <!—auto completion for HTML 5 is available here -->
+</vbxml>
+```
+
+You can press Ctrl+space after `<%` to get this block written for you:
+```VB.NET
+         <%= (Function()
+                    Return < />
+              End Function)()
+         %>
+``` 
 
 # A complere Vazor website sample:
 [eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) is a full ASP.NET Core 3.1 in VB.NET powered by Vazor and ZML.
