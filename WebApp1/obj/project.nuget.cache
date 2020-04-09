@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WQy+ot5+PkYh6Q3xDFPKOYWZMQ9shIlkfJ9lncmlB8IbRXQTYnfuTj0wIsRQW8E/GtsFv9spwBo3u4ogJ1YmJA==",
+  "dgSpecHash": "X5b3yOMDAPpGvgKCTIPi+BJx+hwr6Rq63iXgtv0o7obAEOt2i1H4ETUE8OMVf67xEPXKBum3I5h5efEj9OnffA==",
   "success": true,
   "projectFilePath": "F:\\_VS.NET\\Vazor 3\\Vazor\\WebApp1\\WebApp1.vbproj",
   "expectedPackageFiles": [
@@ -15,12 +15,14 @@
     "C:\\Users\\MHG\\.nuget\\packages\\microsoft.codeanalysis.razor\\3.1.2\\microsoft.codeanalysis.razor.3.1.2.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.2\\microsoft.extensions.dependencymodel.3.1.2.nupkg.sha512",
+    "C:\\Users\\MHG\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.0\\microsoft.extensions.fileproviders.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\MHG\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\MHG\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512",

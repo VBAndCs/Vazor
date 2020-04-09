@@ -10,7 +10,7 @@ Imports Microsoft.Extensions.Hosting
 
 Public Class Startup
     Public Sub New(configuration As IConfiguration)
-        configuration = configuration
+        Me.Configuration = configuration
     End Sub
 
     Public ReadOnly Property Configuration As IConfiguration

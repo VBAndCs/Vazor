@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JwK3xQQkUN+4flTC36Vq4N0KBj05oXNBJAxBqxyiY/ZrrVqq8IU6d58K1n7/BgLhyTDJ8fAvAbHnjgcs4cZssQ==",
+  "dgSpecHash": "SpZdrYRCZy1jwYb88VTRHjvjcSmVxfFpoKhW7jdWJC72uwn86XTp5I6hOwe0t6P4EDwN0C59Hr8zzEZbpQGLGA==",
   "success": true,
   "projectFilePath": "F:\\_VS.NET\\Vazor 3\\Vazor\\VazorPages1\\VazorPages1.vbproj",
   "expectedPackageFiles": [
@@ -17,7 +17,7 @@
     "C:\\Users\\MHG\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\MHG\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
     "C:\\Users\\MHG\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512",
