@@ -7,6 +7,9 @@ These are a few lines of code for a programmer, but a giant leap for VB.NET apps
 
 Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
 
+# Vazor Story:
+Read about [Vazor history](https://github.com/VBAndCs/Vazor/blob/master/A-Vazor-story.md): how the idea was born, and grown.
+
 # Html5 Auto-Completion in Vazor:
 And here is the [VSIX installer](https://github.com/VBAndCs/Vazor/blob/master/vbxmlCompletionProviderVSIX.zip?raw=true) to add an Html5 CompletionProvider inside XML literals to your VS as an extension:
 ![untitled1](https://user-images.githubusercontent.com/48354902/78731288-9e107280-793f-11ea-8927-db336c28b6f9.jpg)
