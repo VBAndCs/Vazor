@@ -10,33 +10,6 @@ Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and
 # Vazor Story:
 Read about [Vazor history](https://github.com/VBAndCs/Vazor/blob/master/A-Vazor-story.md): how the idea was born, and grown.
 
-# Html5 Auto-Completion in Vazor:
-And here is the [VSIX installer](https://github.com/VBAndCs/Vazor/blob/master/vbxmlCompletionProviderVSIX.zip?raw=true) to add an Html5 CompletionProvider inside XML literals to your VS as an extension:
-![untitled1](https://user-images.githubusercontent.com/48354902/78731288-9e107280-793f-11ea-8927-db336c28b6f9.jpg)
-
-It provide auto completion only inside vbxml tags:
-```VB.NET
-Dim x = <vbxml>
-   <!—auto completion for HTML 5 is available here -->
-</vbxml>
-```
-
-You can press Ctrl+space after `<%` to get this block written for you:
-```VB.NET
-         <%= (Function()
-                    Return < />
-              End Function)()
-         %>
-``` 
-
-# A complere Vazor website sample:
-[eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) is a full ASP.NET Core 3.1 in VB.NET powered by Vazor and ZML.
-
-# Adding ZML support in ver 1.6:
-Now, you can use ZML tags inside vbxml code, and call ParseZML to compile ZML tags C# Razor code.
-For more info, see [ZML repo](https://github.com/VBAndCs/ZML).
-
-
 # Project and Item Templates
 Download this file:
 https://github.com/VBAndCs/Vazor/blob/master/VazorTemplateSetup.zip?raw=true
@@ -48,6 +21,46 @@ then unzip it. Double-click the file VazorTemplateSetup.vsix to setuo the Vazor 
 3- A VazorView item template to add a new vazor view (.vazor and .vbxml.vb files) to the MVC project.
 4- A VazorPage item template to add a new vazor page (.cshtml, .cshtml.vb, and .vbxml.vb files) to the Razor Pages project.
 After installation, open .net and create a new project. In the search box, write Vazor, and choose one of the 4 vazor project templates. In the project created, right-click a folder in solution explorer and select Add/New Item. From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
+
+
+# Html5 Auto-Completion in Vazor:
+And here is the [VSIX installer](https://github.com/VBAndCs/Vazor/blob/master/vbxmlCompletionProviderVSIX.zip?raw=true) to add an Html5 CompletionProvider inside XML literals to your VS as an extension:
+![untitled1](https://user-images.githubusercontent.com/48354902/78731288-9e107280-793f-11ea-8927-db336c28b6f9.jpg)
+
+It provide auto completion only inside vbxml tags:
+```VB.NET
+Dim x = <vbxml>
+   <!—auto completion for HTML 5 is available here -->
+</vbxml>
+```
+
+You can write `<%` and press `Ctrl+space` to get this block written for you:
+```VB.NET
+    <%= (Function()
+              Return < />
+           End Function)( )%>
+``` 
+
+where you can use conditions or other vb code to return an html node.
+
+And you can write `<(` and press `Ctrl+space` to get this block written for you:
+```VB.NET
+     <%= (Iterator Function()
+              For Each item In Collection
+                   Yield <p><%= item %></p>
+              Next
+           End Function)( ) %>
+``` 
+
+wher you can modify it to iterat through your collection and yiled an thml node based on each item in the collection, like filling a list with elements.
+
+# A complere Vazor website sample:
+[eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) is a full ASP.NET Core 3.1 in VB.NET powered by Vazor and ZML.
+
+# Adding ZML support in ver 1.6:
+Now, you can use ZML tags inside vbxml code, and call ParseZML to compile ZML tags C# Razor code.
+For more info, see [ZML repo](https://github.com/VBAndCs/ZML).
+
 
 # Vazor Viewes:
 Vazor uses xml literals to compose the HTML code, so all you need is to create a class to represent your view, and make it inherit Vazor.VazorView class. You can name the class as you want, but you must pass the view name without any the extension (like "Index", and "_layout") to the Name property by a call to the base class constructor.
