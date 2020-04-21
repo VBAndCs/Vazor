@@ -52,7 +52,7 @@ And you can write `<(` and press `Ctrl+space` to get this block written for you:
            End Function)( ) %>
 ``` 
 
-wher you can modify it to iterat through your collection and yiled an thml node based on each item in the collection, like filling a list with elements.
+where you can modify it to iterat through your collection and yiled an thml node based on each item in the collection, like filling a list with elements.
 
 # A complere Vazor website sample:
 [eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) is a full ASP.NET Core 3.1 in VB.NET powered by Vazor and ZML.
