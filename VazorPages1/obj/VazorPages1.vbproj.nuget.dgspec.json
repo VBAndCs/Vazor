@@ -13,23 +13,20 @@
         "packagesPath": "C:\\Users\\MHG\\.nuget\\packages\\",
         "outputPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\VazorPages1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\MHG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj": {
                 "projectPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj"
@@ -44,11 +41,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[6.0.2, )"
             },
             "ZML.1.0": {
               "target": "Package",
@@ -73,12 +71,12 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
     "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj": {
-      "version": "1.9.0",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\Vazor.vbproj",
         "projectName": "Vazor",
@@ -86,23 +84,20 @@
         "packagesPath": "C:\\Users\\MHG\\.nuget\\packages\\",
         "outputPath": "F:\\_VS.NET\\Vazor 3\\Vazor\\Vazor\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\MHG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
-          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -113,11 +108,12 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.Extensions.FileProviders.Abstractions": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[6.0.0, )"
             },
             "ZML.1.0": {
               "target": "Package",
@@ -139,7 +135,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

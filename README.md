@@ -1,37 +1,34 @@
-ï»¿# Vazor 2.0
+# Vazor 2.0 (Updated to .NET 6)
 Copyright (c) 2019-2020 Mohammad Hamdy Ghanem.
-
-These are a few lines of code for a programmer, but a giant leap for VB.NET apps!
-
-![vazorpng](https://user-images.githubusercontent.com/48354902/77369645-c1e08f80-6d67-11ea-9929-c62b5529154e.png)
-
-Vazor stands for VB.NET Razor. It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
+[vazorpng](https://user-images.githubusercontent.com/48354902/77369645-c1e08f80-6d67-11ea-9929-c62b5529154e.png)
+Vazor stands for VB.NET Razor. 
+It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
 
 # Vazor Story:
 Read about [Vazor history](https://github.com/VBAndCs/Vazor/blob/master/A-Vazor-story.md): how the idea was born, and grown.
 
 # Project and Item Templates
-Download this file:
-https://github.com/VBAndCs/Vazor/blob/master/VazorTemplateSetup.zip?raw=true
-then unzip it. Double-click the file VazorTemplateSetup.vsix to setuo the Vazor templates:
+Download [this file](https://github.com/VBAndCs/Vazor/blob/master/VazorTemplateSetup.zip?raw=true
+) then unzip it. Double-click the file `VazorTemplateSetup.vsix` to setup the Vazor templates:
 
-1- A Vazor project template for ASP.NET MVC Core 3.1 .
-
-2- A Vazor project template for ASP.NET Web Pages Core 3.1 .
+1- A Vazor project template for ASP.NET MVC Core 6.0 .
+2- A Vazor project template for ASP.NET Web Pages Core 6.0 .
 3- A VazorView item template to add a new vazor view (.vazor and .vbxml.vb files) to the MVC project.
 4- A VazorPage item template to add a new vazor page (.cshtml, .cshtml.vb, and .vbxml.vb files) to the Razor Pages project.
-After installation, open .net and create a new project. In the search box, write Vazor, and choose one of the 4 vazor project templates. In the project created, right-click a folder in solution explorer and select Add/New Item. From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
 
+After installation:
+1- open VS.Net and create a new project. In the search box, write Vazor, and choose one of the 2 vazor project templates. 
+2- In the project created, right-click a folder in solution explorer and select Add/New Item. 
+3- From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
 
 # Html5 Auto-Completion in Vazor:
 And here is the [VSIX installer](https://github.com/VBAndCs/Vazor/blob/master/vbxmlCompletionProviderVSIX.zip?raw=true) to add an Html5 CompletionProvider inside XML literals to your VS as an extension:
 ![untitled1](https://user-images.githubusercontent.com/48354902/78731288-9e107280-793f-11ea-8927-db336c28b6f9.jpg)
-
 It provide auto completion only inside vbxml tags:
 ```VB.NET
 Dim x = <vbxml>
-   <!â€”auto completion for HTML 5 is available here -->
-</vbxml>
+        <!—auto completion for HTML 5 is available here -->
+   </vbxml>
 ```
 
 You can write `<%` and press `Ctrl+space` to get this block written for you:
@@ -41,9 +38,9 @@ You can write `<%` and press `Ctrl+space` to get this block written for you:
            End Function)( )%>
 ``` 
 
-where you can use conditions or other vb code to return an html node.
-
+where you can use conditions or any other vb code to return an html node.
 And you can write `<(` and press `Ctrl+space` to get this block written for you:
+
 ```VB.NET
      <%= (Iterator Function()
               For Each item In Collection
@@ -52,24 +49,22 @@ And you can write `<(` and press `Ctrl+space` to get this block written for you:
            End Function)( ) %>
 ``` 
 
-where you can modify it to iterat through your collection and yiled an thml node based on each item in the collection, like filling a list with elements.
+where you can modify it to iterate through your collection and yiled an thml node based on each item in the collection, like filling a list with elements.
 
 # A complere Vazor website sample:
-[eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) is a full ASP.NET Core 3.1 in VB.NET powered by Vazor and ZML.
+[eShopOnWeb_VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) is a full ASP.NET Core in VB.NET powered by Vazor and ZML.
 
-# Adding ZML support in ver 1.6:
-Now, you can use ZML tags inside vbxml code, and call ParseZML to compile ZML tags C# Razor code.
+# ZML support:
+You can use ZML tags inside vbxml code, and call ParseZML to compile ZML tags to C# Razor code.
 For more info, see [ZML repo](https://github.com/VBAndCs/ZML).
 
-
 # Vazor Viewes:
-Vazor uses xml literals to compose the HTML code, so all you need is to create a class to represent your view, and make it inherit Vazor.VazorView class. You can name the class as you want, but you must pass the view name without any the extension (like "Index", and "_layout") to the Name property by a call to the base class constructor.
+Vazor uses xml literals to compose the HTML code, so all you need is to create a class to represent your view, and make it inherit Vazor.VazorView class. 
+You can name the class as you want, but you must pass the view name without any the extension (like "Index", and "_layout") to the Name property by a call to the base class constructor.
 You can define a field or a property to hold your model data (like a list of students), and receive these data through the constructor of the class.
 Write the vbxml code that represents the view in the GetVbXml Function.
 Do not forget that our view is a VB class, and there is no limit to what you can do with it.
-
 This is an example of a class to represent the Index View. You will find it in the Index.vazor.vb file:
-
 ```VB.NET
 Imports Microsoft.AspNetCore.Mvc.ViewFeatures
 Imports Vazor
@@ -146,7 +141,7 @@ End Class
 In vbxml code you can follow these rules:
 * XML literals have only one root. So, it you don't eant to add extra html5 tag to contain the page content, wrap your code in a `<vbxml>` tag.
 * All html tags and their attributes can be represented in XML, but there is no intellisense support for them until now.
-* Use Razor conventions and tools, like helper tags, sections, partial views, scriptsâ€¦ etc. 
+* Use Razor conventions and tools, like helper tags, sections, partial views, scripts… etc. 
 * Use `<%= VBCode %>` to insert vb code.
 * You can use @VBCode, but vb will consider it as a plain text, so you will have no intellisense for it, but it will be evaluated by Razor in runtime. This is why you must use c# syntax for expressions written after the @ symbol.
 * Use inline-invoked lambda expression to imbed code blocks, like given in the above sample.

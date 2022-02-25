@@ -1,0 +1,14 @@
+F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Release\net6.0\Vazor.deps.json
+F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Release\net6.0\Vazor.dll
+F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Release\net6.0\ref\Vazor.dll
+F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Release\net6.0\Vazor.pdb
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\Vazor.GeneratedMSBuildEditorConfig.editorconfig
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\Vazor.AssemblyInfoInputs.cache
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\Vazor.AssemblyInfo.vb
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\Vazor.vbproj.CoreCompileInputs.cache
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\staticwebassets.build.json
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\staticwebassets.development.json
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\scopedcss\bundle\Vazor.styles.css
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\Vazor.dll
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\ref\Vazor.dll
+F:\_VS.NET\Vazor 3\Vazor\Vazor\obj\Release\net6.0\Vazor.pdb

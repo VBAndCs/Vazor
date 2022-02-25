@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Vazor</id>
+    <version>2.0.0</version>
+    <authors>Mohammed Hamdy Ghanem</authors>
+    <projectUrl>https://github.com/VBAndCs/Vazor</projectUrl>
+    <description>Vazor is a VB.NET Razor that uses vbxml code (VB and xml literals) with zml support to create ASP.NET MVC Core Views and Pages.</description>
+    <copyright>(c) Mohammed Hamdy Ghanem 2019</copyright>
+    <tags>VB.NET Razor ASP.NET MVC Core XML ZML</tags>
+    <repository url="https://github.com/VBAndCs/Vazor" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.Extensions.FileProviders.Abstractions" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="ZML.1.0" version="1.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Release\net6.0\Vazor.dll" target="Lib\net6.0\Vazor.dll" />
+    <file src="F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Release\net6.0\Vazor.deps.json" target="Lib\net6.0\Vazor.deps.json" />
+    <file src="F:\_VS.NET\Vazor 3\Vazor\Vazor\bin\Release\net6.0\Vazor.pdb" target="Lib\net6.0\Vazor.pdb" />
+  </files>
+</package>
