@@ -9,7 +9,7 @@ Read about [Vazor history](https://github.com/VBAndCs/Vazor/blob/master/A-Vazor-
 
 # Project and Item Templates
 To easily crate Vazor apps in VS2019 and VS2022:
-Download this VS Extension [VazorEx](https://marketplace.visualstudio.com/items?itemName=ModernVBNET.Vazor), and Double-click the file `VazorEx.vsix` to setup Vazor templates:
+Download this VS Extension [VazorEx](https://marketplace.visualstudio.com/items?itemName=ModernVBNET.Vazor), and Double-click the file `VazorEx.vsix` to setup these Vazor templates.
 1- A Vazor project template for ASP.NET MVC Core 6.0 .
 2- A Vazor project template for ASP.NET Web Pages Core 6.0 .
 3- A VazorView item template to add a new vazor view (.vazor and .vbxml.vb files) to the MVC project.
