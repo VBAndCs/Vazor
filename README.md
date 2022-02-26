@@ -2,15 +2,15 @@
 Copyright (c) 2019-2020 Mohammad Hamdy Ghanem.
 ![vazorpng](https://user-images.githubusercontent.com/48354902/77369645-c1e08f80-6d67-11ea-9929-c62b5529154e.png)
 Vazor stands for VB.NET Razor. 
-It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code imbedded in XML literals which VB.NET supports!
+It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code embedded in XML literals (which VB.NET supports)!
 
 # Vazor Story:
 Read about [Vazor history](https://github.com/VBAndCs/Vazor/blob/master/A-Vazor-story.md): how the idea was born, and grown.
 
 # Project and Item Templates
-Download [this file](https://github.com/VBAndCs/Vazor/blob/master/VazorTemplateSetup.zip?raw=true
-) then unzip it. Double-click the file `VazorTemplateSetup.vsix` to setup the Vazor templates:
-
+To easily crate Vazor apps in VS2019 and VS2022:
+Download this VS Extension [VazorEx](https://marketplace.visualstudio.com/items?itemName=ModernVBNET.Vazor)
+Double-click the file `VazorEx.vsix` to setup Vazor templates:
 1- A Vazor project template for ASP.NET MVC Core 6.0 .
 2- A Vazor project template for ASP.NET Web Pages Core 6.0 .
 3- A VazorView item template to add a new vazor view (.vazor and .vbxml.vb files) to the MVC project.
@@ -22,9 +22,10 @@ After installation:
 3- From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
 
 # Html5 Auto-Completion in Vazor:
-And here is the [VSIX installer](https://github.com/VBAndCs/Vazor/blob/master/vbxmlCompletionProviderVSIX.zip?raw=true) to add an Html5 CompletionProvider inside XML literals to your VS as an extension:
+VazorEx also installs an Html5 CompletionProvider.
+It provides Html5 auto completion in VB XML literals:
 ![untitled1](https://user-images.githubusercontent.com/48354902/78731288-9e107280-793f-11ea-8927-db336c28b6f9.jpg)
-It provide auto completion only inside vbxml tags:
+The auto completion is enabled only when XML root is `<vbxml>` or `<zml>`:
 ```VB.NET
 Dim x = <vbxml>
         <!—auto completion for HTML 5 is available here -->
