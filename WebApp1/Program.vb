@@ -1,24 +1,48 @@
-Imports System
-Imports System.Collections.Generic
-Imports System.IO
-Imports System.Linq
-Imports System.Threading.Tasks
-Imports Microsoft.AspNetCore
+Imports Microsoft.AspNetCore.Builder
 Imports Microsoft.AspNetCore.Hosting
-Imports Microsoft.Extensions.Configuration
+Imports Microsoft.Extensions.DependencyInjection
 Imports Microsoft.Extensions.Hosting
-Imports Microsoft.Extensions.Logging
+Imports Vazor
 
-Module Program
-    Sub Main(args As String())
-        CreateHostBuilder(args).Build().Run()
-    End Sub
+Friend Module Program
+  Public Sub Main(args As String())
+    Dim provider As VazorViewProvider
+    Dim builder As WebApplicationBuilder
+    Dim app As WebApplication
 
-    Public Function CreateHostBuilder(args() As String) As IHostBuilder
-        Return Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(
-               Sub(webBuilder)
-                   webBuilder.UseStartup(Of Startup)()
-               End Sub
-        )
-    End Function
+    VazorSharedView.CreateAll()
+
+    provider = New VazorViewProvider
+    builder = WebApplication.CreateBuilder
+    builder.
+      Services.
+      AddControllersWithViews.
+      AddRazorRuntimeCompilation(Sub(options)
+                                   options.FileProviders.Add(provider)
+                                 End Sub)
+
+    app = builder.Build
+
+    If app.Environment.IsDevelopment Then
+      app.UseDeveloperExceptionPage
+    Else
+      app.UseExceptionHandler("/Home/Error")
+      ' The default HSTS value Is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+      app.UseHsts
+    End If
+
+    app.UseHttpsRedirection
+    app.UseStaticFiles
+
+    app.UseRouting
+    app.UseAuthorization
+
+    app.UseEndpoints(
+         Sub(routes)
+           routes.MapControllerRoute(
+             name:="default", pattern:="{controller=Home}/{action=Index}/{id?}")
+         End Sub)
+
+    app.Run()
+  End Sub
 End Module
