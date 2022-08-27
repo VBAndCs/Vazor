@@ -196,7 +196,7 @@ The following image shows the rendered Page resulted from:
 
 ![untitled1](https://user-images.githubusercontent.com/48354902/55183329-3eae4d00-5198-11e9-933d-49e9264c8161.jpg)
 
-# Useing Vazor Views:
+# Using Vazor Views:
 * To use Vazor view classes instead of cshtml files, configure the virtual file system by adding this to the Startup.ConfigureServices method. For MVC apps use:
 ```VB.NET
 services.AddControllersWithViews(). ' Enable Vazor
