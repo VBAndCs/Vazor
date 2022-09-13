@@ -1,0 +1,15 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Page.vb</DefaultName>
+    <Name>VazorView</Name>
+    <Description>A Vazor View Class</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.vazor.vb" ReplaceParameters="true">View.vazor.vb</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.vbxml.vb" ReplaceParameters="true">View.vbxml.vb</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

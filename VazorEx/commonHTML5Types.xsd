@@ -1,0 +1,994 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<xsd:schema
+	xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+	xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense'>
+
+	<xsd:include schemaLocation="I18Languages.xsd" />
+	<xsd:import schemaLocation="svg.xsd"/>
+
+	<xsd:attributeGroup name="coreServerAttributeGroup">
+		<!-- Attributes -->
+		<xsd:attribute name="EnableTheming" type="xsd:boolean" vs:nonbrowseable="true" vs:category="ASP.NET" vs:disallowedonmobilepages="true" default="true" vs:serverattribute="true" />
+		<xsd:attribute name="EnableViewState" type="xsd:boolean" vs:category="ASP.NET" default="true" vs:serverattribute="true" />
+		<xsd:attribute name="SkinID" type="xsd:string" vs:nonbrowseable="true" vs:category="ASP.NET" vs:nonfilterable="true" vs:disallowedonmobilepages="true" default="" vs:serverattribute="true" />
+		<xsd:attribute name="Visible" type="xsd:boolean" vs:category="ASP.NET" default="true" vs:serverattribute="true" />
+		<!-- Events -->
+		<xsd:attribute name="OnDataBinding" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+		<xsd:attribute name="OnDisposed" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+		<xsd:attribute name="OnInit" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+		<xsd:attribute name="OnLoad" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+		<xsd:attribute name="OnPreRender" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+		<xsd:attribute name="OnUnload" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="aServerAttributeGroup">
+		<xsd:attribute name="OnServerClick" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="buttonServerAttributeGroup">
+		<xsd:attribute name="CausesValidation" type="xsd:boolean" vs:category="ASP.NET" default="true" vs:serverattribute="true" />
+		<xsd:attribute name="ValidationGroup" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true" />
+		<xsd:attribute name="OnServerClick" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="formServerAttributeGroup">
+		<xsd:attribute name="DefaultButton" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true" />
+		<xsd:attribute name="DefaultFocus" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true" />
+		<xsd:attribute name="SubmitDisabledControls" type="xsd:boolean" vs:category="ASP.NET" default="false" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="inputServerAttributeGroup">
+		<xsd:attribute name="CausesValidation" type="xsd:boolean" vs:inputtype="button image submit" vs:category="ASP.NET" vs:serverattribute="true" />
+		<xsd:attribute name="OnServerClick" vs:omtype="event" vs:inputtype="button image submit" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+		<xsd:attribute name="OnServerChange" vs:omtype="event" vs:inputtype="checkbox hidden radio text" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+		<xsd:attribute name="ValidationGroup" type="xsd:string" vs:inputtype="button image submit" vs:category="ASP.NET" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="multipleServerAttributeGroup">
+		<xsd:attribute name="multiple" type="xsd:boolean" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="selectServerAttributeGroup">
+		<xsd:attribute name="DataSourceID" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true" />
+		<xsd:attribute name="DataTextField" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true" />
+		<xsd:attribute name="DataValueField" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true" />
+		<xsd:attribute name="OnServerChange" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="textareaServerAttributeGroup">
+		<xsd:attribute name="OnServerChange" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="commonHTML5coreAttributeGroup">
+		<xsd:attribute name="runat" vs:readonly="true" vs:nonfilterable="true" vs:serverattribute="true">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="server" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="accesskey" />
+		<xsd:attribute name="class" />
+		<xsd:attribute name="contextmenu" />
+		<xsd:attribute name="dir" default="ltr">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="auto" />
+					<xsd:enumeration value="ltr" />
+					<xsd:enumeration value="rtl" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="data-" vs:readonly="true" />
+		<xsd:attribute name="dropzone" />
+		<xsd:attribute name="id" vs:renametype="classmember" />
+		<xsd:attribute name="hidden" vs:standalone="true">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="hidden" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="lang" type="i18LanguageCode" />
+		<xsd:attribute name="role">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="alert" />
+					<xsd:enumeration value="alertdialog" />
+					<xsd:enumeration value="application" />
+					<xsd:enumeration value="article" />
+					<xsd:enumeration value="banner" />
+					<xsd:enumeration value="button" />
+					<xsd:enumeration value="checkbox" />
+					<xsd:enumeration value="columnheader" />
+					<xsd:enumeration value="combobox" />
+					<xsd:enumeration value="complementary" />
+					<xsd:enumeration value="contentinfo" />
+					<xsd:enumeration value="definition" />
+					<xsd:enumeration value="dialog" />
+					<xsd:enumeration value="directory" />
+					<xsd:enumeration value="document" />
+					<xsd:enumeration value="form" />
+					<xsd:enumeration value="grid" />
+					<xsd:enumeration value="gridcell" />
+					<xsd:enumeration value="group" />
+					<xsd:enumeration value="heading" />
+					<xsd:enumeration value="img" />
+					<xsd:enumeration value="link" />
+					<xsd:enumeration value="list" />
+					<xsd:enumeration value="listbox" />
+					<xsd:enumeration value="listitem" />
+					<xsd:enumeration value="log" />
+					<xsd:enumeration value="main" />
+					<xsd:enumeration value="marquee" />
+					<xsd:enumeration value="math" />
+					<xsd:enumeration value="menu" />
+					<xsd:enumeration value="menubar" />
+					<xsd:enumeration value="menuitem" />
+					<xsd:enumeration value="menuitemcheckbox" />
+					<xsd:enumeration value="menuitemradio" />
+					<xsd:enumeration value="navigation" />
+					<xsd:enumeration value="note" />
+					<xsd:enumeration value="option" />
+					<xsd:enumeration value="presentation" />
+					<xsd:enumeration value="progressbar" />
+					<xsd:enumeration value="radio" />
+					<xsd:enumeration value="radiogroup" />
+					<xsd:enumeration value="region" />
+					<xsd:enumeration value="row" />
+					<xsd:enumeration value="rowgroup" />
+					<xsd:enumeration value="rowheader" />
+					<xsd:enumeration value="scrollbar" />
+					<xsd:enumeration value="search" />
+					<xsd:enumeration value="separator" />
+					<xsd:enumeration value="slider" />
+					<xsd:enumeration value="spinbutton" />
+					<xsd:enumeration value="status" />
+					<xsd:enumeration value="tab" />
+					<xsd:enumeration value="tablist" />
+					<xsd:enumeration value="tabpanel" />
+					<xsd:enumeration value="textbox" />
+					<xsd:enumeration value="timer" />
+					<xsd:enumeration value="toolbar" />
+					<xsd:enumeration value="tooltip" />
+					<xsd:enumeration value="tree" />
+					<xsd:enumeration value="treegrid" />
+					<xsd:enumeration value="treeitem" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="style" vs:builder="style" />
+		<xsd:attribute name="tabIndex" />
+		<xsd:attribute name="title" />
+		<xsd:attribute name="translate">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="yes" />
+					<xsd:enumeration value="no" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="microdataAttributeGroup">
+		<xsd:attribute name="itemscope" vs:standalone="true" />
+		<xsd:attribute name="itemtype">
+			<xsd:simpleType>
+				<xsd:union>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:anyURI">
+							<xsd:enumeration value="http://schema.org/Article" />
+							<xsd:enumeration value="http://schema.org/BlogPosting" />
+							<xsd:enumeration value="http://schema.org/Blog" />
+							<xsd:enumeration value="http://schema.org/Book" />
+							<xsd:enumeration value="http://schema.org/Movie" />
+							<xsd:enumeration value="http://schema.org/Photograph" />
+							<xsd:enumeration value="http://schema.org/Review" />
+							<xsd:enumeration value="http://schema.org/Event" />
+							<xsd:enumeration value="http://schema.org/Organization" />
+							<xsd:enumeration value="http://schema.org/Person" />
+							<xsd:enumeration value="http://schema.org/Place" />
+							<xsd:enumeration value="http://schema.org/Product" />
+							<xsd:enumeration value="http://data-vocabulary.org/Event" />
+							<xsd:enumeration value="http://data-vocabulary.org/Organization" />
+							<xsd:enumeration value="http://data-vocabulary.org/Person" />
+							<xsd:enumeration value="http://data-vocabulary.org/Product" />
+							<xsd:enumeration value="http://data-vocabulary.org/Review" />
+							<xsd:enumeration value="http://data-vocabulary.org/Breadcrumb" />
+							<xsd:enumeration value="http://data-vocabulary.org/Offer" />
+						</xsd:restriction>
+					</xsd:simpleType>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:anyURI" />
+					</xsd:simpleType>
+				</xsd:union>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="itemprop" />
+		<xsd:attribute name="itemref" />
+		<xsd:attribute name="itemid" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="commonHTML5ariaAttributeGroup">
+		<xsd:attribute name="aria-activedescendant" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-atomic" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-autocomplete" default="none" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="inline" />
+					<xsd:enumeration value="list" />
+					<xsd:enumeration value="both" />
+					<xsd:enumeration value="none" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-busy" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-checked" default="undefined" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="true" />
+					<xsd:enumeration value="false" />
+					<xsd:enumeration value="mixed" />
+					<xsd:enumeration value="undefined" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-controls" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-describedby" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-disabled" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-dropeffect" default="none" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="copy" />
+					<xsd:enumeration value="move" />
+					<xsd:enumeration value="link" />
+					<xsd:enumeration value="execute" />
+					<xsd:enumeration value="popup" />
+					<xsd:enumeration value="none" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-expanded" default="undefined" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="true" />
+					<xsd:enumeration value="false" />
+					<xsd:enumeration value="undefined" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-flowto" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-grabbed" default="undefined" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="true" />
+					<xsd:enumeration value="false" />
+					<xsd:enumeration value="undefined" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-haspopup" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-hidden" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-label" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-labelledby" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-level" type="xsd:integer" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-live" default="off" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="off" />
+					<xsd:enumeration value="polite" />
+					<xsd:enumeration value="assertive" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-multiline" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-multiselectable" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-orientation" default="horizontal" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="vertical" />
+					<xsd:enumeration value="horizontal" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-owns" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-posinset" type="xsd:integer" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-pressed" default="undefined" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="true" />
+					<xsd:enumeration value="false" />
+					<xsd:enumeration value="mixed" />
+					<xsd:enumeration value="undefined" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-readonly" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-relevant" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="additions" />
+					<xsd:enumeration value="removals" />
+					<xsd:enumeration value="text" />
+					<xsd:enumeration value="all" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-required" type="xsd:boolean" default="false" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-selected" default="undefined" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="true" />
+					<xsd:enumeration value="false" />
+					<xsd:enumeration value="undefined" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-setsize" type="xsd:integer" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-sort" default="none" vs:category="WAI-ARIA">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="ascending" />
+					<xsd:enumeration value="descending" />
+					<xsd:enumeration value="none" />
+					<xsd:enumeration value="other" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="aria-valuemax" type="xsd:float" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-valuemin" type="xsd:float" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-valuenow" type="xsd:float" vs:category="WAI-ARIA" />
+		<xsd:attribute name="aria-valuetext" vs:category="WAI-ARIA" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="rdfaAttributeGroup">
+		<xsd:attribute name="property">
+			<xsd:simpleType>
+				<xsd:union>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="fb:admins" />
+							<xsd:enumeration value="fb:app_id" />
+							<xsd:enumeration value="og:title" />
+							<xsd:enumeration value="og:type" />
+							<xsd:enumeration value="og:url" />
+							<xsd:enumeration value="og:description" />
+							<xsd:enumeration value="og:determiner" />
+							<xsd:enumeration value="og:locale" />
+							<xsd:enumeration value="og:locale:alternate" />
+							<xsd:enumeration value="og:site_name" />
+							<xsd:enumeration value="og:image" />
+							<xsd:enumeration value="og:image:secure_url" />
+							<xsd:enumeration value="og:image:type" />
+							<xsd:enumeration value="og:image:width" />
+							<xsd:enumeration value="og:image:height" />
+							<xsd:enumeration value="og:video" />
+							<xsd:enumeration value="og:video:secure_url" />
+							<xsd:enumeration value="og:video:type" />
+							<xsd:enumeration value="og:video:width" />
+							<xsd:enumeration value="og:video:height" />
+							<xsd:enumeration value="og:audio" />
+							<xsd:enumeration value="og:audio:secure_url" />
+							<xsd:enumeration value="og:audio:type" />
+						</xsd:restriction>
+					</xsd:simpleType>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string" />
+					</xsd:simpleType>
+				</xsd:union>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="prefix">
+			<xsd:simpleType>
+				<xsd:union>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="fb: http://ogp.me/ns/fb#" />
+							<xsd:enumeration value="og: http://ogp.me/ns#" />
+							<xsd:enumeration value="ov: http://open.vocab.org/terms/" />
+						</xsd:restriction>
+					</xsd:simpleType>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string" />
+					</xsd:simpleType>
+				</xsd:union>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="vocab">
+			<xsd:simpleType>
+				<xsd:union>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="http://schema.org" />
+							<xsd:enumeration value="http://data-vocabulary.org" />
+						</xsd:restriction>
+					</xsd:simpleType>
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string" />
+					</xsd:simpleType>
+				</xsd:union>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="typeof" />
+		<xsd:attribute name="resource" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="commonHTML5commonEventsGroup">
+		<xsd:attribute name="onabort" vs:omtype="event" />
+		<xsd:attribute name="onblur" vs:omtype="event" />
+		<xsd:attribute name="oncancel" vs:omtype="event" />
+		<xsd:attribute name="oncanplay" vs:omtype="event" />
+		<xsd:attribute name="oncanplaythrough" vs:omtype="event" />
+		<xsd:attribute name="onchange" vs:omtype="event" />
+		<xsd:attribute name="onclick" vs:omtype="event" />
+		<xsd:attribute name="onclose" vs:omtype="event" />
+		<xsd:attribute name="oncontextmenu" vs:omtype="event" />
+		<xsd:attribute name="oncuechange" vs:omtype="event" />
+		<xsd:attribute name="ondblclick" vs:omtype="event" />
+		<xsd:attribute name="ondrag" vs:omtype="event" />
+		<xsd:attribute name="ondragend" vs:omtype="event" />
+		<xsd:attribute name="ondragenter" vs:omtype="event" />
+		<xsd:attribute name="ondragleave" vs:omtype="event" />
+		<xsd:attribute name="ondragover" vs:omtype="event" />
+		<xsd:attribute name="ondragstart" vs:omtype="event" />
+		<xsd:attribute name="ondrop" vs:omtype="event" />
+		<xsd:attribute name="ondurationchange" vs:omtype="event" />
+		<xsd:attribute name="onemptied" vs:omtype="event" />
+		<xsd:attribute name="onended" vs:omtype="event" />
+		<xsd:attribute name="onerror" vs:omtype="event" />
+		<xsd:attribute name="onfocus" vs:omtype="event" />
+		<xsd:attribute name="oninput" vs:omtype="event" />
+		<xsd:attribute name="oninvalid" vs:omtype="event" />
+		<xsd:attribute name="onkeydown" vs:omtype="event" />
+		<xsd:attribute name="onkeypress" vs:omtype="event" />
+		<xsd:attribute name="onkeyup" vs:omtype="event" />
+		<xsd:attribute name="onload" vs:omtype="event" />
+		<xsd:attribute name="onloadeddata" vs:omtype="event" />
+		<xsd:attribute name="onloadedmetadata" vs:omtype="event" />
+		<xsd:attribute name="onloadstart" vs:omtype="event" />
+		<xsd:attribute name="onmousedown" vs:omtype="event" />
+		<xsd:attribute name="onmousemove" vs:omtype="event" />
+		<xsd:attribute name="onmouseout" vs:omtype="event" />
+		<xsd:attribute name="onmouseover" vs:omtype="event" />
+		<xsd:attribute name="onmouseup" vs:omtype="event" />
+		<xsd:attribute name="onmousewheel" vs:omtype="event" />
+		<xsd:attribute name="onpause" vs:omtype="event" />
+		<xsd:attribute name="onplay" vs:omtype="event" />
+		<xsd:attribute name="onplaying" vs:omtype="event" />
+		<xsd:attribute name="onprogress" vs:omtype="event" />
+		<xsd:attribute name="onratechange" vs:omtype="event" />
+		<xsd:attribute name="onreadystatechange" vs:omtype="event" />
+		<xsd:attribute name="onreset" vs:omtype="event" />
+		<xsd:attribute name="onscroll" vs:omtype="event" />
+		<xsd:attribute name="onseeked" vs:omtype="event" />
+		<xsd:attribute name="onseeking" vs:omtype="event" />
+		<xsd:attribute name="onselect" vs:omtype="event" />
+		<xsd:attribute name="onshow" vs:omtype="event" />
+		<xsd:attribute name="onstalled" vs:omtype="event" />
+		<xsd:attribute name="onsubmit" vs:omtype="event" />
+		<xsd:attribute name="onsuspend" vs:omtype="event" />
+		<xsd:attribute name="ontimeupdate" vs:omtype="event" />
+		<xsd:attribute name="onvolumechange" vs:omtype="event" />
+		<xsd:attribute name="onwaiting" vs:omtype="event" />
+	</xsd:attributeGroup>
+
+	<xsd:attributeGroup name="mediaAttributeGroup">
+		<xsd:attribute name="src" type="xsd:anyURI" />
+		<xsd:attribute name="preload">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="none"/>
+					<xsd:enumeration value="metadata"/>
+					<xsd:enumeration value="auto"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="autoplay" vs:standalone="true">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="autoplay" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="loop" vs:standalone="true">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="loop" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="controls" vs:standalone="true">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="controls" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="mediagroup" />
+		<xsd:attribute name="muted" vs:standalone="true" />
+	</xsd:attributeGroup>
+
+	<xsd:simpleType name="metaHttpEquivType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="content-language" />
+					<xsd:enumeration value="content-type" />
+					<xsd:enumeration value="default-style" />
+					<xsd:enumeration value="refresh" />
+					<xsd:enumeration value="set-cookie" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="metaNameType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="application-name" />
+					<xsd:enumeration value="author" />
+					<xsd:enumeration value="description" />
+					<xsd:enumeration value="generator" />
+					<xsd:enumeration value="keywords" />
+					<xsd:enumeration value="viewport" />
+					<xsd:enumeration value="image" />
+					<xsd:enumeration value="thumbnail" />
+					<xsd:enumeration value="apple-itunes-app" />
+					<xsd:enumeration value="msApplication-ID" />
+					<xsd:enumeration value="msApplication-PackageFamilyName" />
+					<xsd:enumeration value="msApplication-Arguments" />
+					<xsd:enumeration value="msApplication-MinVersion" />
+					<xsd:enumeration value="msApplication-OptOut" />
+					<xsd:enumeration value="msApplication-Badge" />
+					<xsd:enumeration value="msApplication-TileImage" />
+					<xsd:enumeration value="msApplication-TileColor" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="charsetType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="euc-jp" />
+					<xsd:enumeration value="iso-8859-1" />
+					<xsd:enumeration value="iso-8859-2" />
+					<xsd:enumeration value="iso-8859-15" />
+					<xsd:enumeration value="windows-1251" />
+					<xsd:enumeration value="windows-1252" />
+					<xsd:enumeration value="us-ascii" />
+					<xsd:enumeration value="utf-8" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="styleTypeType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="text/css" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="scriptTypeType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="module" />
+					<xsd:enumeration value="text/javascript" />
+					<xsd:enumeration value="text/html" />
+					<xsd:enumeration value="text/x-handlebars" />
+					<xsd:enumeration value="text/x-handlebars-template" />
+					<xsd:enumeration value="text/x-jsrender" />
+					<xsd:enumeration value="text/template" />
+					<xsd:enumeration value="text/x-jquery-tmpl" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="olReversedType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="reversed" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="imgIsmapType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="ismap" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="imgBorderType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="0" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="iframeSandboxType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="allow-same-origin" />
+					<xsd:enumeration value="allow-top-navigation" />
+					<xsd:enumeration value="allow-forms" />
+					<xsd:enumeration value="allow-scripts" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="iframeSeamlessType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="seamless" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="detailsOpenType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="open" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="commandTypeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="command" />
+			<xsd:enumeration value="checkbox" />
+			<xsd:enumeration value="radio" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="disabledType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="disabled" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="checkedType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="checked" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="menuTypeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="context" />
+			<xsd:enumeration value="toolbar" />
+			<xsd:enumeration value="list" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="trackKindType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="subtitles" />
+			<xsd:enumeration value="captions" />
+			<xsd:enumeration value="descriptions" />
+			<xsd:enumeration value="chapters" />
+			<xsd:enumeration value="metadata" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="autocompleteType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="on" />
+			<xsd:enumeration value="off" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="enctypeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="multipart/form-data" />
+			<xsd:enumeration value="application/x-www-form-urlencoded" />
+			<xsd:enumeration value="text/plain" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="formmethodType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="dialog" />
+			<xsd:enumeration value="get" />
+			<xsd:enumeration value="post" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="formNovalidateType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="novalidate" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="inputTypeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="button" />
+			<xsd:enumeration value="checkbox" />
+			<xsd:enumeration value="color" />
+			<xsd:enumeration value="date" />
+			<xsd:enumeration value="datetime" />
+			<xsd:enumeration value="datetime-local" />
+			<xsd:enumeration value="email" />
+			<xsd:enumeration value="file" />
+			<xsd:enumeration value="hidden" />
+			<xsd:enumeration value="image" />
+			<xsd:enumeration value="month" />
+			<xsd:enumeration value="number" />
+			<xsd:enumeration value="password" />
+			<xsd:enumeration value="radio" />
+			<xsd:enumeration value="range" />
+			<xsd:enumeration value="reset" />
+			<xsd:enumeration value="search" />
+			<xsd:enumeration value="submit" />
+			<xsd:enumeration value="text" />
+			<xsd:enumeration value="tel" />
+			<xsd:enumeration value="time" />
+			<xsd:enumeration value="url" />
+			<xsd:enumeration value="week" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="inputFormnovalidateType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="formnovalidate" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="buttonTypeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="button" />
+			<xsd:enumeration value="reset" />
+			<xsd:enumeration value="submit" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="optionSelectedType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="selected" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="autofocusType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="autofocus" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="textareaReadonlyType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="readonly" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="textareaWrapType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="hard" />
+			<xsd:enumeration value="soft" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="keygenKeytypeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="rsa" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="areaShapeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="rect" />
+			<xsd:enumeration value="circle" />
+			<xsd:enumeration value="poly" />
+			<xsd:enumeration value="default" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="tableBorderType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="0" />
+			<xsd:enumeration value="1" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="thScopeType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="auto" />
+			<xsd:enumeration value="col" />
+			<xsd:enumeration value="colgroup" />
+			<xsd:enumeration value="row" />
+			<xsd:enumeration value="rowgroup" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<!-- XDR datatype derivations -->
+
+	<xsd:simpleType name="mediaType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="screen" />
+					<xsd:enumeration value="print" />
+					<xsd:enumeration value="tty" />
+					<xsd:enumeration value="tv" />
+					<xsd:enumeration value="projection" />
+					<xsd:enumeration value="handheld" />
+					<xsd:enumeration value="braille" />
+					<xsd:enumeration value="aural" />
+					<xsd:enumeration value="all" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="mediaMimeType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="video/mpeg" />
+					<xsd:enumeration value="video/mp4" />
+					<xsd:enumeration value="video/3gpp" />
+					<xsd:enumeration value="video/ogg" />
+					<xsd:enumeration value="video/webm" />
+					<xsd:enumeration value="video/m4v" />
+					<xsd:enumeration value="video/x-ms-wmv" />
+					<xsd:enumeration value="video/quicktime" />
+					<xsd:enumeration value="audio/ogg" />
+					<xsd:enumeration value="audio/mp3" />
+					<xsd:enumeration value="audio/mp4" />
+					<xsd:enumeration value="audio/vnd.wave" />
+					<xsd:enumeration value="audio/x-ms-wma" />
+					<xsd:enumeration value="audio/vorbis" />
+					<xsd:enumeration value="audio/vnd.rn-realaudio" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="anchorLinkType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="alternate" />
+					<xsd:enumeration value="archives" />
+					<xsd:enumeration value="author" />
+					<xsd:enumeration value="bookmark" />
+					<xsd:enumeration value="canonical" />
+					<xsd:enumeration value="external" />
+					<xsd:enumeration value="first" />
+					<xsd:enumeration value="help" />
+					<xsd:enumeration value="index" />
+					<xsd:enumeration value="last" />
+					<xsd:enumeration value="license" />
+					<xsd:enumeration value="next" />
+					<xsd:enumeration value="nofollow" />
+					<xsd:enumeration value="noreferrer"/>
+					<xsd:enumeration value="prefetch" />
+					<xsd:enumeration value="prev" />
+					<xsd:enumeration value="search" />
+					<xsd:enumeration value="sidebar" />
+					<xsd:enumeration value="tag" />
+					<xsd:enumeration value="up" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="linkLinkType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="alternate" />
+					<xsd:enumeration value="archives" />
+					<xsd:enumeration value="author" />
+					<xsd:enumeration value="first" />
+					<xsd:enumeration value="help" />
+					<xsd:enumeration value="icon" />
+					<xsd:enumeration value="index" />
+					<xsd:enumeration value="last" />
+					<xsd:enumeration value="license" />
+					<xsd:enumeration value="next" />
+					<xsd:enumeration value="pingback" />
+					<xsd:enumeration value="prefetch" />
+					<xsd:enumeration value="prev" />
+					<xsd:enumeration value="search" />
+					<xsd:enumeration value="stylesheet" />
+					<xsd:enumeration value="sidebar" />
+					<xsd:enumeration value="tag" />
+					<xsd:enumeration value="up" />
+					<xsd:enumeration value="apple-touch-icon" />
+					<xsd:enumeration value="apple-touch-icon-precomposed" />
+					<xsd:enumeration value="apple-touch-startup-image" />
+					<xsd:enumeration value="apple-mobile-web-app-capable" />
+					<xsd:enumeration value="apple-mobile-web-app-status-bar-style" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="browsingContext">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:NMTOKEN">
+					<xsd:enumeration value="_blank" />
+					<xsd:enumeration value="_parent" />
+					<xsd:enumeration value="_self" />
+					<xsd:enumeration value="_top" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="contentType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="html/sandboxed" />
+					<xsd:enumeration value="text/css" />
+					<xsd:enumeration value="text/html" />
+					<xsd:enumeration value="text/javascript" />
+					<xsd:enumeration value="text/plain" />
+					<xsd:enumeration value="text/x-component" />
+					<xsd:enumeration value="text/x-html-insertion" />
+					<xsd:enumeration value="text/xml" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="simpleContentType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="text/asp" />
+					<xsd:enumeration value="text/asa" />
+					<xsd:enumeration value="text/html" />
+					<xsd:enumeration value="text/plain" />
+					<xsd:enumeration value="text/xml" />
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string" />
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+
+</xsd:schema>
+

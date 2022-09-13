@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VazorTemplateSetup\\VazorTemplateSetup.vbproj": {}
+  },
+  "projects": {
+    "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VazorTemplateSetup\\VazorTemplateSetup.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VazorTemplateSetup\\VazorTemplateSetup.vbproj",
+        "projectName": "VazorTemplateSetup",
+        "projectPath": "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VazorTemplateSetup\\VazorTemplateSetup.vbproj",
+        "packagesPath": "C:\\Users\\Mhmd\\.nuget\\packages\\",
+        "outputPath": "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VazorTemplateSetup\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Mhmd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VbXmlCompletionProvider\\VbXmlCompletionProvider.vbproj": {
+                "projectPath": "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VbXmlCompletionProvider\\VbXmlCompletionProvider.vbproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[17.1.4054, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "target": "Package",
+              "version": "[17.1.32210.191, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VbXmlCompletionProvider\\VbXmlCompletionProvider.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VbXmlCompletionProvider\\VbXmlCompletionProvider.vbproj",
+        "projectName": "vbxmlCompletionProvider",
+        "projectPath": "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VbXmlCompletionProvider\\VbXmlCompletionProvider.vbproj",
+        "packagesPath": "C:\\Users\\Mhmd\\.nuget\\packages\\",
+        "outputPath": "F:\\_VS.NET\\Vazor 6\\VazorTemplates\\VazorTemplateSetup\\VbXmlCompletionProvider\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mhmd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp.Features": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.Features": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Microsoft.CodeAnalysis.VisualBasic.Workspaces": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

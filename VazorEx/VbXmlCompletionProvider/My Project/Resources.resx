@@ -1,0 +1,2492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommonHTML5Types" xml:space="preserve">
+    <value>&lt;?xml version='1.0' encoding='utf-8'?&gt;
+&lt;xsd:schema
+	xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+	xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense'&gt;
+
+	&lt;xsd:include schemaLocation="I18Languages.xsd"/&gt;
+	&lt;xsd:import schemaLocation="svg.xsd"/&gt;
+
+	&lt;xsd:attributeGroup name="coreServerAttributeGroup"&gt;
+		&lt;!-- Attributes --&gt;
+		&lt;xsd:attribute name="EnableTheming" type="xsd:boolean" vs:nonbrowseable="true" vs:category="ASP.NET" vs:disallowedonmobilepages="true" default="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="EnableViewState" type="xsd:boolean" vs:category="ASP.NET" default="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="SkinID" type="xsd:string" vs:nonbrowseable="true" vs:category="ASP.NET" vs:nonfilterable="true" vs:disallowedonmobilepages="true" default="" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="Visible" type="xsd:boolean" vs:category="ASP.NET" default="true" vs:serverattribute="true"/&gt;
+		&lt;!-- Events --&gt;
+		&lt;xsd:attribute name="OnDataBinding" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnDisposed" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnInit" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnLoad" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnPreRender" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnUnload" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="aServerAttributeGroup"&gt;
+		&lt;xsd:attribute name="OnServerClick" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="buttonServerAttributeGroup"&gt;
+		&lt;xsd:attribute name="CausesValidation" type="xsd:boolean" vs:category="ASP.NET" default="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="ValidationGroup" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnServerClick" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="formServerAttributeGroup"&gt;
+		&lt;xsd:attribute name="DefaultButton" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="DefaultFocus" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="SubmitDisabledControls" type="xsd:boolean" vs:category="ASP.NET" default="false" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="inputServerAttributeGroup"&gt;
+		&lt;xsd:attribute name="CausesValidation" type="xsd:boolean" vs:inputtype="button image submit" vs:category="ASP.NET" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnServerClick" vs:omtype="event" vs:inputtype="button image submit" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnServerChange" vs:omtype="event" vs:inputtype="checkbox hidden radio text" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="ValidationGroup" type="xsd:string" vs:inputtype="button image submit" vs:category="ASP.NET" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="multipleServerAttributeGroup"&gt;
+		&lt;xsd:attribute name="multiple" type="xsd:boolean" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="selectServerAttributeGroup"&gt;
+		&lt;xsd:attribute name="DataSourceID" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="DataTextField" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="DataValueField" type="xsd:string" vs:category="ASP.NET" default="" vs:serverattribute="true"/&gt;
+		&lt;xsd:attribute name="OnServerChange" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="textareaServerAttributeGroup"&gt;
+		&lt;xsd:attribute name="OnServerChange" vs:omtype="event" vs:category="ASP.NET" vs:nonfilterable="true" vs:serverattribute="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="commonHTML5coreAttributeGroup"&gt;
+		&lt;xsd:attribute name="runat" vs:readonly="true" vs:nonfilterable="true" vs:serverattribute="true"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="server"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="accesskey"/&gt;
+		&lt;xsd:attribute name="class"/&gt;
+		&lt;xsd:attribute name="contextmenu"/&gt;
+		&lt;xsd:attribute name="dir" default="ltr"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="auto"/&gt;
+					&lt;xsd:enumeration value="ltr"/&gt;
+					&lt;xsd:enumeration value="rtl"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="data-" vs:readonly="true"/&gt;
+		&lt;xsd:attribute name="dropzone"/&gt;
+		&lt;xsd:attribute name="id" vs:renametype="classmember"/&gt;
+		&lt;xsd:attribute name="hidden" vs:standalone="true"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="hidden"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="lang" type="i18LanguageCode"/&gt;
+		&lt;xsd:attribute name="role"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="alert"/&gt;
+					&lt;xsd:enumeration value="alertdialog"/&gt;
+					&lt;xsd:enumeration value="application"/&gt;
+					&lt;xsd:enumeration value="article"/&gt;
+					&lt;xsd:enumeration value="banner"/&gt;
+					&lt;xsd:enumeration value="button"/&gt;
+					&lt;xsd:enumeration value="checkbox"/&gt;
+					&lt;xsd:enumeration value="columnheader"/&gt;
+					&lt;xsd:enumeration value="combobox"/&gt;
+					&lt;xsd:enumeration value="complementary"/&gt;
+					&lt;xsd:enumeration value="contentinfo"/&gt;
+					&lt;xsd:enumeration value="definition"/&gt;
+					&lt;xsd:enumeration value="dialog"/&gt;
+					&lt;xsd:enumeration value="directory"/&gt;
+					&lt;xsd:enumeration value="document"/&gt;
+					&lt;xsd:enumeration value="form"/&gt;
+					&lt;xsd:enumeration value="grid"/&gt;
+					&lt;xsd:enumeration value="gridcell"/&gt;
+					&lt;xsd:enumeration value="group"/&gt;
+					&lt;xsd:enumeration value="heading"/&gt;
+					&lt;xsd:enumeration value="img"/&gt;
+					&lt;xsd:enumeration value="link"/&gt;
+					&lt;xsd:enumeration value="list"/&gt;
+					&lt;xsd:enumeration value="listbox"/&gt;
+					&lt;xsd:enumeration value="listitem"/&gt;
+					&lt;xsd:enumeration value="log"/&gt;
+					&lt;xsd:enumeration value="main"/&gt;
+					&lt;xsd:enumeration value="marquee"/&gt;
+					&lt;xsd:enumeration value="math"/&gt;
+					&lt;xsd:enumeration value="menu"/&gt;
+					&lt;xsd:enumeration value="menubar"/&gt;
+					&lt;xsd:enumeration value="menuitem"/&gt;
+					&lt;xsd:enumeration value="menuitemcheckbox"/&gt;
+					&lt;xsd:enumeration value="menuitemradio"/&gt;
+					&lt;xsd:enumeration value="navigation"/&gt;
+					&lt;xsd:enumeration value="note"/&gt;
+					&lt;xsd:enumeration value="option"/&gt;
+					&lt;xsd:enumeration value="presentation"/&gt;
+					&lt;xsd:enumeration value="progressbar"/&gt;
+					&lt;xsd:enumeration value="radio"/&gt;
+					&lt;xsd:enumeration value="radiogroup"/&gt;
+					&lt;xsd:enumeration value="region"/&gt;
+					&lt;xsd:enumeration value="row"/&gt;
+					&lt;xsd:enumeration value="rowgroup"/&gt;
+					&lt;xsd:enumeration value="rowheader"/&gt;
+					&lt;xsd:enumeration value="scrollbar"/&gt;
+					&lt;xsd:enumeration value="search"/&gt;
+					&lt;xsd:enumeration value="separator"/&gt;
+					&lt;xsd:enumeration value="slider"/&gt;
+					&lt;xsd:enumeration value="spinbutton"/&gt;
+					&lt;xsd:enumeration value="status"/&gt;
+					&lt;xsd:enumeration value="tab"/&gt;
+					&lt;xsd:enumeration value="tablist"/&gt;
+					&lt;xsd:enumeration value="tabpanel"/&gt;
+					&lt;xsd:enumeration value="textbox"/&gt;
+					&lt;xsd:enumeration value="timer"/&gt;
+					&lt;xsd:enumeration value="toolbar"/&gt;
+					&lt;xsd:enumeration value="tooltip"/&gt;
+					&lt;xsd:enumeration value="tree"/&gt;
+					&lt;xsd:enumeration value="treegrid"/&gt;
+					&lt;xsd:enumeration value="treeitem"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="style" vs:builder="style"/&gt;
+		&lt;xsd:attribute name="tabIndex"/&gt;
+		&lt;xsd:attribute name="title"/&gt;
+		&lt;xsd:attribute name="translate"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="yes"/&gt;
+					&lt;xsd:enumeration value="no"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="microdataAttributeGroup"&gt;
+		&lt;xsd:attribute name="itemscope" vs:standalone="true"/&gt;
+		&lt;xsd:attribute name="itemtype"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:union&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:anyURI"&gt;
+							&lt;xsd:enumeration value="http://schema.org/Article"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/BlogPosting"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Blog"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Book"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Movie"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Photograph"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Review"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Event"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Organization"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Person"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Place"/&gt;
+							&lt;xsd:enumeration value="http://schema.org/Product"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org/Event"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org/Organization"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org/Person"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org/Product"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org/Review"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org/Breadcrumb"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org/Offer"/&gt;
+						&lt;/xsd:restriction&gt;
+					&lt;/xsd:simpleType&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:anyURI"/&gt;
+					&lt;/xsd:simpleType&gt;
+				&lt;/xsd:union&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="itemprop"/&gt;
+		&lt;xsd:attribute name="itemref"/&gt;
+		&lt;xsd:attribute name="itemid"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="commonHTML5ariaAttributeGroup"&gt;
+		&lt;xsd:attribute name="aria-activedescendant" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-atomic" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-autocomplete" default="none" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="inline"/&gt;
+					&lt;xsd:enumeration value="list"/&gt;
+					&lt;xsd:enumeration value="both"/&gt;
+					&lt;xsd:enumeration value="none"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-busy" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-checked" default="undefined" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="mixed"/&gt;
+					&lt;xsd:enumeration value="undefined"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-controls" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-describedby" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-disabled" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-dropeffect" default="none" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="copy"/&gt;
+					&lt;xsd:enumeration value="move"/&gt;
+					&lt;xsd:enumeration value="link"/&gt;
+					&lt;xsd:enumeration value="execute"/&gt;
+					&lt;xsd:enumeration value="popup"/&gt;
+					&lt;xsd:enumeration value="none"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-expanded" default="undefined" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="undefined"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-flowto" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-grabbed" default="undefined" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="undefined"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-haspopup" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-hidden" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-label" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-labelledby" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-level" type="xsd:integer" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-live" default="off" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="off"/&gt;
+					&lt;xsd:enumeration value="polite"/&gt;
+					&lt;xsd:enumeration value="assertive"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-multiline" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-multiselectable" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-orientation" default="horizontal" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="vertical"/&gt;
+					&lt;xsd:enumeration value="horizontal"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-owns" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-posinset" type="xsd:integer" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-pressed" default="undefined" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="mixed"/&gt;
+					&lt;xsd:enumeration value="undefined"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-readonly" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-relevant" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="additions"/&gt;
+					&lt;xsd:enumeration value="removals"/&gt;
+					&lt;xsd:enumeration value="text"/&gt;
+					&lt;xsd:enumeration value="all"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-required" type="xsd:boolean" default="false" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-selected" default="undefined" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="undefined"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-setsize" type="xsd:integer" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-sort" default="none" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="ascending"/&gt;
+					&lt;xsd:enumeration value="descending"/&gt;
+					&lt;xsd:enumeration value="none"/&gt;
+					&lt;xsd:enumeration value="other"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="aria-valuemax" type="xsd:float" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-valuemin" type="xsd:float" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-valuenow" type="xsd:float" vs:category="WAI-ARIA"/&gt;
+		&lt;xsd:attribute name="aria-valuetext" vs:category="WAI-ARIA"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="rdfaAttributeGroup"&gt;
+		&lt;xsd:attribute name="property"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:union&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:string"&gt;
+							&lt;xsd:enumeration value="fb:admins"/&gt;
+							&lt;xsd:enumeration value="fb:app_id"/&gt;
+							&lt;xsd:enumeration value="og:title"/&gt;
+							&lt;xsd:enumeration value="og:type"/&gt;
+							&lt;xsd:enumeration value="og:url"/&gt;
+							&lt;xsd:enumeration value="og:description"/&gt;
+							&lt;xsd:enumeration value="og:determiner"/&gt;
+							&lt;xsd:enumeration value="og:locale"/&gt;
+							&lt;xsd:enumeration value="og:locale:alternate"/&gt;
+							&lt;xsd:enumeration value="og:site_name"/&gt;
+							&lt;xsd:enumeration value="og:image"/&gt;
+							&lt;xsd:enumeration value="og:image:secure_url"/&gt;
+							&lt;xsd:enumeration value="og:image:type"/&gt;
+							&lt;xsd:enumeration value="og:image:width"/&gt;
+							&lt;xsd:enumeration value="og:image:height"/&gt;
+							&lt;xsd:enumeration value="og:video"/&gt;
+							&lt;xsd:enumeration value="og:video:secure_url"/&gt;
+							&lt;xsd:enumeration value="og:video:type"/&gt;
+							&lt;xsd:enumeration value="og:video:width"/&gt;
+							&lt;xsd:enumeration value="og:video:height"/&gt;
+							&lt;xsd:enumeration value="og:audio"/&gt;
+							&lt;xsd:enumeration value="og:audio:secure_url"/&gt;
+							&lt;xsd:enumeration value="og:audio:type"/&gt;
+						&lt;/xsd:restriction&gt;
+					&lt;/xsd:simpleType&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:string"/&gt;
+					&lt;/xsd:simpleType&gt;
+				&lt;/xsd:union&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="prefix"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:union&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:string"&gt;
+							&lt;xsd:enumeration value="fb: http://ogp.me/ns/fb#"/&gt;
+							&lt;xsd:enumeration value="og: http://ogp.me/ns#"/&gt;
+							&lt;xsd:enumeration value="ov: http://open.vocab.org/terms/"/&gt;
+						&lt;/xsd:restriction&gt;
+					&lt;/xsd:simpleType&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:string"/&gt;
+					&lt;/xsd:simpleType&gt;
+				&lt;/xsd:union&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="vocab"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:union&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:string"&gt;
+							&lt;xsd:enumeration value="http://schema.org"/&gt;
+							&lt;xsd:enumeration value="http://data-vocabulary.org"/&gt;
+						&lt;/xsd:restriction&gt;
+					&lt;/xsd:simpleType&gt;
+					&lt;xsd:simpleType&gt;
+						&lt;xsd:restriction base="xsd:string"/&gt;
+					&lt;/xsd:simpleType&gt;
+				&lt;/xsd:union&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="typeof"/&gt;
+		&lt;xsd:attribute name="resource"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="commonHTML5commonEventsGroup"&gt;
+		&lt;xsd:attribute name="onabort" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onblur" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="oncancel" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="oncanplay" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="oncanplaythrough" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onchange" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onclick" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onclose" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="oncontextmenu" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="oncuechange" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondblclick" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondrag" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondragend" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondragenter" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondragleave" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondragover" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondragstart" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondrop" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ondurationchange" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onemptied" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onended" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onerror" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onfocus" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="oninput" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="oninvalid" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onkeydown" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onkeypress" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onkeyup" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onload" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onloadeddata" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onloadedmetadata" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onloadstart" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onmousedown" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onmousemove" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onmouseout" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onmouseover" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onmouseup" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onmousewheel" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onpause" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onplay" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onplaying" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onprogress" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onratechange" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onreadystatechange" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onreset" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onscroll" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onseeked" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onseeking" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onselect" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onshow" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onstalled" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onsubmit" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onsuspend" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ontimeupdate" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onvolumechange" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onwaiting" vs:omtype="event"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="mediaAttributeGroup"&gt;
+		&lt;xsd:attribute name="src" type="xsd:anyURI"/&gt;
+		&lt;xsd:attribute name="preload"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="none"/&gt;
+					&lt;xsd:enumeration value="metadata"/&gt;
+					&lt;xsd:enumeration value="auto"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="autoplay" vs:standalone="true"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="autoplay"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="loop" vs:standalone="true"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="loop"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="controls" vs:standalone="true"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="controls"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="mediagroup"/&gt;
+		&lt;xsd:attribute name="muted" vs:standalone="true"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:simpleType name="metaHttpEquivType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="content-language"/&gt;
+					&lt;xsd:enumeration value="content-type"/&gt;
+					&lt;xsd:enumeration value="default-style"/&gt;
+					&lt;xsd:enumeration value="refresh"/&gt;
+					&lt;xsd:enumeration value="set-cookie"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="metaNameType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="application-name"/&gt;
+					&lt;xsd:enumeration value="author"/&gt;
+					&lt;xsd:enumeration value="description"/&gt;
+					&lt;xsd:enumeration value="generator"/&gt;
+					&lt;xsd:enumeration value="keywords"/&gt;
+					&lt;xsd:enumeration value="viewport"/&gt;
+					&lt;xsd:enumeration value="image"/&gt;
+					&lt;xsd:enumeration value="thumbnail"/&gt;
+					&lt;xsd:enumeration value="apple-itunes-app"/&gt;
+					&lt;xsd:enumeration value="msApplication-ID"/&gt;
+					&lt;xsd:enumeration value="msApplication-PackageFamilyName"/&gt;
+					&lt;xsd:enumeration value="msApplication-Arguments"/&gt;
+					&lt;xsd:enumeration value="msApplication-MinVersion"/&gt;
+					&lt;xsd:enumeration value="msApplication-OptOut"/&gt;
+					&lt;xsd:enumeration value="msApplication-Badge"/&gt;
+					&lt;xsd:enumeration value="msApplication-TileImage"/&gt;
+					&lt;xsd:enumeration value="msApplication-TileColor"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="charsetType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="euc-jp"/&gt;
+					&lt;xsd:enumeration value="iso-8859-1"/&gt;
+					&lt;xsd:enumeration value="iso-8859-2"/&gt;
+					&lt;xsd:enumeration value="iso-8859-15"/&gt;
+					&lt;xsd:enumeration value="windows-1251"/&gt;
+					&lt;xsd:enumeration value="windows-1252"/&gt;
+					&lt;xsd:enumeration value="us-ascii"/&gt;
+					&lt;xsd:enumeration value="utf-8"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="styleTypeType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="text/css"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="scriptTypeType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="module"/&gt;
+					&lt;xsd:enumeration value="text/javascript"/&gt;
+					&lt;xsd:enumeration value="text/html"/&gt;
+					&lt;xsd:enumeration value="text/x-handlebars"/&gt;
+					&lt;xsd:enumeration value="text/x-handlebars-template"/&gt;
+					&lt;xsd:enumeration value="text/x-jsrender"/&gt;
+					&lt;xsd:enumeration value="text/template"/&gt;
+					&lt;xsd:enumeration value="text/x-jquery-tmpl"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="olReversedType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="reversed"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="imgIsmapType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="ismap"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="imgBorderType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="0"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="iframeSandboxType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="allow-same-origin"/&gt;
+					&lt;xsd:enumeration value="allow-top-navigation"/&gt;
+					&lt;xsd:enumeration value="allow-forms"/&gt;
+					&lt;xsd:enumeration value="allow-scripts"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="iframeSeamlessType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="seamless"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="detailsOpenType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="open"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="commandTypeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="command"/&gt;
+			&lt;xsd:enumeration value="checkbox"/&gt;
+			&lt;xsd:enumeration value="radio"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="disabledType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="disabled"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="checkedType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="checked"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="menuTypeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="context"/&gt;
+			&lt;xsd:enumeration value="toolbar"/&gt;
+			&lt;xsd:enumeration value="list"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="trackKindType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="subtitles"/&gt;
+			&lt;xsd:enumeration value="captions"/&gt;
+			&lt;xsd:enumeration value="descriptions"/&gt;
+			&lt;xsd:enumeration value="chapters"/&gt;
+			&lt;xsd:enumeration value="metadata"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="autocompleteType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="on"/&gt;
+			&lt;xsd:enumeration value="off"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="enctypeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="multipart/form-data"/&gt;
+			&lt;xsd:enumeration value="application/x-www-form-urlencoded"/&gt;
+			&lt;xsd:enumeration value="text/plain"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="formmethodType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="get"/&gt;
+			&lt;xsd:enumeration value="post"/&gt;
+			&lt;xsd:enumeration value="put"/&gt;
+			&lt;xsd:enumeration value="delete"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="formNovalidateType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="novalidate"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="inputTypeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="button"/&gt;
+			&lt;xsd:enumeration value="checkbox"/&gt;
+			&lt;xsd:enumeration value="color"/&gt;
+			&lt;xsd:enumeration value="date"/&gt;
+			&lt;xsd:enumeration value="datetime"/&gt;
+			&lt;xsd:enumeration value="datetime-local"/&gt;
+			&lt;xsd:enumeration value="email"/&gt;
+			&lt;xsd:enumeration value="file"/&gt;
+			&lt;xsd:enumeration value="hidden"/&gt;
+			&lt;xsd:enumeration value="image"/&gt;
+			&lt;xsd:enumeration value="month"/&gt;
+			&lt;xsd:enumeration value="number"/&gt;
+			&lt;xsd:enumeration value="password"/&gt;
+			&lt;xsd:enumeration value="radio"/&gt;
+			&lt;xsd:enumeration value="range"/&gt;
+			&lt;xsd:enumeration value="reset"/&gt;
+			&lt;xsd:enumeration value="search"/&gt;
+			&lt;xsd:enumeration value="submit"/&gt;
+			&lt;xsd:enumeration value="text"/&gt;
+			&lt;xsd:enumeration value="tel"/&gt;
+			&lt;xsd:enumeration value="time"/&gt;
+			&lt;xsd:enumeration value="url"/&gt;
+			&lt;xsd:enumeration value="week"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="inputFormnovalidateType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="formnovalidate"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="buttonTypeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="button"/&gt;
+			&lt;xsd:enumeration value="reset"/&gt;
+			&lt;xsd:enumeration value="submit"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="optionSelectedType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="selected"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="autofocusType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="autofocus"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="textareaReadonlyType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="readonly"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="textareaWrapType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="hard"/&gt;
+			&lt;xsd:enumeration value="soft"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="keygenKeytypeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="rsa"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="areaShapeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="rect"/&gt;
+			&lt;xsd:enumeration value="circle"/&gt;
+			&lt;xsd:enumeration value="poly"/&gt;
+			&lt;xsd:enumeration value="default"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="tableBorderType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="0"/&gt;
+			&lt;xsd:enumeration value="1"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="thScopeType"&gt;
+		&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+			&lt;xsd:enumeration value="auto"/&gt;
+			&lt;xsd:enumeration value="col"/&gt;
+			&lt;xsd:enumeration value="colgroup"/&gt;
+			&lt;xsd:enumeration value="row"/&gt;
+			&lt;xsd:enumeration value="rowgroup"/&gt;
+		&lt;/xsd:restriction&gt;
+	&lt;/xsd:simpleType&gt;
+
+
+	&lt;!-- XDR datatype derivations --&gt;
+
+	&lt;xsd:simpleType name="mediaType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="screen"/&gt;
+					&lt;xsd:enumeration value="print"/&gt;
+					&lt;xsd:enumeration value="tty"/&gt;
+					&lt;xsd:enumeration value="tv"/&gt;
+					&lt;xsd:enumeration value="projection"/&gt;
+					&lt;xsd:enumeration value="handheld"/&gt;
+					&lt;xsd:enumeration value="braille"/&gt;
+					&lt;xsd:enumeration value="aural"/&gt;
+					&lt;xsd:enumeration value="all"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="mediaMimeType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="video/mpeg"/&gt;
+					&lt;xsd:enumeration value="video/mp4"/&gt;
+					&lt;xsd:enumeration value="video/3gpp"/&gt;
+					&lt;xsd:enumeration value="video/ogg"/&gt;
+					&lt;xsd:enumeration value="video/webm"/&gt;
+					&lt;xsd:enumeration value="video/m4v"/&gt;
+					&lt;xsd:enumeration value="video/x-ms-wmv"/&gt;
+					&lt;xsd:enumeration value="video/quicktime"/&gt;
+					&lt;xsd:enumeration value="audio/ogg"/&gt;
+					&lt;xsd:enumeration value="audio/mp3"/&gt;
+					&lt;xsd:enumeration value="audio/mp4"/&gt;
+					&lt;xsd:enumeration value="audio/vnd.wave"/&gt;
+					&lt;xsd:enumeration value="audio/x-ms-wma"/&gt;
+					&lt;xsd:enumeration value="audio/vorbis"/&gt;
+					&lt;xsd:enumeration value="audio/vnd.rn-realaudio"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="anchorLinkType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="alternate"/&gt;
+					&lt;xsd:enumeration value="archives"/&gt;
+					&lt;xsd:enumeration value="author"/&gt;
+					&lt;xsd:enumeration value="bookmark"/&gt;
+					&lt;xsd:enumeration value="canonical"/&gt;
+					&lt;xsd:enumeration value="external"/&gt;
+					&lt;xsd:enumeration value="first"/&gt;
+					&lt;xsd:enumeration value="help"/&gt;
+					&lt;xsd:enumeration value="index"/&gt;
+					&lt;xsd:enumeration value="last"/&gt;
+					&lt;xsd:enumeration value="license"/&gt;
+					&lt;xsd:enumeration value="next"/&gt;
+					&lt;xsd:enumeration value="nofollow"/&gt;
+					&lt;xsd:enumeration value="noreferrer"/&gt;
+					&lt;xsd:enumeration value="prefetch"/&gt;
+					&lt;xsd:enumeration value="prev"/&gt;
+					&lt;xsd:enumeration value="search"/&gt;
+					&lt;xsd:enumeration value="sidebar"/&gt;
+					&lt;xsd:enumeration value="tag"/&gt;
+					&lt;xsd:enumeration value="up"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="linkLinkType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="alternate"/&gt;
+					&lt;xsd:enumeration value="archives"/&gt;
+					&lt;xsd:enumeration value="author"/&gt;
+					&lt;xsd:enumeration value="first"/&gt;
+					&lt;xsd:enumeration value="help"/&gt;
+					&lt;xsd:enumeration value="icon"/&gt;
+					&lt;xsd:enumeration value="index"/&gt;
+					&lt;xsd:enumeration value="last"/&gt;
+					&lt;xsd:enumeration value="license"/&gt;
+					&lt;xsd:enumeration value="next"/&gt;
+					&lt;xsd:enumeration value="pingback"/&gt;
+					&lt;xsd:enumeration value="prefetch"/&gt;
+					&lt;xsd:enumeration value="prev"/&gt;
+					&lt;xsd:enumeration value="search"/&gt;
+					&lt;xsd:enumeration value="stylesheet"/&gt;
+					&lt;xsd:enumeration value="sidebar"/&gt;
+					&lt;xsd:enumeration value="tag"/&gt;
+					&lt;xsd:enumeration value="up"/&gt;
+					&lt;xsd:enumeration value="apple-touch-icon"/&gt;
+					&lt;xsd:enumeration value="apple-touch-icon-precomposed"/&gt;
+					&lt;xsd:enumeration value="apple-touch-startup-image"/&gt;
+					&lt;xsd:enumeration value="apple-mobile-web-app-capable"/&gt;
+					&lt;xsd:enumeration value="apple-mobile-web-app-status-bar-style"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="browsingContext"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="_blank"/&gt;
+					&lt;xsd:enumeration value="_parent"/&gt;
+					&lt;xsd:enumeration value="_self"/&gt;
+					&lt;xsd:enumeration value="_top"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="contentType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="html/sandboxed"/&gt;
+					&lt;xsd:enumeration value="text/css"/&gt;
+					&lt;xsd:enumeration value="text/html"/&gt;
+					&lt;xsd:enumeration value="text/javascript"/&gt;
+					&lt;xsd:enumeration value="text/plain"/&gt;
+					&lt;xsd:enumeration value="text/x-component"/&gt;
+					&lt;xsd:enumeration value="text/x-html-insertion"/&gt;
+					&lt;xsd:enumeration value="text/xml"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+	&lt;xsd:simpleType name="simpleContentType"&gt;
+		&lt;xsd:union&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"&gt;
+					&lt;xsd:enumeration value="text/asp"/&gt;
+					&lt;xsd:enumeration value="text/asa"/&gt;
+					&lt;xsd:enumeration value="text/html"/&gt;
+					&lt;xsd:enumeration value="text/plain"/&gt;
+					&lt;xsd:enumeration value="text/xml"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:string"/&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:union&gt;
+	&lt;/xsd:simpleType&gt;
+
+&lt;/xsd:schema&gt;</value>
+  </data>
+  <data name="Html_5" xml:space="preserve">
+    <value>&lt;?xml version='1.0' encoding='utf-8'?&gt;
+&lt;xsd:schema xmlns='http://schemas.microsoft.com/intellisense/html5'
+	xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+	targetNamespace='http://schemas.microsoft.com/intellisense/html5'
+	xmlns:vs='http://schemas.microsoft.com/Visual-Studio-Intellisense'
+	xmlns:svg="http://www.w3.org/2000/svg"
+	vs:clientom="w3c-dom1.tlb"
+	vs:ishtmlschema="true"
+	vs:isserverschema="false"
+	vs:htmlflavor="5.0"
+	vs:cssschema="CSS 2.1"
+	vs:SuccinctFriendlyName="HTML5"
+	vs:customattrprefix="data-"
+	&gt;
+	&lt;!--
+		Warning:                                                                                    
+		Warning: 
+		Warning: Do not change the targetNamespace above 
+		Warning: 
+		Warning: 
+--&gt;
+
+	&lt;!-- TODO: list of charsets for meta intellisense --&gt;
+	&lt;!-- TODO: DOM5 --&gt;
+
+	&lt;xsd:annotation&gt;
+		&lt;xsd:documentation&gt;
+			Microsoft Visual Studio schema for HTML5
+		&lt;/xsd:documentation&gt;
+	&lt;/xsd:annotation&gt;
+
+	&lt;xsd:include schemaLocation="CommonHTML5Types.xsd"/&gt;
+
+	&lt;xsd:attributeGroup name="coreAttributeGroup"&gt;
+		&lt;xsd:attributeGroup ref="commonHTML5coreAttributeGroup"/&gt;
+		&lt;xsd:attributeGroup ref="rdfaAttributeGroup"/&gt;
+		&lt;xsd:attribute name="contenteditable" vs:standalone="noname"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="inherit"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="draggable" vs:standalone="noname"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="auto"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="spellcheck" vs:standalone="noname"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="ariaAttributeGroup"&gt;
+		&lt;xsd:attributeGroup ref="commonHTML5ariaAttributeGroup"/&gt;
+		&lt;xsd:attribute name="aria-invalid" default="false" vs:category="WAI-ARIA"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="grammar"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+					&lt;xsd:enumeration value="spelling"/&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="playToAttributeGroup"&gt;
+		&lt;xsd:attribute name="x-ms-playToDisabled" vs:standalone="noname"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="x-ms-playToPrimary" vs:standalone="noname"&gt;
+			&lt;xsd:simpleType&gt;
+				&lt;xsd:restriction base="xsd:NMTOKEN"&gt;
+					&lt;xsd:enumeration value="true"/&gt;
+					&lt;xsd:enumeration value="false"/&gt;
+				&lt;/xsd:restriction&gt;
+			&lt;/xsd:simpleType&gt;
+		&lt;/xsd:attribute&gt;
+		&lt;xsd:attribute name="x-ms-playToPreferredSourceUri"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="commonEventsGroup"&gt;
+		&lt;xsd:attributeGroup ref="commonHTML5commonEventsGroup"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:attributeGroup name="commonAttributeGroup"&gt;
+		&lt;xsd:attributeGroup ref="coreAttributeGroup"/&gt;
+		&lt;xsd:attributeGroup ref="microdataAttributeGroup"/&gt;
+		&lt;xsd:attributeGroup ref="ariaAttributeGroup"/&gt;
+		&lt;xsd:attributeGroup ref="commonEventsGroup"/&gt;
+		&lt;xsd:attributeGroup ref="coreServerAttributeGroup"/&gt;
+	&lt;/xsd:attributeGroup&gt;
+
+	&lt;xsd:group name="metadataContent"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="base"/&gt;
+			&lt;xsd:element ref="command"/&gt;
+			&lt;xsd:element ref="link"/&gt;
+			&lt;xsd:element ref="meta"/&gt;
+			&lt;xsd:element ref="noscript"/&gt;
+			&lt;xsd:element ref="script"/&gt;
+			&lt;xsd:element ref="style"/&gt;
+			&lt;xsd:element name="title" type="titleType" minOccurs="1" maxOccurs="1"/&gt;
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+	&lt;xsd:group name="flowContent"&gt;
+		&lt;xsd:choice&gt;
+
+			&lt;xsd:element ref="a"/&gt;
+			&lt;xsd:element ref="abbr"/&gt;
+			&lt;xsd:element ref="area"/&gt;
+			&lt;xsd:element ref="address"/&gt;
+			&lt;xsd:element ref="article"/&gt;
+			&lt;xsd:element ref="aside"/&gt;
+			&lt;xsd:element ref="audio"/&gt;
+
+			&lt;xsd:element ref="b"/&gt;
+			&lt;xsd:element ref="bdi"/&gt;
+			&lt;xsd:element ref="bdo"/&gt;
+			&lt;xsd:element ref="blockquote"/&gt;
+			&lt;xsd:element ref="br"/&gt;
+			&lt;xsd:element ref="button"/&gt;
+
+			&lt;xsd:element ref="canvas"/&gt;
+			&lt;xsd:element ref="cite"/&gt;
+			&lt;xsd:element ref="code"/&gt;
+			&lt;xsd:element ref="command"/&gt;
+
+			&lt;xsd:element ref="datalist"/&gt;
+			&lt;xsd:element ref="del"/&gt;
+			&lt;xsd:element ref="details"/&gt;
+			&lt;xsd:element ref="dfn"/&gt;
+			&lt;xsd:element ref="dialog"/&gt;
+			&lt;xsd:element ref="div"/&gt;
+			&lt;xsd:element ref="dl"/&gt;
+
+			&lt;xsd:element ref="em"/&gt;
+			&lt;xsd:element ref="embed"/&gt;
+
+			&lt;xsd:element ref="fieldset"/&gt;
+			&lt;xsd:element ref="figcaption"/&gt;
+			&lt;xsd:element ref="figure"/&gt;
+			&lt;xsd:element ref="footer"/&gt;
+			&lt;xsd:element ref="form"/&gt;
+
+			&lt;xsd:element ref="h1"/&gt;
+			&lt;xsd:element ref="h2"/&gt;
+			&lt;xsd:element ref="h3"/&gt;
+			&lt;xsd:element ref="h4"/&gt;
+			&lt;xsd:element ref="h5"/&gt;
+			&lt;xsd:element ref="h6"/&gt;
+			&lt;xsd:element ref="header"/&gt;
+			&lt;xsd:element ref="hgroup"/&gt;
+			&lt;xsd:element ref="hr"/&gt;
+			&lt;xsd:element ref="wbr"/&gt;
+
+			&lt;xsd:element ref="i"/&gt;
+			&lt;xsd:element ref="iframe"/&gt;
+			&lt;xsd:element ref="img"/&gt;
+			&lt;xsd:element ref="input"/&gt;
+			&lt;xsd:element ref="ins"/&gt;
+
+			&lt;xsd:element ref="kbd"/&gt;
+			&lt;xsd:element ref="keygen"/&gt;
+
+			&lt;xsd:element ref="label"/&gt;
+			&lt;xsd:element ref="link"/&gt;
+
+			&lt;xsd:element ref="main"/&gt;
+			&lt;xsd:element ref="map"/&gt;
+			&lt;xsd:element ref="mark"/&gt;
+			&lt;xsd:element ref="math"/&gt;
+			&lt;xsd:element ref="menu"/&gt;
+			&lt;xsd:element ref="meta"/&gt;
+			&lt;xsd:element ref="meter"/&gt;
+
+			&lt;xsd:element ref="nav"/&gt;
+			&lt;xsd:element ref="noscript"/&gt;
+
+			&lt;xsd:element ref="ol"/&gt;
+			&lt;xsd:element ref="object"/&gt;
+			&lt;xsd:element ref="output"/&gt;
+
+			&lt;xsd:element ref="p"/&gt;
+			&lt;xsd:element ref="param"/&gt;
+			&lt;xsd:element ref="pre"/&gt;
+			&lt;xsd:element ref="progress"/&gt;
+
+			&lt;xsd:element ref="q"/&gt;
+
+			&lt;xsd:element ref="ruby"/&gt;
+
+			&lt;xsd:element ref="s"/&gt;
+			&lt;xsd:element ref="samp"/&gt;
+			&lt;xsd:element ref="script"/&gt;
+			&lt;xsd:element ref="section"/&gt;
+			&lt;xsd:element ref="select"/&gt;
+			&lt;xsd:element ref="small"/&gt;
+			&lt;xsd:element ref="source"/&gt;
+			&lt;xsd:element ref="span"/&gt;
+			&lt;xsd:element ref="strong"/&gt;
+			&lt;xsd:element ref="style"/&gt;
+			&lt;xsd:element ref="sub"/&gt;
+			&lt;xsd:element ref="sup"/&gt;
+			&lt;xsd:element ref="svg"/&gt;
+
+			&lt;xsd:element ref="table"/&gt;
+			&lt;xsd:element ref="textarea"/&gt;
+			&lt;xsd:element ref="time"/&gt;
+			&lt;xsd:element ref="track"/&gt;
+
+			&lt;xsd:element ref="u"/&gt;
+			&lt;xsd:element ref="ul"/&gt;
+
+			&lt;xsd:element ref="var"/&gt;
+			&lt;xsd:element ref="video"/&gt;
+
+			&lt;xsd:element ref="x-ms-webview"/&gt;
+
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+	&lt;xsd:group name="headingContent"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="h1"/&gt;
+			&lt;xsd:element ref="h2"/&gt;
+			&lt;xsd:element ref="h3"/&gt;
+			&lt;xsd:element ref="h4"/&gt;
+			&lt;xsd:element ref="h5"/&gt;
+			&lt;xsd:element ref="h6"/&gt;
+			&lt;xsd:element ref="hgroup"/&gt;
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+	&lt;xsd:group name="sectioningContent"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="article"/&gt;
+			&lt;xsd:element ref="aside"/&gt;
+			&lt;xsd:element ref="nav"/&gt;
+			&lt;xsd:element ref="section"/&gt;
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+	&lt;xsd:group name="phrasingContent"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="a"/&gt;
+			&lt;xsd:element ref="abbr"/&gt;
+			&lt;xsd:element ref="area"/&gt;
+			&lt;xsd:element ref="audio"/&gt;
+
+			&lt;xsd:element ref="b"/&gt;
+			&lt;xsd:element ref="bdi"/&gt;
+			&lt;xsd:element ref="bdo"/&gt;
+			&lt;xsd:element ref="br"/&gt;
+			&lt;xsd:element ref="button"/&gt;
+
+			&lt;xsd:element ref="canvas"/&gt;
+			&lt;xsd:element ref="cite"/&gt;
+			&lt;xsd:element ref="code"/&gt;
+			&lt;xsd:element ref="command"/&gt;
+
+			&lt;xsd:element ref="datalist"/&gt;
+			&lt;xsd:element ref="del"/&gt;
+			&lt;xsd:element ref="dfn"/&gt;
+
+			&lt;xsd:element ref="em"/&gt;
+			&lt;xsd:element ref="embed"/&gt;
+
+			&lt;xsd:element ref="i"/&gt;
+			&lt;xsd:element ref="iframe"/&gt;
+			&lt;xsd:element ref="img"/&gt;
+			&lt;xsd:element ref="input"/&gt;
+			&lt;xsd:element ref="ins"/&gt;
+
+			&lt;xsd:element ref="kbd"/&gt;
+			&lt;xsd:element ref="keygen"/&gt;
+
+			&lt;xsd:element ref="label"/&gt;
+			&lt;xsd:element ref="link"/&gt;
+
+			&lt;xsd:element ref="map"/&gt;
+			&lt;xsd:element ref="mark"/&gt;
+			&lt;xsd:element ref="math"/&gt;
+			&lt;xsd:element ref="meta"/&gt;
+			&lt;xsd:element ref="meter"/&gt;
+
+			&lt;xsd:element ref="noscript"/&gt;
+
+			&lt;xsd:element ref="object"/&gt;
+			&lt;xsd:element ref="output"/&gt;
+
+			&lt;xsd:element ref="pre"/&gt;
+			&lt;xsd:element ref="progress"/&gt;
+
+			&lt;xsd:element ref="q"/&gt;
+
+			&lt;xsd:element ref="ruby"/&gt;
+
+			&lt;xsd:element ref="s"/&gt;
+			&lt;xsd:element ref="samp"/&gt;
+			&lt;xsd:element ref="script"/&gt;
+			&lt;xsd:element ref="select"/&gt;
+			&lt;xsd:element ref="small"/&gt;
+			&lt;xsd:element ref="span"/&gt;
+			&lt;xsd:element ref="strong"/&gt;
+			&lt;xsd:element ref="sub"/&gt;
+			&lt;xsd:element ref="sup"/&gt;
+			&lt;xsd:element ref="svg"/&gt;
+
+			&lt;xsd:element ref="textarea"/&gt;
+			&lt;xsd:element ref="time"/&gt;
+
+			&lt;xsd:element ref="u"/&gt;
+
+			&lt;xsd:element ref="var"/&gt;
+			&lt;xsd:element ref="video"/&gt;
+
+			&lt;xsd:element ref="wbr"/&gt;
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+	&lt;xsd:group name="formElements"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="button"/&gt;
+			&lt;xsd:element ref="fieldset"/&gt;
+			&lt;xsd:element ref="input"/&gt;
+			&lt;xsd:element ref="keygen"/&gt;
+			&lt;xsd:element ref="label"/&gt;
+			&lt;xsd:element ref="object"/&gt;
+			&lt;xsd:element ref="output"/&gt;
+			&lt;xsd:element ref="select"/&gt;
+			&lt;xsd:element ref="textarea"/&gt;
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+	&lt;xsd:group name="labelElements"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="button"/&gt;
+			&lt;xsd:element ref="input"/&gt;
+			&lt;xsd:element ref="keygen"/&gt;
+			&lt;xsd:element ref="select"/&gt;
+			&lt;xsd:element ref="textarea"/&gt;
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+	&lt;xsd:group name="interactiveContent"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="a"/&gt;
+			&lt;xsd:element ref="audio"/&gt;
+			&lt;xsd:element ref="button"/&gt;
+			&lt;xsd:element ref="details"/&gt;
+			&lt;xsd:element ref="embed"/&gt;
+			&lt;xsd:element ref="iframe"/&gt;
+			&lt;xsd:element ref="img"/&gt;
+			&lt;xsd:element ref="input"/&gt;
+			&lt;xsd:element ref="keygen"/&gt;
+			&lt;xsd:element ref="label"/&gt;
+			&lt;xsd:element ref="menu"/&gt;
+			&lt;xsd:element ref="object"/&gt;
+			&lt;xsd:element ref="select"/&gt;
+			&lt;xsd:element ref="textarea"/&gt;
+			&lt;xsd:element ref="video"/&gt;
+			&lt;xsd:element ref="x-ms-webview"/&gt;
+		&lt;/xsd:choice&gt;
+	&lt;/xsd:group&gt;
+
+
+	&lt;!-- End of group definitions --&gt;
+
+	&lt;!--================ Document Structure ==================================--&gt;
+
+	&lt;!-- This element must be the first one in the file! --&gt;
+	&lt;xsd:element name="html"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element name="body" type="bodyType" minOccurs="1" maxOccurs="1"/&gt;
+				&lt;xsd:element name="head" type="headType" minOccurs="0" maxOccurs="1"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="manifest" type="xsd:anyURI"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--================ Document Head =======================================--&gt;
+
+	&lt;xsd:element name="head" type="headType"/&gt;
+
+	&lt;xsd:complexType name="headType"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:group ref="metadataContent"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:element name="title" type="titleType"/&gt;
+
+	&lt;xsd:complexType name="titleType" mixed="true"&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;!-- document base URI --&gt;
+	&lt;xsd:element name="base"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="href" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.cshtml;.vbhtml;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp"/&gt;
+			&lt;xsd:attribute name="target" type="browsingContext"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="link" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="href" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.cshtml;.vbhtml;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp"/&gt;
+			&lt;xsd:attribute name="hreflang" type="i18LanguageCode"/&gt;
+			&lt;xsd:attribute name="rel" type="linkLinkType" use="required"/&gt;
+			&lt;xsd:attribute name="media" type="mediaType" default="screen"/&gt;
+			&lt;xsd:attribute name="type" type="contentType" vs:readonly="true"/&gt;
+			&lt;xsd:attribute name="sizes"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="meta" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="http-equiv" type="metaHttpEquivType"/&gt;
+			&lt;xsd:attribute name="name" type="metaNameType"/&gt;
+			&lt;xsd:attribute name="content"/&gt;
+			&lt;xsd:attribute name="charset" type="charsetType"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!-- style info, which may include CDATA sections --&gt;
+
+	&lt;xsd:element name="style"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="type" type="styleTypeType" vs:readonly="true"/&gt;
+			&lt;xsd:attribute name="media" type="mediaType" default="screen"/&gt;
+			&lt;xsd:attribute name="scoped" vs:standalone="true"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!-- script statements, which may include CDATA sections --&gt;
+
+	&lt;xsd:element name="script"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="coreAttributeGroup"/&gt;
+			&lt;xsd:attribute name="charset" type="charsetType"/&gt;
+			&lt;xsd:attribute name="type" type="scriptTypeType" vs:readonly="true"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI"/&gt;
+			&lt;xsd:attribute name="defer" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="async" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="nomodule" vs:standalone="true"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!-- alternate Content container for non script-based rendering --&gt;
+
+	&lt;xsd:element name="noscript" vs:contentmodel="transparent"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--=================== Document Body ====================================--&gt;
+
+	&lt;xsd:element name="body" type="bodyType"/&gt;
+
+	&lt;xsd:complexType name="bodyType" mixed="true"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:group ref="flowContent"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;xsd:attribute name="onafterprint" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onbeforeprint" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onbeforeunload" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onhashchange" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onmessage" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onoffline" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="ononline" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onpopstate" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onpagehide" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onpageshow" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onredo" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onresize" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onstorage" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onundo" vs:omtype="event"/&gt;
+		&lt;xsd:attribute name="onunload" vs:omtype="event"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:element name="section" type="simpleFlowContentElement" vs:disallowedancestor="address"/&gt;
+	&lt;xsd:element name="nav" type="simpleFlowContentElement" vs:disallowedancestor="address"/&gt;
+
+	&lt;xsd:element name="article" vs:disallowedancestor="address"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="pubdate"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="aside" type="simpleFlowContentElement" vs:disallowedancestor="address"/&gt;
+
+	&lt;xsd:element name="h1" type="simplePhrasingContentElement" vs:disallowedancestor="address"/&gt;
+	&lt;xsd:element name="h2" type="simplePhrasingContentElement" vs:disallowedancestor="address"/&gt;
+	&lt;xsd:element name="h3" type="simplePhrasingContentElement" vs:disallowedancestor="address"/&gt;
+	&lt;xsd:element name="h4" type="simplePhrasingContentElement" vs:disallowedancestor="address"/&gt;
+	&lt;xsd:element name="h5" type="simplePhrasingContentElement" vs:disallowedancestor="address"/&gt;
+	&lt;xsd:element name="h6" type="simplePhrasingContentElement" vs:disallowedancestor="address"/&gt;
+
+	&lt;xsd:element name="hgroup"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="h1"/&gt;
+				&lt;xsd:element ref="h2"/&gt;
+				&lt;xsd:element ref="h3"/&gt;
+				&lt;xsd:element ref="h4"/&gt;
+				&lt;xsd:element ref="h5"/&gt;
+				&lt;xsd:element ref="h6"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="header" vs:disallowedancestor="header footer address" type="simpleFlowContentElement"/&gt;
+	&lt;xsd:element name="footer" vs:disallowedancestor="header footer address" type="simpleFlowContentElement"/&gt;
+	&lt;xsd:element name="address" vs:disallowedancestor="address" type="simpleFlowContentElement"/&gt;
+
+	&lt;xsd:element name="p" type="simplePhrasingContentElement" vs:implicitclosure="true"/&gt;
+
+	&lt;xsd:element name="br"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="pre" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="dialog"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;!-- TODO: support xsd:sequence
+			&lt;xsd:sequence minOccurs="0" maxOccurs="unbounded"&gt;
+				&lt;xsd:element ref="dd" /&gt;
+				&lt;xsd:element ref="dt" /&gt;
+			&lt;/xsd:sequence&gt;
+				--&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="dd"/&gt;
+				&lt;xsd:element ref="dt"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="blockquote"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="cite" type="xsd:anyURI"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="ol"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="li"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="start" type="xsd:integer"/&gt;
+			&lt;xsd:attribute name="reversed" type="olReversedType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="type"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="ul"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="li"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="li" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="value" type="xsd:integer" vs:requiredparent="ol"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="dl"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="dd"/&gt;
+				&lt;xsd:element ref="dt"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="dt" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+				&lt;xsd:element ref="dialog"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="dd" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--================== The Anchor Element ================================--&gt;
+
+	&lt;xsd:element name="a" vs:disallowedancestor="a button" vs:contentmodel="transparent"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;!-- Content Model --&gt;
+			&lt;!-- Attributes --&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="aServerAttributeGroup"/&gt;
+			&lt;xsd:attribute name="href" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.cshtml;.vbhtml;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp"/&gt;
+			&lt;xsd:attribute name="target" type="browsingContext" vs:requiredattribute="href"/&gt;
+			&lt;xsd:attribute name="name"/&gt;
+			&lt;xsd:attribute name="ping" vs:requiredattribute="href"/&gt;
+			&lt;xsd:attribute name="rel" type="anchorLinkType" vs:requiredattribute="href"/&gt;
+			&lt;xsd:attribute name="media" type="mediaType" default="screen" vs:requiredattribute="href"/&gt;
+			&lt;xsd:attribute name="hreflang" type="i18LanguageCode" vs:requiredattribute="href"/&gt;
+			&lt;xsd:attribute name="type" type="simpleContentType" vs:requiredattribute="href"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="em" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="strong" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="small" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="cite" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="bdi" type="simplePhrasingContentElement"/&gt;
+
+	&lt;xsd:element name="q"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="cite" type="xsd:anyURI"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="dfn" type="simplePhrasingContentElement" vs:disallowedancestor="dfn"/&gt;
+	&lt;xsd:element name="abbr" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="code" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="var" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="samp" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="kbd" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="sub" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="sup" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="i" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="b" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="u" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="s" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="mark" type="simplePhrasingContentElement"/&gt;
+
+	&lt;xsd:element name="progress" vs:disallowedancestor="progress"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="value" type="xsd:float"/&gt;
+			&lt;xsd:attribute name="max" type="vs:positiveFloat"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="meter" vs:disallowedancestor="meter"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="value" type="xsd:float" use="required"/&gt;
+			&lt;xsd:attribute name="min" type="xsd:float"/&gt;
+			&lt;xsd:attribute name="max" type="xsd:float"/&gt;
+			&lt;xsd:attribute name="low" type="xsd:float"/&gt;
+			&lt;xsd:attribute name="high" type="xsd:float"/&gt;
+			&lt;xsd:attribute name="optimum" type="xsd:float"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="time" vs:disallowedancestor="time"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="datetime" type="xsd:dateTime"/&gt;
+			&lt;xsd:attribute name="pubdate" vs:standalone="true" vs:requiredattribute="datetime"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="ruby"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;!-- TODO: support xsd:sequence
+			&lt;xsd:sequence minOccurs="1" maxOccurs="unbounded"&gt;
+					&lt;xsd:group ref="phrasingContent" /&gt;
+				&lt;xsd:choice&gt;
+					&lt;xsd:element name="rt" type="rtType" minOccurs="1" maxOccurs="1" /&gt;
+					&lt;xsd:element name="rp" type="rpType" minOccurs="1" maxOccurs="1" /&gt;
+				&lt;/xsd:choice&gt;
+			&lt;/xsd:sequence&gt;
+				--&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+				&lt;xsd:element ref="rt"/&gt;
+				&lt;xsd:element ref="rp"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="rt" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="rp" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="bdo" type="simplePhrasingContentElement"/&gt;
+	&lt;xsd:element name="span" type="simplePhrasingContentElement"/&gt;
+
+	&lt;!--=================== Inserted/Deleted Text ============================--&gt;
+
+	&lt;xsd:element name="ins"&gt;
+		&lt;xsd:complexType mixed="true" vs:contentmodel="transparent"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="cite" type="xsd:anyURI"/&gt;
+			&lt;xsd:attribute name="datetime" type="xsd:dateTime"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="del"&gt;
+		&lt;xsd:complexType mixed="true" vs:contentmodel="transparent"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="cite" type="xsd:anyURI"/&gt;
+			&lt;xsd:attribute name="datetime" type="xsd:dateTime"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--==================== Embedded content ======================================--&gt;
+
+	&lt;xsd:element name="figure" vs:disallowedancestor="legend"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;!-- TODO: support xsd:sequence
+			&lt;xsd:choice minOccurs="1" maxOccurs="1"&gt;
+				&lt;xsd:sequence minOccurs="1" maxOccurs="1"&gt;
+					&lt;xsd:element ref="legend" /&gt;
+					&lt;xsd:group ref="flowContent" /&gt;
+				&lt;/xsd:sequence&gt;
+				&lt;xsd:sequence minOccurs="1" maxOccurs="1"&gt;
+					&lt;xsd:group ref="flowContent" /&gt;
+					&lt;xsd:element ref="legend" /&gt;
+				&lt;/xsd:sequence&gt;
+				&lt;xsd:group ref="flowContent" /&gt;
+			&lt;/xsd:choice&gt;
+				--&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+				&lt;xsd:element name="legend" type="legendType" minOccurs="0" maxOccurs="1"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="figcaption" type="simpleFlowContentElement"/&gt;
+
+	&lt;xsd:element name="img"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="playToAttributeGroup"/&gt;
+			&lt;xsd:attribute name="alt"/&gt;
+			&lt;xsd:attribute name="crossorigin"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI" use="required" vs:preferredextensions=".jpg;.jpeg;.gif;.bmp;.jpe;.png;.dib;.tif;.wmf;.ras;.eps;.pcx;.pcd;.tga;.ashx;.asix"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="usemap"/&gt;
+			&lt;xsd:attribute name="ismap" type="imgIsmapType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="border" type="imgBorderType" vs:deprecated="true"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="iframe" vs:disallowedancestor="button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.cshtml;.vbhtml;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp"/&gt;
+			&lt;xsd:attribute name="srcdoc"/&gt;
+			&lt;xsd:attribute name="name" type="browsingContext"/&gt;
+			&lt;xsd:attribute name="sandbox" type="iframeSandboxType"/&gt;
+			&lt;xsd:attribute name="seamless" type="iframeSeamlessType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="x-ms-webview" vs:requiredprojectcapabilities="WindowsAppContainer"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI" vs:preferredextensions=".htm;.html;"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="ondomcontentloaded" vs:omtype="event"/&gt;
+			&lt;xsd:attribute name="onloadcomplete" vs:omtype="event"/&gt;
+			&lt;xsd:attribute name="onnavigated" vs:omtype="event"/&gt;
+			&lt;xsd:attribute name="onnavigating" vs:omtype="event"/&gt;
+			&lt;xsd:attribute name="onnavigationfailed" vs:omtype="event"/&gt;
+			&lt;xsd:attribute name="onscriptnotify" vs:omtype="event"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="embed" vs:disallowedancestor="button"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="playToAttributeGroup"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.cshtml;.vbhtml;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="type" type="vs:mimeType"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="object"&gt;
+		&lt;xsd:complexType mixed="true" vs:clientom="__object" vs:contentmodel="transparent"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element name="param" type="paramType" minOccurs="0" maxOccurs="unbounded"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="playToAttributeGroup"/&gt;
+			&lt;xsd:attribute name="data" type="xsd:anyURI"/&gt;
+			&lt;xsd:attribute name="type" type="vs:mimeType"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="usemap" type="xsd:anyURI"/&gt;
+			&lt;xsd:attribute name="name" type="browsingContext"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="param" type="paramType"/&gt;
+
+	&lt;xsd:complexType name="paramType"&gt;
+		&lt;xsd:attributeGroup ref="coreAttributeGroup"/&gt;
+		&lt;xsd:attribute name="name" use="required"/&gt;
+		&lt;xsd:attribute name="value" use="required"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;!--=================== Interactive content =======================================--&gt;
+
+	&lt;xsd:element name="details" vs:disallowedancestor="button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;!-- TODO: support xsd:sequence
+			&lt;xsd:sequence minOccurs="1" maxOccurs="1"&gt;
+				&lt;xsd:element ref="legend" /&gt;
+				&lt;xsd:group ref="flowContent" /&gt;
+			&lt;/xsd:sequence&gt;
+			--&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element name="summary" type="summaryType" minOccurs="1" maxOccurs="1"/&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="open" type="detailsOpenType" vs:standalone="true"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="summary" type="summaryType"/&gt;
+
+	&lt;xsd:complexType name="summaryType" mixed="true"&gt;
+		&lt;xsd:attributeGroup ref="coreAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:element name="command"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="type" type="commandTypeType"/&gt;
+			&lt;xsd:attribute name="label"/&gt;
+			&lt;xsd:attribute name="icon"/&gt;
+			&lt;xsd:attribute name="disabled" type="disabledType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="checked" type="checkedType" vs:requiredattribute="type=radio|checkbox" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="radiogroup" vs:requiredattribute="type=radio"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="menu" vs:disallowedancestor="button"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="li"/&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="type" type="menuTypeType"/&gt;
+			&lt;xsd:attribute name="label"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--=================== Miscellaneous elements =======================================--&gt;
+
+	&lt;xsd:element name="legend" type="legendType"/&gt;
+
+	&lt;xsd:complexType name="legendType" mixed="true"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:group ref="phrasingContent"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:element name="div" type="simpleFlowContentElement"/&gt;
+
+	&lt;xsd:element name="main" type="simpleFlowContentElement" vs:disallowedancestor="article aside footer header nav"/&gt;
+
+	&lt;!--=================== Interactive content =======================================--&gt;
+
+	&lt;xsd:element name="source"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI"/&gt;
+			&lt;xsd:attribute name="type" type="mediaMimeType"/&gt;
+			&lt;xsd:attribute name="media" type="mediaType" default="screen"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="track"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="kind" type="trackKindType"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI"/&gt;
+			&lt;xsd:attribute name="srclang" type="i18LanguageCode"/&gt;
+			&lt;xsd:attribute name="label"/&gt;
+			&lt;xsd:attribute name="default" vs:standalone="true"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="audio" vs:contentmodel="transparent" vs:disallowedancestor="audio video button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="source"/&gt;
+				&lt;xsd:element ref="track"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="mediaAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="playToAttributeGroup"/&gt;
+			&lt;xsd:attribute name="crossorigin"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="video" vs:contentmodel="transparent" vs:disallowedancestor="audio video button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="source"/&gt;
+				&lt;xsd:element ref="track"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="mediaAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="playToAttributeGroup"/&gt;
+			&lt;xsd:attribute name="poster"/&gt;
+			&lt;xsd:attribute name="crossorigin"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--=================== Horizontal Rule ==================================--&gt;
+
+	&lt;xsd:element name="hr"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--=================== Word break ==================================--&gt;
+
+	&lt;xsd:element name="wbr"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+
+	&lt;!--================ Forms ===============================================--&gt;
+
+	&lt;xsd:element name="form" vs:disallowedancestor="form"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="formServerAttributeGroup"/&gt;
+			&lt;xsd:attribute name="accept-charset"/&gt;
+			&lt;xsd:attribute name="action" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.cshtml;.vbhtml;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp"/&gt;
+			&lt;xsd:attribute name="autocomplete" type="autocompleteType"/&gt;
+			&lt;xsd:attribute name="enctype" type="enctypeType"/&gt;
+			&lt;xsd:attribute name="method" type="formmethodType" default="get"/&gt;
+			&lt;xsd:attribute name="name"/&gt;
+			&lt;xsd:attribute name="novalidate" type="formNovalidateType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="target" type="browsingContext"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="fieldset"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element name="legend" type="legendType" minOccurs="0" maxOccurs="1"/&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="disabled" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="name"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="label" vs:disallowedancestor="button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="for"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="input" vs:disallowedancestor="button"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="inputServerAttributeGroup"/&gt;
+			&lt;xsd:attribute name="type" type="inputTypeType" vs:readonly="true"/&gt;
+			&lt;xsd:attribute name="accept" vs:inputtype="file"/&gt;
+			&lt;xsd:attribute name="alt" vs:inputtype="image"/&gt;
+			&lt;xsd:attribute name="autocomplete" type="autocompleteType" vs:inputtype="color date datetime datetime-local email month number password range search tel text time url week"/&gt;
+			&lt;xsd:attribute name="autofocus" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="checked" type="checkedType" vs:standalone="true" vs:inputtype="checkbox radio"/&gt;
+			&lt;xsd:attribute name="dirname" type="xsd:string"/&gt;
+			&lt;xsd:attribute name="disabled" type="disabledType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="formaction" vs:inputtype="submit image"/&gt;
+			&lt;xsd:attribute name="formenctype" type="enctypeType" vs:inputtype="submit image"/&gt;
+			&lt;xsd:attribute name="formmethod" type="formmethodType" default="get" vs:inputtype="submit image"/&gt;
+			&lt;xsd:attribute name="formnovalidate" type="inputFormnovalidateType" vs:inputtype="submit image" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="formtarget" type="browsingContext" vs:inputtype="submit image"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger" vs:inputtype="image"/&gt;
+			&lt;xsd:attribute name="list" vs:inputtype="color date datetime datetime-local email month number range search tel text time url week"/&gt;
+			&lt;xsd:attribute name="max" vs:inputtype="date datetime datetime-local month number range search time week"/&gt;
+			&lt;xsd:attribute name="maxlength" type="xsd:positiveInteger" vs:inputtype="email password search tel text time url"/&gt;
+			&lt;xsd:attribute name="min" vs:inputtype="date datetime datetime-local month number range search time week"/&gt;
+			&lt;xsd:attribute name="multiple" vs:inputtype="email file" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="name" type="xsd:string"/&gt;
+			&lt;xsd:attribute name="pattern" vs:inputtype="email password search tel text time url" vs:requiredattribute="title"/&gt;
+			&lt;xsd:attribute name="placeholder" vs:inputtype="email password search tel text url"/&gt;
+			&lt;xsd:attribute name="readonly" type="textareaReadonlyType" vs:standalone="true" vs:inputtype="date datetime datetime-local email month number password search tel text time url week"/&gt;
+			&lt;xsd:attribute name="required" vs:inputtype="checkbox date datetime datetime-local email file month number password radio search tel text time url week" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="size" type="xsd:positiveInteger" vs:inputtype="email password search tel text time url"/&gt;
+			&lt;xsd:attribute name="src" type="xsd:anyURI" vs:inputtype="image"/&gt;
+			&lt;xsd:attribute name="step" vs:inputtype="date datetime datetime-local month number range search time week"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger" vs:inputtype="image"/&gt;
+			&lt;xsd:attribute name="value"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="button" vs:disallowedancestor="a button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="buttonServerAttributeGroup"/&gt;
+			&lt;xsd:attribute name="autofocus" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="disabled" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="formaction" vs:inputtype="submit image"/&gt;
+			&lt;xsd:attribute name="formenctype" type="enctypeType" vs:inputtype="submit image"/&gt;
+			&lt;xsd:attribute name="formmethod" type="formmethodType" default="get" vs:inputtype="submit image"/&gt;
+			&lt;xsd:attribute name="formnovalidate" type="inputFormnovalidateType" vs:inputtype="submit image" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="formtarget" type="browsingContext" vs:inputtype="submit image"/&gt;
+
+			&lt;xsd:attribute name="name"/&gt;
+			&lt;xsd:attribute name="value"/&gt;
+			&lt;xsd:attribute name="type" type="buttonTypeType" default="submit" vs:readonly="true"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="select" vs:disallowedancestor="a button"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="option"/&gt;
+				&lt;xsd:element ref="optgroup"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="multipleServerAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="selectServerAttributeGroup"/&gt;
+			&lt;xsd:attribute name="autofocus" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="disabled" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="multiple" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="name"/&gt;
+			&lt;xsd:attribute name="required" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="size" type="xsd:positiveInteger"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="datalist"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice vs:exclusive="true"&gt;
+				&lt;xsd:element ref="option"/&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="optgroup"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="option"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="disabled" type="disabledType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="label" use="required"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="option" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="disabled" type="disabledType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="selected" type="optionSelectedType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="label"/&gt;
+			&lt;xsd:attribute name="value"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="textarea" vs:disallowedancestor="a button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attributeGroup ref="textareaServerAttributeGroup"/&gt;
+			&lt;xsd:attribute name="autofocus" type="autofocusType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="disabled" type="disabledType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="maxlength" type="xsd:positiveInteger"/&gt;
+			&lt;xsd:attribute name="name"/&gt;
+			&lt;xsd:attribute name="placeholder"/&gt;
+			&lt;xsd:attribute name="readonly" type="textareaReadonlyType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="required" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="rows" type="xsd:integer"/&gt;
+			&lt;xsd:attribute name="cols" type="xsd:integer"/&gt;
+			&lt;xsd:attribute name="wrap" type="textareaWrapType"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="keygen" vs:disallowedancestor="a button" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="autofocus" type="autofocusType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="challenge"/&gt;
+			&lt;xsd:attribute name="disabled" type="disabledType" vs:standalone="true"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="keytype" type="keygenKeytypeType"/&gt;
+			&lt;xsd:attribute name="name"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="output" vs:disallowedancestor="a button"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="phrasingContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="for"/&gt;
+			&lt;xsd:attribute name="form" vs:associatedcontrolid="form"/&gt;
+			&lt;xsd:attribute name="name"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!--================== Canvas ============================--&gt;
+
+	&lt;xsd:element name="canvas" vs:contentmodel="transparent"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="width" type="xsd:nonNegativeInteger"/&gt;
+			&lt;xsd:attribute name="height" type="xsd:nonNegativeInteger"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="map"&gt;
+		&lt;xsd:complexType mixed="true" vs:contentmodel="transparent"&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="name" use="required"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="area" vs:implicitclosure="true" vs:requiredancestor="map"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="Shape" type="areaShapeType" default="rect"/&gt;
+			&lt;xsd:attribute name="coords"/&gt;
+			&lt;xsd:attribute name="href" type="xsd:anyURI" vs:preferredextensions=".asp;.aspx;.cshtml;.vbhtml;.asmx;.asax;.ashx;.asix;.ascx;.htm;.html;.xml;.xsd;.config;.asa;.css;.shtm;.shtml;.php;.jsp"/&gt;
+			&lt;xsd:attribute name="hreflang" type="i18LanguageCode"/&gt;
+			&lt;xsd:attribute name="alt" use="required" vs:requiredattribute="href"/&gt;
+			&lt;xsd:attribute name="target" type="browsingContext"/&gt;
+			&lt;xsd:attribute name="media" type="mediaType" default="screen"/&gt;
+			&lt;xsd:attribute name="rel" type="anchorLinkType"/&gt;
+			&lt;xsd:attribute name="ping"/&gt;
+			&lt;xsd:attribute name="type"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="math"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="svg" type="svg:svgType" vs:isxml="true"/&gt;
+
+	&lt;!--======================= Tables =======================================--&gt;
+
+	&lt;xsd:element name="table" vs:disallowedancestor="caption"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;!-- TODO: cupport order per W3C: 
+				In this order: optionally a caption element, followed by either zero or more colgroup elements, 
+				followed optionally by a thead element, followed optionally by a tfoot element, 
+				followed by either zero or more tbody elements or one or more tr elements, followed optionally 
+				by a tfoot element (but there can only be one tfoot element child in total). 
+			--&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element name="caption" type="simpleFlowContentElement" minOccurs="0" maxOccurs="1"/&gt;
+				&lt;xsd:element ref="colgroup"/&gt;
+				&lt;xsd:element name="thead" type="theadType" minOccurs="0" maxOccurs="1"/&gt;
+				&lt;xsd:element name="tfoot" type="tfootType" minOccurs="0" maxOccurs="1"/&gt;
+				&lt;xsd:element ref="tbody"/&gt;
+				&lt;xsd:element ref="tr"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="summary"/&gt;
+			&lt;xsd:attribute name="border" type="tableBorderType"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="caption" type="simpleFlowContentElement"/&gt;
+
+	&lt;xsd:element name="colgroup"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="col"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="span" type="xsd:integer" default="1"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="col"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="span" type="xsd:integer" default="1"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="thead" type="theadType"/&gt;
+
+	&lt;xsd:complexType name="theadType" vs:implicitclosure="true"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="tr"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:element name="tfoot" type="tfootType"/&gt;
+
+	&lt;xsd:complexType name="tfootType" vs:implicitclosure="true"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:element ref="tr"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:element name="tbody" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element ref="tr"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="tr" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:element name="th" type="thType"/&gt;
+				&lt;xsd:element ref="td"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:element name="th" type="thType"/&gt;
+
+	&lt;xsd:complexType name="thType" mixed="true" vs:implicitclosure="true"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:group ref="flowContent"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+		&lt;xsd:attribute name="abbr"/&gt;
+		&lt;xsd:attribute name="headers"/&gt;
+		&lt;xsd:attribute name="rowspan" default="1" type="xsd:positiveInteger"/&gt;
+		&lt;xsd:attribute name="colspan" default="1" type="xsd:positiveInteger"/&gt;
+		&lt;xsd:attribute name="scope" type="thScopeType"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:element name="td" vs:implicitclosure="true"&gt;
+		&lt;xsd:complexType mixed="true"&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+			&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+			&lt;xsd:attribute name="headers"/&gt;
+			&lt;xsd:attribute name="rowspan" default="1" type="xsd:positiveInteger"/&gt;
+			&lt;xsd:attribute name="colspan" default="1" type="xsd:positiveInteger"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;!-- Special element for deriving flow content members --&gt;
+	&lt;xsd:element name="FlowContentElement" vs:nonbrowseable="true"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:choice&gt;
+				&lt;xsd:group ref="flowContent"/&gt;
+			&lt;/xsd:choice&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+
+	&lt;xsd:complexType mixed="true" name="simpleFlowContentElement"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:group ref="flowContent"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+	&lt;xsd:complexType mixed="true" name="simplePhrasingContentElement"&gt;
+		&lt;xsd:choice&gt;
+			&lt;xsd:group ref="phrasingContent"/&gt;
+		&lt;/xsd:choice&gt;
+		&lt;xsd:attributeGroup ref="commonAttributeGroup"/&gt;
+	&lt;/xsd:complexType&gt;
+
+&lt;/xsd:schema&gt;</value>
+  </data>
+</root>

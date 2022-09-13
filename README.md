@@ -1,6 +1,8 @@
 # Vazor 2.0 (Updated to .NET 6)
 Copyright (c) 2019-2020 Mohammad Hamdy Ghanem.
+
 ![vazorpng](https://user-images.githubusercontent.com/48354902/77369645-c1e08f80-6d67-11ea-9929-c62b5529154e.png)
+
 Vazor stands for VB.NET Razor. 
 It allows you to write ASP.NET (both MVC Core and Razor Pages) applications with VB.NET including designing the views with vb.net code embedded in XML literals (which VB.NET supports)!
 
@@ -9,16 +11,17 @@ Read about [Vazor history](https://github.com/VBAndCs/Vazor/blob/master/A-Vazor-
 
 # Project and Item Templates
 To easily crate Vazor apps in VS2019 and VS2022:
-Download this VS Extension [VazorEx](https://marketplace.visualstudio.com/items?itemName=ModernVBNET.Vazor), and Double-click the file `VazorEx.vsix` to setup these Vazor templates.
-1- A Vazor project template for ASP.NET MVC Core 6.0 .
-2- A Vazor project template for ASP.NET Web Pages Core 6.0 .
-3- A VazorView item template to add a new vazor view (.vazor and .vbxml.vb files) to the MVC project.
-4- A VazorPage item template to add a new vazor page (.cshtml, .cshtml.vb, and .vbxml.vb files) to the Razor Pages project.
+Download this VS Extension [VazorEx](https://marketplace.visualstudio.com/items?itemName=ModernVBNET.Vazor), and Double-click the file `VazorEx.vsix` to setup these Vazor templates:
+
+1. A Vazor project template for ASP.NET MVC Core 6.0 .
+2. A Vazor project template for ASP.NET Web Pages Core 6.0 .
+3. A VazorView item template to add a new vazor view (.vazor and .vbxml.vb files) to the MVC project.
+4. A VazorPage item template to add a new vazor page (.cshtml, .cshtml.vb, and .vbxml.vb files) to the Razor Pages project.
 
 After installation:
-1- open VS.Net and create a new project. In the search box, write Vazor, and choose one of the 2 vazor project templates. 
-2- In the project created, right-click a folder in solution explorer and select Add/New Item. 
-3- From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
+1. open VS.Net and create a new project. In the search box, write Vazor, and choose one of the 2 vazor project templates. 
+2. In the project created, right-click a folder in solution explorer and select Add/New Item. 
+3. From the dialoge box select VazorView (if this is an MVC project) or VazorPage (if this is a Razor Pages project).
 
 # Html5 Auto-Completion in Vazor:
 VazorEx also installs an Html5 CompletionProvider.

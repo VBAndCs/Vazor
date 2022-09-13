@@ -1,0 +1,12 @@
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\bin\Release\netstandard2.0\vbxmlCompletionProvider.deps.json
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\bin\Release\netstandard2.0\vbxmlCompletionProvider.dll
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\bin\Release\netstandard2.0\vbxmlCompletionProvider.pdb
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\VbXmlCompletionProvider.vbproj.AssemblyReference.cache
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\vbxmlCompProv.Resources.resources
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\VbXmlCompletionProvider.vbproj.GenerateResource.cache
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\VbXmlCompletionProvider.GeneratedMSBuildEditorConfig.editorconfig
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\VbXmlCompletionProvider.AssemblyInfoInputs.cache
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\VbXmlCompletionProvider.AssemblyInfo.vb
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\VbXmlCompletionProvider.vbproj.CoreCompileInputs.cache
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\vbxmlCompletionProvider.dll
+F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\obj\Release\netstandard2.0\vbxmlCompletionProvider.pdb

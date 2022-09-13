@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = vbxmlCompProv
+build_property.ProjectDir = F:\_VS.NET\Vazor 6\VazorTemplates\VazorTemplateSetup\VbXmlCompletionProvider\
