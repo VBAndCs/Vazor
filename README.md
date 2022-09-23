@@ -30,7 +30,7 @@ It provides Html5 auto completion in VB XML literals:
 The auto completion is enabled only when XML root is `<vbxml>` or `<zml>`:
 ```VB.NET
 Dim x = <vbxml>
-        <!—auto completion for HTML 5 is available here -->
+        <!â€”auto completion for HTML 5 is available here -->
    </vbxml>
 ```
 
@@ -144,7 +144,7 @@ End Class
 In vbxml code you can follow these rules:
 * XML literals have only one root. So, it you don't eant to add extra html5 tag to contain the page content, wrap your code in a `<vbxml>` tag.
 * All html tags and their attributes can be represented in XML, but there is no intellisense support for them until now.
-* Use Razor conventions and tools, like helper tags, sections, partial views, scripts… etc. 
+* Use Razor conventions and tools, like helper tags, sections, partial views, scriptsâ€¦ etc. 
 * Use `<%= VBCode %>` to insert vb code.
 * You can use @VBCode, but vb will consider it as a plain text, so you will have no intellisense for it, but it will be evaluated by Razor in runtime. This is why you must use c# syntax for expressions written after the @ symbol.
 * Use inline-invoked lambda expression to imbed code blocks, like given in the above sample.
